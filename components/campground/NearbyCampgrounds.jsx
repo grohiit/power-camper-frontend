@@ -1,9 +1,9 @@
-import React from "react";
-import Slider from "react-slick";
-import NearbyCampgroundListItem from "./NearbyCampgroundListItem";
-import NearByCampgroundSlide from "./NearByCampgroundSlide";
+import React from 'react'
+import Slider from 'react-slick'
+import NearbyCampgroundListItem from './NearbyCampgroundListItem'
+import NearByCampgroundSlide from './NearByCampgroundSlide'
 
-const NearbyCampgrounds = ({ nearbycampgroundData }) => {
+const NearbyCampgrounds = ({ nearbycampgroundData, type }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -11,14 +11,14 @@ const NearbyCampgrounds = ({ nearbycampgroundData }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
+  }
 
   return (
     <>
       <section className="mt-20 lg:mt-28 xl:mt-36">
         <div className="container mx-auto ">
           <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center mb-5 md:mb-8 lg:mb-10 xl:mb-16 xxl:mb-20  max-w-lg mx-auto">
-            Nearby Campgrounds
+            {type} Campgrounds
           </h2>
           <div className="block sm:hidden nearby_slider">
             <Slider {...settings}>
@@ -39,7 +39,7 @@ const NearbyCampgrounds = ({ nearbycampgroundData }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default NearbyCampgrounds;
+export default NearbyCampgrounds

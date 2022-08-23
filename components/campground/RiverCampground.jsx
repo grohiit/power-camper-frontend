@@ -1,7 +1,7 @@
-import React from "react";
-import { RedCrossIcon, TickIcon } from "../common/Icons";
-import Image from "next/image";
-import { markdownToHtml } from "../common/Functions";
+import React from 'react'
+import { RedCrossIcon, TickIcon } from '../common/Icons'
+import Image from 'next/image'
+import { markdownToHtml } from '../common/Functions'
 
 const RiverCampground = ({ data }) => {
   const {
@@ -9,9 +9,8 @@ const RiverCampground = ({ data }) => {
     reservationRequired,
     reservationInfo,
     bestCampgsiteDescription,
-    bestCampsiteImage,
-  } = data ? data : {};
-
+  } = data ? data : {}
+  const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
   return (
     <>
       <section className=" mt-20 lg:mt-28 xl:mt-36" id="About">
@@ -79,7 +78,7 @@ const RiverCampground = ({ data }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default RiverCampground;
+export default RiverCampground
