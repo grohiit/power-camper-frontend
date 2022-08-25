@@ -15,11 +15,6 @@ module.exports = {
         xl: '5rem',
         '2xl': '6rem',
       },
-      fontSize: {
-        lg: '1.2rem',
-        sm: '1.2rem',
-        base: '1.2rem',
-      },
       center: true,
     },
     extend: {

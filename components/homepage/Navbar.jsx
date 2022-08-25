@@ -97,7 +97,8 @@ const Navbar = () => {
                     height={33}
                     layout="intrinsic"
                   />
-                  <h2 className="font-Balsamiq text-[#764C29] text-sm lg:text-base font-bold leading-[19px] sm:leading-[24px] ml-1 sm:ml-3 ">
+                  <h2 className="font-Balsamiq text-[#764C29] text-lg font-bold leading-[19px] sm:leading-[24px] ml-1 sm:ml-3 ">
+                    {/* remove text-xl and add text-sm and lg:text-base */}
                     Power Camper
                   </h2>
                 </span>
