@@ -9,11 +9,11 @@ const NavbarDropdown = () => {
   return (
     <>
       {/* <div className="relative "> */}
-      <a href="/campgrounds">
+      <Link href="/campgrounds">
         <button className="custom_select text-[#4F535D] hover:text-[#754C29] font-Balsamiq text-sm lg:text-base flex items-center  mx-auto cursor-pointer ">
           <span>Campgrounds</span>
         </button>
-      </a>
+      </Link>
       {/* </div> */}
     </>
   )
