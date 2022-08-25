@@ -1,25 +1,30 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   // plugins: [require("tw-elements/dist/plugin")],
   theme: {
     container: {
       padding: {
-        DEFAULT: "1rem",
-        sm: "2rem",
-        lg: "2rem",
-        xl: "5rem",
-        "2xl": "6rem",
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '2rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+      fontSize: {
+        lg: '1.2rem',
+        sm: '1.2rem',
+        base: '1.2rem',
       },
       center: true,
     },
     extend: {
       fontFamily: {
-        Poppins: ["Poppins"],
+        Poppins: ['Poppins'],
         Balsamiq: ["'Balsamiq Sans', cursive"],
         Bubblegum: ["'Bubblegum Sans', cursive"],
         Cabin: ["'Cabin', sans-serif"],
@@ -27,4 +32,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

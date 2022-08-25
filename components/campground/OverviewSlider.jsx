@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import { markdownToHtml } from "../common/Functions";
-import ReservationForm from "./ReservationForm";
+import Image from 'next/image'
+import React from 'react'
+import { markdownToHtml } from '../common/Functions'
+import ReservationForm from './ReservationForm'
 
 const OverviewSlider = ({ overview }) => {
   return (
@@ -33,7 +33,8 @@ const OverviewSlider = ({ overview }) => {
               </h2>
               <div className="max-w-lg list-disc mb-12   block">
                 <div
-                  className="font-Cabin text-sm lg:text-base opacity-70 text-justify"
+                  className="font-Cabin text-xl opacity-70 text-justify"
+                  //remove text-xl and add text-sm lg:text-base
                   dangerouslySetInnerHTML={{
                     __html: markdownToHtml(
                       JSON.parse(JSON.stringify(overview))
@@ -47,7 +48,7 @@ const OverviewSlider = ({ overview }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default OverviewSlider;
+export default OverviewSlider

@@ -1,4 +1,3 @@
-import Header from '../../components/common/Header'
 import Hero from '../../components/campground/Hero'
 import OverviewSlider from '../../components/campground/OverviewSlider'
 import RiverCampground from '../../components/campground/RiverCampground'
@@ -12,8 +11,6 @@ import CommentForm from '../../components/campground/CommentForm'
 import NearbyCampgrounds from '../../components/campground/NearbyCampgrounds'
 import Footer from '../../components/common/Footer'
 import BackToTop from '../../components/common/BackToTop'
-import Navbar from '../../components/homepage/Navbar'
-import Head from 'next/head'
 import 'aos/dist/aos.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -22,6 +19,7 @@ import { useEffect } from 'react'
 import ActivityMain from '../../components/campground/ActivityMain'
 import { API_URL } from '@/config/index'
 import PageNotFound from '../../components/common/PageNotFound'
+import Layout from '@/components/Layout'
 
 export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
   useEffect(() => {
@@ -39,86 +37,23 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
 
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <link rel="icon" href="/favicon.png" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta
-          name="description"
-          content="Platte River Campground Among Top 50 campgrounds in California"
-        />
-        <link rel="apple-touch-icon" href="logo192.png" />
-        <link rel="manifest" href="manifest.json" />
-        <title>Power Camper</title>
-        <meta name="title" content="Power Camper" />
-        <meta
-          name="description"
-          content="Platte River Campground Among Top 50 campgrounds in California"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://power-camper2.vercel.app/" />
-        <meta property="og:title" content="Power Camper" />
-        <meta
-          property="og:description"
-          content="Platte River Campground Among Top 50 campgrounds in California"
-        />
-        <meta
-          property="og:image"
-          content="https://power-camper2.vercel.app/seo.webp"
-        />
-        <meta
-          property="twitter:card"
-          content="https://power-camper2.vercel.app/"
-        />
-        <meta
-          property="twitter:url"
-          content="https://power-camper2.vercel.app/"
-        />
-        <meta property="twitter:title" content="Power Camper" />
-        <meta
-          property="twitter:description"
-          content="Platte River Campground Among Top 50 campgrounds in California"
-        />
-        <meta
-          property="twitter:image"
-          content="https://power-camper2.vercel.app/seo.webp"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        ></link>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
-      </Head>
-      <Navbar />
-      {/* <Header /> */}
-      <Hero data={campgroundpageData} />
-      <OverviewSlider overview={campgroundpageData.overview} />
-      <RiverCampground data={campgroundpageData} />
-      <ActivityMain data={campgroundpageData} />
-      <Amenities anim={campgroundpageData} />
-      <RiverMap campgroundMap={campgroundpageData.campgroundMap} />
-      <Direction directions={campgroundpageData.directions} />
-      <Weather data={campgroundpageData} />
-      <Faq faqdata={campgroundpageData.faqs} />
-      <RiverReview />
-      <CommentForm reviewdata={campgroundreviewData} />
-      <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" />
-      <Footer />
-      <BackToTop />
+      <Layout>
+        {/* <Header /> */}
+        <Hero data={campgroundpageData} />
+        <OverviewSlider overview={campgroundpageData.overview} />
+        <RiverCampground data={campgroundpageData} />
+        <ActivityMain data={campgroundpageData} />
+        <Amenities anim={campgroundpageData} />
+        <RiverMap campgroundMap={campgroundpageData.campgroundMap} />
+        <Direction directions={campgroundpageData.directions} />
+        <Weather data={campgroundpageData} />
+        <Faq faqdata={campgroundpageData.faqs} />
+        <RiverReview />
+        <CommentForm reviewdata={campgroundreviewData} />
+        <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" />
+        <Footer />
+        <BackToTop />
+      </Layout>
     </>
   )
 }

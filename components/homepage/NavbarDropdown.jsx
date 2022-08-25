@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
-import { HeaderDropdownIcon } from '../common/Icons'
 import Link from 'next/link'
 
 const NavbarDropdown = () => {
@@ -8,13 +7,11 @@ const NavbarDropdown = () => {
   console.log(router.pathname)
   return (
     <>
-      {/* <div className="relative "> */}
       <Link href="/campgrounds">
         <button className="custom_select text-[#4F535D] hover:text-[#754C29] font-Balsamiq text-sm lg:text-base flex items-center  mx-auto cursor-pointer ">
           <span>Campgrounds</span>
         </button>
       </Link>
-      {/* </div> */}
     </>
   )
 }

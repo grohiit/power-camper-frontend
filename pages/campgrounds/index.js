@@ -1,12 +1,13 @@
 import { API_URL } from '@/config/index'
-import Navbar from '@/components/homepage/Navbar'
+import Layout from '../../components/Layout'
 import NearByCampgrounds from '@/components/campground/NearbyCampgrounds'
 
 export default function allCampgroundsPage({ URL, datanearby }) {
   return (
     <>
-      <Navbar />
-      <NearByCampgrounds nearbycampgroundData={datanearby} type="All" />
+      <Layout>
+        <NearByCampgrounds nearbycampgroundData={datanearby} type="All" />
+      </Layout>
     </>
   )
 }

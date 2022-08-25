@@ -1,14 +1,15 @@
-import Navbar from '../components/homepage/Navbar'
+import Layout from '../components/Layout'
 
 export default function aboutPage() {
   return (
     <>
-      <Navbar />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>This is the about page</h1>
+      <Layout title="About Power Camper">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>This is the about page</h1>
+      </Layout>
     </>
   )
 }
