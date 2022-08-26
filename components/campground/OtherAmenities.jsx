@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from "react";
-import { amenitiesSecondData } from "../common/Content";
-import { CrossIcon } from "../common/Icons";
+import React, { useEffect, useState } from 'react'
+import { amenitiesSecondData } from '../common/Content'
+import { CrossIcon } from '../common/Icons'
 
-const OtherAmenities = ({ anim }) => {
-  const { otherAmenities } = anim ? anim : {};
-  const [filteredOtherAnimities, setFilteredOtherAnimities] = useState([]);
+const OtherAmenities = ({ otherAmenities = {} }) => {
+  const [filteredOtherAnimities, setFilteredOtherAnimities] = useState([])
 
   useEffect(() => {
     for (let i = 0; i < amenitiesSecondData.length; i++) {
-      const data = findMatch(otherAmenities, amenitiesSecondData[i]);
+      const data = findMatch(otherAmenities, amenitiesSecondData[i])
       if (data.length) {
-        setFilteredOtherAnimities((prevState) => [...prevState, ...data]);
+        setFilteredOtherAnimities((prevState) => [...prevState, ...data])
       }
     }
-  }, [otherAmenities]);
+  }, [otherAmenities])
 
   function findMatch(basicAmenities, amenitiesData) {
-    const data = [];
+    const data = []
     for (let j = 0; j < basicAmenities.length; j++) {
       if (
         basicAmenities[j].key.toLowerCase() ===
         amenitiesData.title.toLowerCase()
       ) {
-        amenitiesData.isActive = basicAmenities[j].value;
-        data.push(amenitiesData);
+        amenitiesData.isActive = basicAmenities[j].value
+        data.push(amenitiesData)
       }
     }
-    return data;
+    return data
   }
 
   return (
@@ -36,7 +35,7 @@ const OtherAmenities = ({ anim }) => {
           return (
             <div
               className={`w-[64px] sm:w-[85px] py-2 sm:py-3 border-[#CBDED3] border text-center box_shadow_amemties flex flex-col justify-around items-center sm:mb-5  ${
-                val.isActive ? "" : "is_unaivable"
+                val.isActive ? '' : 'is_unaivable'
               }`}
               key={index}
             >
@@ -50,11 +49,11 @@ const OtherAmenities = ({ anim }) => {
                 {val.title}
               </p>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default OtherAmenities;
+export default OtherAmenities

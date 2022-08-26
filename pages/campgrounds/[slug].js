@@ -1,7 +1,7 @@
 import Hero from '../../components/campground/Hero'
 import OverviewSlider from '../../components/campground/OverviewSlider'
 import RiverCampground from '../../components/campground/RiverCampground'
-import Amenities from '../../components/campground/Amenities'
+import AmenitiesActivities from '../../components/campground/AmenitiesActivities'
 import RiverMap from '../../components/campground/RiverMap'
 import Direction from '../../components/campground/Direction'
 import Weather from '../../components/campground/Weather'
@@ -43,7 +43,7 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         <OverviewSlider overview={campgroundpageData.overview} />
         <RiverCampground data={campgroundpageData} />
         <ActivityMain data={campgroundpageData} />
-        <Amenities anim={campgroundpageData} />
+        <AmenitiesActivities campgroundpageData={campgroundpageData} />
         <RiverMap campgroundMap={campgroundpageData.campgroundMap} />
         <Direction directions={campgroundpageData.directions} />
         <Weather data={campgroundpageData} />

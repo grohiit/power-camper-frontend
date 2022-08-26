@@ -69,7 +69,7 @@ export default function Layout({ children, title }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
       </Head>
       <Navbar />
-      {children}
+      <main>{children}</main>
     </>
   )
 }

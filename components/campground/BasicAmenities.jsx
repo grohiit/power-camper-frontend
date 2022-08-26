@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from "react";
-import { amenitiesData } from "../common/Content";
-import { CrossIcon } from "../common/Icons";
+import React, { useEffect, useState } from 'react'
+import { amenitiesData } from '../common/Content'
+import { CrossIcon } from '../common/Icons'
 
-const BasicAmenities = ({ anim }) => {
-  const { basicAmenities } = anim ? anim : {};
-  const [filterBasicAnimitiesData, setFilterBasicAnimitiesData] = useState([]);
+const BasicAmenities = ({ basicAmenities = {} }) => {
+  const [filterBasicAnimitiesData, setFilterBasicAnimitiesData] = useState([])
 
   useEffect(() => {
     for (let i = 0; i < amenitiesData.length; i++) {
-      const data = findMatch(basicAmenities, amenitiesData[i]);
+      const data = findMatch(basicAmenities, amenitiesData[i])
       if (data.length) {
-        setFilterBasicAnimitiesData((prevState) => [...prevState, ...data]);
+        setFilterBasicAnimitiesData((prevState) => [...prevState, ...data])
       }
     }
-  }, [basicAmenities]);
+  }, [basicAmenities])
 
   function findMatch(basicAmenities, amenitiesData) {
-    const data = [];
+    const data = []
     for (let j = 0; j < basicAmenities.length; j++) {
       if (
         basicAmenities[j].key.toLowerCase() ===
         amenitiesData.title.toLowerCase()
       ) {
-        amenitiesData.isActive = basicAmenities[j].value;
-        data.push(amenitiesData);
+        amenitiesData.isActive = basicAmenities[j].value
+        data.push(amenitiesData)
       }
     }
-    return data;
+    return data
   }
 
   return (
@@ -35,7 +34,7 @@ const BasicAmenities = ({ anim }) => {
         {filterBasicAnimitiesData.map((val, index) => (
           <div
             className={`w-24 sm:w-[128px]  py-4 sm:py-5 border-[#CBDED3] border text-center box_shadow_amemties flex flex-col justify-around items-center   sm:mb-5  ${
-              val.isActive ? "" : "is_unaivable"
+              val.isActive ? '' : 'is_unaivable'
             }`}
             key={index}
           >
@@ -52,7 +51,7 @@ const BasicAmenities = ({ anim }) => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BasicAmenities;
+export default BasicAmenities

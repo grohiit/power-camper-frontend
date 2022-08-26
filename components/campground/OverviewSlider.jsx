@@ -34,7 +34,6 @@ const OverviewSlider = ({ overview }) => {
               <div className="max-w-lg list-disc mb-12   block">
                 <div
                   className="font-Cabin text-lg opacity-70 text-justify"
-                  //remove text-lg and add text-sm lg:text-base
                   dangerouslySetInnerHTML={{
                     __html: markdownToHtml(
                       JSON.parse(JSON.stringify(overview))

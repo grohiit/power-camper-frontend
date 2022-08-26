@@ -1,10 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import Activities from "./Activities";
-import BasicAmenities from "./BasicAmenities";
-import OtherAmenities from "./OtherAmenities";
+import Image from 'next/image'
+import React from 'react'
+import Activities from './Activities'
+import BasicAmenities from './BasicAmenities'
+import OtherAmenities from './OtherAmenities'
 
-const Amenities = ({ anim }) => {
+const Amenities = ({ campgroundpageData }) => {
   return (
     <>
       <section className="mt-20 lg:mt-28 relative ">
@@ -32,15 +32,19 @@ const Amenities = ({ anim }) => {
               <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 text-center lg:text-start">
                 Amenities
               </h2>
-              <BasicAmenities anim={anim} />
-              <OtherAmenities anim={anim} />
+              <BasicAmenities
+                basicAmenities={campgroundpageData.basicAmenities}
+              />
+              <OtherAmenities
+                otherAmenities={campgroundpageData.otherAmenities}
+              />
             </div>
-            <Activities anim={anim} />
+            <Activities activities={campgroundpageData.activities} />
           </div>
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Amenities;
+export default Amenities

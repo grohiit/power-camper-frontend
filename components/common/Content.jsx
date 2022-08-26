@@ -28,281 +28,336 @@ import {
   SwimmingIcon,
   TicketIcon,
   TreeIcon,
-} from "./Icons";
+} from './Icons'
+
+export const iconsObjData = {
+  'Picnic Tables': <AirplaneIcon />,
+  Trash: <BagIcon />,
+  Wifi: <BinocularsIcon />,
+  'Potable Water': <BonfireIcon />,
+  'Campfire Rings': <BulbIcon />,
+  'Visitors/Rec Center': <CameraIcon />,
+  'Cell Service': <CapsIcon />,
+  Alcohol: <Cloud />,
+  'Campground Host': <CloudIcon />,
+  Grills: <CloudsIcon />,
+  Hiking: <CompassIcon />,
+  Fishing: <DogIcon />,
+  'Scuba Diving': <FireIcon />,
+  'Surfing / Windsurfing': <FlashlightIcon />,
+  'Exhibits / Guided Tours': <ForestIcon />,
+  Snorkeling: <MapIcon />,
+  Swimming: <PawIcon />,
+  'Bike Trails': <PetsAmenityIcon />,
+  'Tide Pools': <PocketKnifeIcon />,
+  Volleyball: <RVTrailerIcon />,
+  'Canoeing / Kayaking': <ShoesIcon />,
+  Photography: <ShowerGreenAmenityIcon />,
+  'Whale Watching': <ShowerIcon />,
+  Backpacking: <StarIcon />,
+  Placeholder: <SunglassesIcon />,
+}
+
+export const iconsData = [
+  {
+    icon: <Cloud />,
+    title: 'Scuba Diving',
+  },
+  {
+    icon: <FireIcon />,
+    title: 'Snorkeling',
+  },
+  {
+    icon: <SwimmingIcon />,
+    title: 'Swimming',
+  },
+  {
+    icon: <MapIcon />,
+    title: 'Exhibits / Guided Tours',
+  },
+  {
+    icon: <ShoesIcon />,
+    title: 'Surfing / Windsurfing',
+  },
+  {
+    icon: <AirplaneIcon />,
+    title: 'Placeholder',
+  },
+]
 
 export const activitiesData = [
   {
     icon: <PawIcon />,
-    title: "Quis quam porta ornare fermentum lectus tincidunt.",
+    title: 'Quis quam porta ornare fermentum lectus tincidunt.',
   },
   {
     icon: <SwimmingIcon />,
-    title: "Rm is morbi iaculiscommodo senectus quam sed massa.",
+    title: 'Rm is morbi iaculiscommodo senectus quam sed massa.',
   },
   {
     icon: <FireIcon />,
-    title: "Quis quam porta ornare fermentum lectus tincidunt.",
+    title: 'Quis quam porta ornare fermentum lectus tincidunt.',
   },
   {
     icon: <Cloud />,
-    title: "Ultrices amet purus velit.",
+    title: 'Ultrices amet purus velit.',
   },
   // {
   //   icon: <CapIcon />,
   //   title: "Ultrices amet purus velit nunc lectus",
   // },
-];
+]
 export const rulesData = [
   {
-    subtitle: "12 days",
+    subtitle: '12 days',
     iconCondition: false,
-    title: "Max. Length of Stayx",
+    title: 'Max. Length of Stayx',
   },
   {
-    subtitle: "8",
+    subtitle: '8',
     iconCondition: false,
-    title: "Max. People per Site",
+    title: 'Max. People per Site',
   },
   {
-    subtitle: "2",
+    subtitle: '2',
     iconCondition: false,
-    title: "Max. Vehicles per Site",
+    title: 'Max. Vehicles per Site',
   },
   {
-    subtitle: "",
+    subtitle: '',
     iconCondition: true,
-    title: "RV/Trailers Allowed?",
+    title: 'RV/Trailers Allowed?',
   },
   {
-    subtitle: "40ft",
+    subtitle: '40ft',
     iconCondition: false,
-    title: "RV/Trailer Max Length",
+    title: 'RV/Trailer Max Length',
   },
   {
-    subtitle: "",
+    subtitle: '',
     iconCondition: false,
-    title: "Group Camping Allowed",
+    title: 'Group Camping Allowed',
   },
   {
-    subtitle: "",
+    subtitle: '',
     iconCondition: true,
-    title: "Pets Allowed?",
+    title: 'Pets Allowed?',
   },
   {
-    subtitle: "Only in designated fire rings",
+    subtitle: 'Only in designated fire rings',
     iconCondition: false,
-    title: "Fires Allowed?",
+    title: 'Fires Allowed?',
   },
-];
+]
 export const costData = [
   {
-    title: "Site Type",
-    subtitle: "Nightly Fee",
+    title: 'Site Type',
+    subtitle: 'Nightly Fee',
   },
   {
-    title: "Site w/ Electrical Hook-up",
-    subtitle: "$31",
+    title: 'Site w/ Electrical Hook-up',
+    subtitle: '$31',
   },
   {
-    title: "Site w/ Electrical Hook-up",
-    subtitle: "$26",
+    title: 'Site w/ Electrical Hook-up',
+    subtitle: '$26',
   },
   {
-    title: "Group Site",
-    subtitle: "$50",
+    title: 'Group Site',
+    subtitle: '$50',
   },
   {
-    title: "Walk-in Sites",
-    subtitle: "$22",
+    title: 'Walk-in Sites',
+    subtitle: '$22',
   },
-];
+]
 
 export const weatherData = [
   {
     icon: <BulbIcon />,
-    title: "Sunday",
-    date: "03/07/2022",
-    degree: "70°",
+    title: 'Sunday',
+    date: '03/07/2022',
+    degree: '70°',
   },
   {
     icon: <CloudsIcon />,
-    title: "Monday",
-    date: "04/07/2022",
-    degree: "70°",
+    title: 'Monday',
+    date: '04/07/2022',
+    degree: '70°',
   },
   {
     icon: <BulbIcon />,
-    title: "Tuesday",
-    date: "05/07/2022",
-    degree: "70°",
+    title: 'Tuesday',
+    date: '05/07/2022',
+    degree: '70°',
   },
   {
     icon: <CloudsIcon />,
-    title: "Wednesday",
-    date: "06/07/2022",
-    degree: "70°",
+    title: 'Wednesday',
+    date: '06/07/2022',
+    degree: '70°',
   },
   {
     icon: <BulbIcon />,
-    title: "Thuresday",
-    date: "07/07/2022",
-    degree: "70°",
+    title: 'Thuresday',
+    date: '07/07/2022',
+    degree: '70°',
   },
 
   {
     icon: <CloudsIcon />,
-    title: "Friday",
-    date: "08/07/2022",
-    degree: "70°",
+    title: 'Friday',
+    date: '08/07/2022',
+    degree: '70°',
   },
   {
     icon: <BulbIcon />,
-    title: "Saturday",
-    date: "09/07/2022",
-    degree: "70°",
+    title: 'Saturday',
+    date: '09/07/2022',
+    degree: '70°',
   },
-];
+]
 
 export const showImg = [
   {
-    image: "/img/png/slider/sliderImg1.png",
+    image: '/img/png/slider/sliderImg1.png',
   },
   {
-    image: "/img/png/slider/sliderImg2.png",
+    image: '/img/png/slider/sliderImg2.png',
   },
   {
-    image: "/img/png/slider/sliderImg3.png",
+    image: '/img/png/slider/sliderImg3.png',
   },
   {
-    image: "/img/png/slider/sliderImg1.png",
+    image: '/img/png/slider/sliderImg1.png',
   },
   {
-    image: "/img/png/slider/sliderImg2.png",
+    image: '/img/png/slider/sliderImg2.png',
   },
   {
-    image: "/img/png/slider/sliderImg3.png",
+    image: '/img/png/slider/sliderImg3.png',
   },
-];
+]
 
 export const amenitiesData = [
   {
     icon: <RVTrailerIcon />,
-    title: "RV/Trailers",
+    title: 'RV/Trailers',
     isActive: true,
   },
   {
     icon: <FlashlightIcon />,
-    title: "Hookups",
+    title: 'Hookups',
     isActive: true,
   },
   {
     icon: <CameraIcon />,
-    title: "Pull Through Spots",
+    title: 'Pull Through Spots',
     isActive: true,
   },
   {
     icon: <PetsAmenityIcon />,
-    title: "Pet Friendly",
+    title: 'Pet Friendly',
     isActive: true,
   },
   {
     icon: <SunIcon />,
-    title: "ADA Sites",
+    title: 'ADA Sites',
     isActive: true,
   },
   {
     icon: <ShowerGreenAmenityIcon />,
-    title: "Showers",
+    title: 'Showers',
     isActive: true,
   },
-];
+]
 export const amenitiesSecondData = [
   {
     icon: <CapsIcon />,
-    title: "caps",
+    title: 'caps',
     isActive: true,
   },
   {
     icon: <CompassIcon />,
-    title: "compass",
+    title: 'compass',
     isActive: true,
   },
   {
     icon: <BonfireIcon />,
-    title: "bonfire",
+    title: 'bonfire',
     isActive: true,
   },
   {
     icon: <SunglassesIcon />,
-    title: "sunglasses",
+    title: 'sunglasses',
     isActive: true,
   },
   {
     icon: <MapIcon />,
-    title: "map",
+    title: 'map',
     isActive: true,
   },
   {
     icon: <TicketIcon />,
-    title: "ticket",
+    title: 'ticket',
     isActive: true,
   },
   {
     icon: <AirplaneIcon />,
-    title: "airplane",
+    title: 'airplane',
     isActive: true,
   },
   {
     icon: <BagIcon />,
-    title: "bag",
+    title: 'bag',
     isActive: true,
   },
   {
     icon: <ForestIcon />,
-    title: "forest",
+    title: 'forest',
     isActive: true,
   },
   {
     icon: <ShoesIcon />,
-    title: "shoes",
+    title: 'shoes',
     isActive: true,
   },
   {
     icon: <CloudIcon />,
-    title: "cloud",
+    title: 'cloud',
     isActive: true,
   },
   {
     icon: <TreeIcon />,
-    title: "tree",
+    title: 'tree',
     isActive: true,
   },
   {
     icon: <BinocularsIcon />,
-    title: "binoculars",
+    title: 'binoculars',
     isActive: true,
   },
   {
     icon: <PocketKnifeIcon />,
-    title: "pocket Knife",
+    title: 'pocket Knife',
     isActive: true,
   },
-];
+]
 
 export const RatingSummaryData = [
   {
     star: [
       {
         starValue: <StarIcon />,
-        starActive: "star_active",
+        starActive: 'star_active',
       },
-      { starValue: <StarIcon />, starActive: "star_active" },
-      { starValue: <StarIcon />, starActive: "star_active" },
-      { starValue: <StarIcon />, starActive: "star_active" },
-      { starValue: <StarIcon />, starActive: " " },
+      { starValue: <StarIcon />, starActive: 'star_active' },
+      { starValue: <StarIcon />, starActive: 'star_active' },
+      { starValue: <StarIcon />, starActive: 'star_active' },
+      { starValue: <StarIcon />, starActive: ' ' },
     ],
   },
-];
+]
 
 export const starData = [
   {
@@ -320,31 +375,31 @@ export const starData = [
   {
     imageUrl: <StarIcon />,
   },
-];
+]
 export const heroData = {
-  heading: " Platte River Campground",
-  title: " Among Top 50 campgrounds in California",
+  heading: ' Platte River Campground',
+  title: ' Among Top 50 campgrounds in California',
   address: `5685 Lake Michigan Rd, Honor, MI 49640, United States`,
-  contact: "+1 231 326 5134",
-  email: " www.example.com",
+  contact: '+1 231 326 5134',
+  email: ' www.example.com',
   star: [
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
   ],
   circleBoxText: [
-    { title: "174", subtitle: "Total Sites" },
-    { title: "All year", subtitle: "Season" },
-    { title: "45", subtitle: "Nightly cost" },
+    { title: '174', subtitle: 'Total Sites' },
+    { title: 'All year', subtitle: 'Season' },
+    { title: '45', subtitle: 'Nightly cost' },
   ],
   circleBoxIcon: [
     { icon: <DogIcon />, isActive: false },
     { icon: <ShowerIcon />, isActive: false },
-    { icon: "RV/Trailers", isActive: false },
+    { icon: 'RV/Trailers', isActive: false },
   ],
-};
+}
 
 // export const data = {
 //   list: [
