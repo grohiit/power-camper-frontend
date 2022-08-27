@@ -31,7 +31,7 @@ const OverviewSlider = ({ overview }) => {
               <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 w-full">
                 Overview
               </h2>
-              <div className="max-w-lg list-disc mb-12   block">
+              <div className="max-w-lg list-disc mb-12 block">
                 <div
                   className="font-Cabin text-lg opacity-70 text-justify"
                   dangerouslySetInnerHTML={{

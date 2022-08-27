@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { iconsData, iconsObjData } from '../common/Content'
+import { iconsObjData } from '../common/Content'
 
 const Activities = ({ activities = {} }) => {
   const displayActivities = activities.map((v, i) => ({

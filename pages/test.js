@@ -1,13 +1,13 @@
-import { BackpackIcon, TestIcon } from '@/components/campground/ActivityIcons'
+import { iconsObjData } from '@/components/common/Content'
 import Activities from '../components/campground/Activities'
 
 import Navbar from '../components/homepage/Navbar'
 export default function TestPage() {
-  const activities = [1, 2, 3]
+  const activities = Object.keys(iconsObjData)
+  console.log(activities)
   return (
     <>
-      <BackpackIcon />
-      <Activities activities={[1, 2, 3, 4, 5]} />
+      <Activities activities={activities} />
     </>
   )
 }
