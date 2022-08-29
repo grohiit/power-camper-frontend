@@ -38,7 +38,10 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
   const name = campgroundpageData.name
   return (
     <>
-      <Layout>
+      <Layout
+        title={campgroundpageData.seoTitle}
+        description={campgroundpageData.metaDescription}
+      >
         {/* <Header /> */}
         <GallerySummary data={campgroundpageData} />
         <OverviewReservationForm data={campgroundpageData} />

@@ -1,5 +1,4 @@
 import Summary from '../components/campground/Summary'
-import Summary2 from '../components/campground/Summary2'
 
 const data = {
   name: 'Test Name',
@@ -50,7 +49,6 @@ export default function TestPage() {
       <br />
       <Summary data={data2} />
       <br />
-      <Summary2 data={data2} />
     </>
   )
 }

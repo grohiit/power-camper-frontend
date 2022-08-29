@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from './homepage/Navbar'
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, description }) {
   return (
     <>
       <Head>
@@ -11,7 +11,9 @@ export default function Layout({ children, title }) {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Get notifed of campground availabilities instantly!"
+          content={
+            description || 'Get notifed of campground availabilities instantly!'
+          }
         />
         <link rel="apple-touch-icon" href="logo192.png" />
         <link rel="manifest" href="manifest.json" />

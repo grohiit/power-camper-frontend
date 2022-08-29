@@ -8,7 +8,6 @@ import {
   WaterIcon,
   WheelChairIcon,
   SewerIcon,
-  CrossIcon2,
 } from '@/components/common/Icons'
 import ReviewStars from '@/components/common/ReviewStars'
 import Image from 'next/image'
