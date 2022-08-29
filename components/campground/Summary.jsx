@@ -82,7 +82,6 @@ const Summary = ({ data }) => {
                   summary.RV ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
-                {/* <span className="relative"> */}
                 <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                   <BusIcon />
                 </span>
@@ -98,7 +97,6 @@ const Summary = ({ data }) => {
                     <CrossIcon />
                   </span>
                 )}
-                {/* </span> */}
                 <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                   {summary.RV
                     ? 'This campground allows RVs or Trailers at some campsites'
@@ -114,7 +112,6 @@ const Summary = ({ data }) => {
                       : 'is_unaivable platte_river_camp_icons'
                   }`}
                 >
-                  {/* <span className="relative"> */}
                   <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                     <ElectricIcon />
                   </span>
@@ -124,7 +121,6 @@ const Summary = ({ data }) => {
                       <CrossIcon />
                     </span>
                   )}
-                  {/* </span> */}
                   <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                     {summary.hookups.electric
                       ? 'This campground has Electric hookups'
@@ -139,7 +135,6 @@ const Summary = ({ data }) => {
                         : 'is_unaivable platte_river_camp_icons'
                     }`}
                   >
-                    {/* <span className="relative"> */}
                     <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                       <SewerIcon />
                     </span>
@@ -149,7 +144,6 @@ const Summary = ({ data }) => {
                         <CrossIcon />
                       </span>
                     )}
-                    {/* </span> */}
                     <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                       {summary.hookups.sewer
                         ? 'This campground has sewer hookups'
@@ -164,7 +158,6 @@ const Summary = ({ data }) => {
                         : 'is_unaivable platte_river_camp_icons'
                     }`}
                   >
-                    {/* <span className="relative"> */}
                     <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                       <WaterIcon />
                     </span>
@@ -174,7 +167,6 @@ const Summary = ({ data }) => {
                         <CrossIcon />
                       </span>
                     )}
-                    {/* </span> */}
                     <span className="pointer-events-none absolute -top-14 sm:-top-10 -left-4 sm:left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                       {summary.hookups.water
                         ? 'This campground has water hookups'
@@ -191,7 +183,6 @@ const Summary = ({ data }) => {
                   summary.shower ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
-                {/* <span className="relative"> */}
                 <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                   <ShowerIcon />
                 </span>
@@ -200,16 +191,11 @@ const Summary = ({ data }) => {
                     <CrossIcon />
                   </span>
                 )}
-                {/* </span> */}
-                {summary.shower ? (
-                  <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
-                    This campground has showers on site.
-                  </span>
-                ) : (
-                  <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
-                    This campground has NO showers on site.
-                  </span>
-                )}
+                <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
+                  {summary.shower
+                    ? 'This campground has showers on site'
+                    : 'This campground has NO showers on site'}
+                </span>
               </div>
               {/* PETS  */}
               <div
@@ -217,7 +203,6 @@ const Summary = ({ data }) => {
                   summary.pets ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
-                {/* <span className="relative"> */}
                 <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                   <DogIcon />
                 </span>
@@ -226,7 +211,6 @@ const Summary = ({ data }) => {
                     <CrossIcon />
                   </span>
                 )}
-                {/* </span> */}
                 <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                   {summary.pets
                     ? 'This campground is pet-friendly. Bring your pals!'
@@ -239,7 +223,6 @@ const Summary = ({ data }) => {
                   summary.ada ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
-                {/* <span className="relative"> */}
                 <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                   <WheelChairIcon />
                 </span>
@@ -249,7 +232,6 @@ const Summary = ({ data }) => {
                     <CrossIcon />
                   </span>
                 )}
-                {/* </span> */}
                 <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                   {summary.ada
                     ? 'This campground has accessibility campsites and features'
