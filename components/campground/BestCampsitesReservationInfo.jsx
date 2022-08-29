@@ -3,12 +3,13 @@ import { RedCrossIcon, TickIcon } from '../common/Icons'
 import Image from 'next/image'
 import { markdownToHtml } from '../common/Functions'
 
-const RiverCampground = ({ data }) => {
+const BestCampsitesReservationInfo = ({ data }) => {
   const {
     reservationAllowed,
     reservationRequired,
     reservationInfo,
     bestCampgsiteDescription,
+    name,
   } = data ? data : {}
   const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
   return (
@@ -19,7 +20,7 @@ const RiverCampground = ({ data }) => {
             <div className="lg:w-3/6 lg:pr-[25px] mb-20 lg:mb-0">
               <div>
                 <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md">
-                  Best Campsites at Platte River Campground
+                  Best Campsites at {name}
                 </h2>
 
                 <div
@@ -43,7 +44,7 @@ const RiverCampground = ({ data }) => {
             <div className="lg:w-3/6 lg:pl-[25px]">
               <div>
                 <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-5 max-w-md">
-                  Platte River Campground Reservation InfoRMATION
+                  {name} Reservation Information
                 </h2>
                 <div className="river_main_box w-oka py-[6px] px-[8px] mb-[20px] lg:mb-[30px]">
                   <div className="river_middle_box py-4 lg:py-6 px-3 lg:px-[16px]">
@@ -81,4 +82,4 @@ const RiverCampground = ({ data }) => {
   )
 }
 
-export default RiverCampground
+export default BestCampsitesReservationInfo

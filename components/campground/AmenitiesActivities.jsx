@@ -4,7 +4,7 @@ import Activities from './Activities'
 import BasicAmenities from './BasicAmenities'
 import OtherAmenities from './OtherAmenities'
 
-const Amenities = ({ campgroundpageData }) => {
+const AmenitiesActivities = ({ campgroundpageData }) => {
   return (
     <>
       <section className="mt-20 lg:mt-28 relative ">
@@ -47,4 +47,4 @@ const Amenities = ({ campgroundpageData }) => {
   )
 }
 
-export default Amenities
+export default AmenitiesActivities

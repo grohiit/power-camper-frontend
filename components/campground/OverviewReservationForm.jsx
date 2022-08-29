@@ -3,7 +3,7 @@ import React from 'react'
 import { markdownToHtml } from '../common/Functions'
 import ReservationForm from './ReservationForm'
 
-const OverviewSlider = ({ overview }) => {
+const OverviewForm = ({ data: { overview, name } }) => {
   return (
     <section className="mt-16 sm:mt-24 pt-1 relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">
@@ -43,11 +43,11 @@ const OverviewSlider = ({ overview }) => {
               </div>
             </div>
           </div>
-          <ReservationForm />
+          <ReservationForm name={name} />
         </div>
       </div>
     </section>
   )
 }
 
-export default OverviewSlider
+export default OverviewForm

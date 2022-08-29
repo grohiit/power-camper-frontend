@@ -83,33 +83,6 @@ export const iconsObjData = {
   Placeholder: <PlaceholderIcon />,
 }
 
-export const iconsData = [
-  {
-    icon: <Cloud />,
-    title: 'Scuba Diving',
-  },
-  {
-    icon: <FireIcon />,
-    title: 'Snorkeling',
-  },
-  {
-    icon: <SwimmingIcon />,
-    title: 'Swimming',
-  },
-  {
-    icon: <MapIcon />,
-    title: 'Exhibits / Guided Tours',
-  },
-  {
-    icon: <ShoesIcon />,
-    title: 'Surfing / Windsurfing',
-  },
-  {
-    icon: <AirplaneIcon />,
-    title: 'Placeholder',
-  },
-]
-
 export const activitiesData = [
   {
     icon: <PawIcon />,

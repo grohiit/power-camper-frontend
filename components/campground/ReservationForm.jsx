@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import DropDown from "../common/DropDown";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import "react-dropdown/style.css";
+import React, { useState } from 'react'
+import DropDown from '../common/DropDown'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+import 'react-dropdown/style.css'
 
-const ReservationForm = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  const [checkOutDate, setCheckOutdate] = useState(new Date());
+const ReservationForm = ({ name }) => {
+  const [startDate, setStartDate] = useState(new Date())
+  const [checkOutDate, setCheckOutdate] = useState(new Date())
 
   return (
     <>
       <div className=" sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-6 xl:mb-0 mx-auto xl:ml-auto">
         <div className="bg_green_linear rounded-lg px-1 py-4 sm:p-4 md:p-11  ">
           <h2 className="font-Bubblegum text-white text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md mx-auto text-center">
-            Platte River Sold Out?
+            {name} Sold Out?
             <span className="block">We can get you a reservation!</span>
           </h2>
           <div className="get_started_box py-6 sm:py-8 px-2 sm:px-6 max-w-md mx-auto">
@@ -24,16 +24,16 @@ const ReservationForm = () => {
               <div className="w-24 mr-3">
                 <DropDown
                   onChange={(e) => {
-                    console.log(e);
+                    console.log(e)
                   }}
                   placeholder="CA"
-                  options={["One", "Second", "Three"]}
+                  options={['One', 'Second', 'Three']}
                 />
               </div>
               <div className="w-64">
                 <DropDown
                   placeholder="Doheny State Beach"
-                  options={["One", "Second", "Three"]}
+                  options={['One', 'Second', 'Three']}
                 />
               </div>
             </div>
@@ -47,14 +47,14 @@ const ReservationForm = () => {
                 <div className="sm:w-[134px] mb-3 sm:mb-0  mr-3 ">
                   <DropDown
                     placeholder="RV"
-                    options={["One", "Second", "Three"]}
+                    options={['One', 'Second', 'Three']}
                     className="font-Cabin text-sm lg:text-base  text-white "
                   />
                 </div>
                 <div className="sm:w-[108px]">
                   <DropDown
                     placeholder="10FT"
-                    options={["One", "Second", "Three"]}
+                    options={['One', 'Second', 'Three']}
                   />
                 </div>
               </div>
@@ -66,7 +66,7 @@ const ReservationForm = () => {
                 </p>
               </div>
               <div className="sm:w-[108px]">
-                <DropDown placeholder="01" options={["01", "02", "03"]} />
+                <DropDown placeholder="01" options={['01', '02', '03']} />
               </div>
             </div>
             <div className="flex  sm:w-96 justify-between mb-4 sm:mb-6 items-center">
@@ -112,7 +112,7 @@ const ReservationForm = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ReservationForm;
+export default ReservationForm

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-const CampGroundCost = ({ campgroundCost }) => {
+const CampGroundCost = ({ campgroundCost, name }) => {
   return (
     <>
       <div className="lg:w-3/6 lg:pl-[25px]">
         <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4    ">
-          Platte River Campground Cost
+          {name} Campground Cost
         </h2>
         <div className="river_main_box  py-[6px] px-[8px] mb-[20px] lg:mb-[30px]">
           <div className="river_middle_box pt-[18px] lg:pt-6 pb-[14px] px-[14px] lg:px-[16px]">
@@ -22,13 +22,13 @@ const CampGroundCost = ({ campgroundCost }) => {
                     {val.value}
                   </span>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CampGroundCost;
+export default CampGroundCost

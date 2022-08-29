@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { Document, Page, pdfjs } from 'react-pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
-const RiverMap = ({ campgroundMap }) => {
+const CampgroundMap = ({ campgroundMap, name }) => {
   function onDocumentLoadSuccess({ numPages }) {}
 
   return (
@@ -26,7 +26,7 @@ const RiverMap = ({ campgroundMap }) => {
         <div className="container mx-auto my-14">
           <div>
             <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center mb-5 md:mb-8 lg:mb-10 xl:mb-16 xxl:mb-20 text-white ">
-              Platte River Campground Map
+              {name} Campground Map
             </h2>
             <div className="max-w-map bg-[#3D4F3B] river_map_color rounded-lg mb-5 md:mb-8 lg:mb-10 xl:mb-16 pb-1">
               <div className="river_map_border py-1 lg:py-3.5 px-2 lg:px-5 rounded-lg">
@@ -68,7 +68,7 @@ const RiverMap = ({ campgroundMap }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default RiverMap;
+export default CampgroundMap

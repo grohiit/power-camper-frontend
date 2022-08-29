@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-const CampGroundRules = ({ campgroundRules }) => {
+const CampGroundRules = ({ campgroundRules, name }) => {
   return (
     <>
       <div className="lg:w-3/6 lg:pr-[100px] mb-20 lg:mb-0">
         <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4">
-          Platte River Campground Rules
+          {name} Campground Rules
         </h2>
         <div className="river_main_box  py-[6px] px-[8px] ">
           <div className="river_middle_box pt-[18px] lg:pt-6 pb-[14px] px-[14px] lg:px-[16px]">
@@ -22,13 +22,13 @@ const CampGroundRules = ({ campgroundRules }) => {
                     {val.value}
                   </span>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CampGroundRules;
+export default CampGroundRules

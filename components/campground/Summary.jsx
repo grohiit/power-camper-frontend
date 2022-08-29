@@ -1,5 +1,5 @@
-import React from "react";
-import { heroData } from "../common/Content";
+import React from 'react'
+import { heroData } from '../common/Content'
 import {
   BusIcon,
   CrossIcon,
@@ -9,25 +9,25 @@ import {
   WaterIcon,
   WheelChairIcon,
   SewerIcon,
-} from "../common/Icons";
-import ReviewStars from "../common/ReviewStars";
-import Image from "next/image";
+} from '../common/Icons'
+import ReviewStars from '../common/ReviewStars'
+import Image from 'next/image'
 
-const HeroBox = ({ data }) => {
-  const { star } = heroData;
+const Summary = ({ data }) => {
+  const { star } = heroData
 
   const { name, website, tagLine, phone, rating, summary, location } = data
     ? data
-    : {};
+    : {}
 
   return (
     <>
       <div className="w-full sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-12 xl:mb-0 sm:mx-auto xl:ml-auto">
         <div className="river_main_box p-3 sm:p-5 w-full">
           <div className="river_middle_box  p-3 sm:p-5">
-            <h2 className="font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4x text-white text-center mb-4 capitalize">
+            <h1 className="font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4x text-white text-center mb-4 capitalize">
               {name}
-            </h2>
+            </h1>
             <p className="font-Cabin text-sm lg:text-base opacity-70 text-center  text-white">
               {tagLine}
             </p>
@@ -42,7 +42,7 @@ const HeroBox = ({ data }) => {
               ))}
             </div>
             <p className="font-Cabin text-sm lg:text-base opacity-70 text-center  text-white px-10 sm:px-0">
-              {location.formattedAddress ? location.formattedAddress : ""}
+              {location.formattedAddress ? location.formattedAddress : ''}
             </p>
             <div className="text-center">
               <a
@@ -54,10 +54,10 @@ const HeroBox = ({ data }) => {
             </div>
             <div className="text-center">
               <a
-                href={`mailto:${website}`}
+                href={`${website}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-Cabin text-sm lg:text-base opacity-70 text-center  text-white"
+                className="font-Cabin text-sm lg:text-base opacity-70 text-center underline text-white hover:text-blue-800"
               >
                 {website}
               </a>
@@ -67,11 +67,11 @@ const HeroBox = ({ data }) => {
               {/* TOTAL SITES  */}
               <div className="flex flex-col  justify-center items-center border-2 border-white  h-20 sm:h-24  w-20 sm:w-24 rounded-full  ">
                 <span className="font-Cabin text-sm lg:text-base text-white  ">
-                  {summary.cost}
+                  {`$${summary.cost}`}
                 </span>
                 <span
                   className={`font-Cabin text-sm lg:text-base  text-center  text-white ${
-                    summary.cost ? "opacity-100" : "opacity-70"
+                    summary.cost ? 'opacity-100' : 'opacity-70'
                   } `}
                 >
                   Per night
@@ -80,7 +80,7 @@ const HeroBox = ({ data }) => {
               {/* RV   */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.RV ? "" : "is_unaivable platte_river_camp_icons"
+                  summary.RV ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="relative">
@@ -89,7 +89,7 @@ const HeroBox = ({ data }) => {
                   </span>
                   <span
                     className={`font-Cabin text-sm lg:text-base  text-center  text-white ${
-                      summary.RV ? "opacity-100" : "opacity-70"
+                      summary.RV ? 'opacity-100' : 'opacity-70'
                     } `}
                   >
                     RV/Trailers
@@ -124,8 +124,8 @@ const HeroBox = ({ data }) => {
                 <div
                   className={`  h-[40px] w-[40px]  group relative    ${
                     summary.hookups.electric
-                      ? ""
-                      : "is_unaivable platte_river_camp_icons"
+                      ? ''
+                      : 'is_unaivable platte_river_camp_icons'
                   }`}
                 >
                   <span className="relative">
@@ -162,8 +162,8 @@ const HeroBox = ({ data }) => {
                   <div
                     className={`  h-[40px] w-[40px]  group relative    ${
                       summary.hookups.sewer
-                        ? ""
-                        : "is_unaivable platte_river_camp_icons"
+                        ? ''
+                        : 'is_unaivable platte_river_camp_icons'
                     }`}
                   >
                     <span className="relative">
@@ -200,8 +200,8 @@ const HeroBox = ({ data }) => {
                   <div
                     className={`  h-[40px] w-[40px]  group relative    ${
                       summary.hookups.water
-                        ? ""
-                        : "is_unaivable platte_river_camp_icons"
+                        ? ''
+                        : 'is_unaivable platte_river_camp_icons'
                     }`}
                   >
                     <span className="relative">
@@ -241,7 +241,7 @@ const HeroBox = ({ data }) => {
               {/* SHOWER  */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.showers ? "" : "is_unaivable platte_river_camp_icons"
+                  summary.showers ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
@@ -274,7 +274,7 @@ const HeroBox = ({ data }) => {
               {/* PETS  */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2  group relative  ${
-                  summary.pets ? "" : "is_unaivable platte_river_camp_icons"
+                  summary.pets ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="relative">
@@ -309,7 +309,7 @@ const HeroBox = ({ data }) => {
               {/* RV TRAILER  */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative ${
-                  summary.ADA ? "" : "is_unaivable platte_river_camp_icons"
+                  summary.ADA ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="relative">
@@ -348,7 +348,7 @@ const HeroBox = ({ data }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HeroBox;
+export default Summary

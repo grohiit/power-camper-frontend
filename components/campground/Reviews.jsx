@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-const RiverReview = () => {
+const Reviews = ({ name }) => {
   return (
     <>
       <section className="mt-8 lg:mt-12 xl:mt-16">
         <div className="container mx-auto my-7">
           <div>
             <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center mb-5 md:mb-8 lg:mb-10 xl:mb-16 xxl:mb-20  max-w-lg mx-auto">
-              Platte River Campground Reviews
+              {name} Campground Reviews
             </h2>
             <div className="flex   items-center justify-center text-center  ">
               <a
@@ -27,7 +27,7 @@ const RiverReview = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default RiverReview;
+export default Reviews

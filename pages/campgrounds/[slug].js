@@ -1,12 +1,13 @@
-import Hero from '../../components/campground/Hero'
-import OverviewSlider from '../../components/campground/OverviewSlider'
-import RiverCampground from '../../components/campground/RiverCampground'
+import GallerySummary from '../../components/campground/GallerySummary'
+import OverviewReservationForm from '../../components/campground/OverviewReservationForm'
+import BestCampsitesReservationInfo from '../../components/campground/BestCampsitesReservationInfo'
+import RulesCost from '../../components/campground/RulesCost'
 import AmenitiesActivities from '../../components/campground/AmenitiesActivities'
-import RiverMap from '../../components/campground/RiverMap'
+import CampgroundMap from '../../components/campground/CampgroundMap'
 import Direction from '../../components/campground/Direction'
 import Weather from '../../components/campground/Weather'
 import Faq from '../../components/common/Faq'
-import RiverReview from '../../components/campground/RiverReview'
+import Reviews from '../../components/campground/Reviews'
 import CommentForm from '../../components/campground/CommentForm'
 import NearbyCampgrounds from '../../components/campground/NearbyCampgrounds'
 import Footer from '../../components/common/Footer'
@@ -16,7 +17,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Aos from 'aos'
 import { useEffect } from 'react'
-import ActivityMain from '../../components/campground/ActivityMain'
+
 import { API_URL } from '@/config/index'
 import PageNotFound from '../../components/common/PageNotFound'
 import Layout from '@/components/Layout'
@@ -34,21 +35,24 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
       ? nearbycampgroundData.data
       : {}
   if (!pagedata.success) return <PageNotFound />
-
+  const name = campgroundpageData.name
   return (
     <>
       <Layout>
         {/* <Header /> */}
-        <Hero data={campgroundpageData} />
-        <OverviewSlider overview={campgroundpageData.overview} />
-        <RiverCampground data={campgroundpageData} />
-        <ActivityMain data={campgroundpageData} />
+        <GallerySummary data={campgroundpageData} />
+        <OverviewReservationForm data={campgroundpageData} />
+        <BestCampsitesReservationInfo data={campgroundpageData} />
+        <RulesCost data={campgroundpageData} />
         <AmenitiesActivities campgroundpageData={campgroundpageData} />
-        <RiverMap campgroundMap={campgroundpageData.campgroundMap} />
+        <CampgroundMap
+          campgroundMap={campgroundpageData.campgroundMap}
+          name={name}
+        />
         <Direction directions={campgroundpageData.directions} />
         <Weather data={campgroundpageData} />
         <Faq faqdata={campgroundpageData.faqs} />
-        <RiverReview />
+        <Reviews name={name} />
         <CommentForm reviewdata={campgroundreviewData} />
         <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" />
         <Footer />
