@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cabin:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: "comic";
-  src: url("/font/Comic_Gecko_Pro.woff2");
+  font-family: 'comic';
+  src: url('/font/Comic_Gecko_Pro.woff2');
 }
 
 @font-face {
-  font-family: "calibri";
-  src: url("/font/Calibri.woff2");
+  font-family: 'calibri';
+  src: url('/font/Calibri.woff2');
 }
 
 html,
@@ -41,8 +41,8 @@ body {
   --color-text-white: #bab7b5;
   --color-text-grey: #666666;
 
-  --ff-kanit: "Kanit", sans-serif;
-  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-kanit: 'Kanit', sans-serif;
+  --ff-montserrat: 'Montserrat', sans-serif;
 
   --fw-400: 400;
   --fw-500: 500;
@@ -252,7 +252,8 @@ body {
 }
 
 .bg_green_linear {
-  background: #4e5f4c;
+  background-color: #754c29;
+  /* background: #4e5f4c; */
   box-shadow: 0px 20px 80px rgba(16, 18, 17, 0.01);
   background-attachment: fixed;
 }
@@ -281,7 +282,7 @@ body {
 }
 
 .faqBg {
-  background-image: url("/img/png/faq/faq_bg.png");
+  background-image: url('/img/png/faq/faq_bg.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -350,7 +351,7 @@ textarea:focus {
 .Dropdown-arrow {
   background-color: none !important;
   border: none !important;
-  background-image: url("/img/svg/dropDownIcon.svg") !important;
+  background-image: url('/img/svg/dropDownIcon.svg') !important;
   height: 10px !important;
   width: 10px !important;
   background-repeat: no-repeat;
@@ -375,7 +376,7 @@ textarea:focus {
 .homepage_dropdown .Dropdown-arrow {
   background-color: none !important;
   border: none !important;
-  background-image: url("/img/svg/dropDownIcon.svg") !important;
+  background-image: url('/img/svg/dropDownIcon.svg') !important;
   height: 10px !important;
   width: 10px !important;
   background-repeat: no-repeat;
@@ -399,7 +400,7 @@ textarea:focus {
   background-color: none !important;
   top: 50% !important;
   border: none !important;
-  background-image: url("/img/svg/dropDownIcon.svg") !important;
+  background-image: url('/img/svg/dropDownIcon.svg') !important;
   height: 10px !important;
   width: 10px !important;
   background-repeat: no-repeat;
@@ -424,19 +425,19 @@ textarea:focus {
 }
 
 .Dropdown-placeholder {
-  font-family: "Cabin", sans-serif !important;
+  font-family: 'Cabin', sans-serif !important;
   color: #ffffff !important;
 }
 
 .homepage_dropdown .Dropdown-placeholder {
-  font-family: "Balsamiq Sans", cursive !important;
+  font-family: 'Balsamiq Sans', cursive !important;
   color: #ffffff !important;
   font-size: 20px !important;
   line-height: 1.25rem !important;
 }
 
 .homepage_dropdown2 .Dropdown-placeholder {
-  font-family: "Balsamiq Sans", cursive !important;
+  font-family: 'Balsamiq Sans', cursive !important;
   color: #ffffff !important;
   font-size: 16px !important;
   line-height: 1.25rem !important;
@@ -447,7 +448,7 @@ textarea:focus {
 }
 
 .hero_bg {
-  background-image: url("/img/png/HeaderImg/Header-img-bg.png");
+  background-image: url('/img/png/HeaderImg/Header-img-bg.png');
 }
 
 .nearby_slider .slick-dots li button:before {
@@ -484,7 +485,7 @@ textarea:focus {
 }
 
 .homepage_dropdown .Dropdown-option {
-  font-family: "Balsamiq Sans", cursive !important;
+  font-family: 'Balsamiq Sans', cursive !important;
   background-color: #3d4f3b !important;
   color: white !important;
 }
@@ -679,7 +680,7 @@ span image {
 }
 
 .page_not_found {
-  background-image: url("/img/png/pageNotFound/bottom_wave.png");
+  background-image: url('/img/png/pageNotFound/bottom_wave.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 100px;
@@ -700,7 +701,7 @@ span image {
   width: 22px;
   height: 22px;
   cursor: pointer !important;
-  background-image: url("/img/svg/right-arrow.svg") !important;
+  background-image: url('/img/svg/right-arrow.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   left: 0px !important;
@@ -714,7 +715,7 @@ span image {
   width: 22px;
   height: 22px;
   cursor: pointer !important;
-  background-image: url("/img/svg/left-arrow.svg") !important;
+  background-image: url('/img/svg/left-arrow.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   right: 0px !important;
@@ -729,7 +730,7 @@ span image {
   width: 50px;
   height: 50px;
   cursor: pointer !important;
-  background-image: url("/img/svg/memberSilderArrowLeft.svg") !important;
+  background-image: url('/img/svg/memberSilderArrowLeft.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   left: 0px !important;
@@ -745,7 +746,7 @@ span image {
   width: 50px;
   height: 50px;
   cursor: pointer !important;
-  background-image: url("/img/svg/memberSilderArrowRight.svg") !important;
+  background-image: url('/img/svg/memberSilderArrowRight.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   right: 0px !important;
@@ -873,7 +874,7 @@ span image {
   }
 
   .hero_bg {
-    background-image: url("/img/png/HeaderImg/Header-img-bg-second.png");
+    background-image: url('/img/png/HeaderImg/Header-img-bg-second.png');
   }
 
   .slider_img span img {
@@ -938,7 +939,7 @@ span image {
 }
 
 .compsite_circle_border::after {
-  content: "";
+  content: '';
   position: absolute;
   right: -414px;
   top: 50%;
@@ -949,7 +950,7 @@ span image {
 
 @media (max-width: 1535.98px) {
   .compsite_circle_border::after {
-    content: "";
+    content: '';
     position: absolute;
     right: -300px;
     top: 50%;
@@ -961,7 +962,7 @@ span image {
 
 @media (max-width: 1279.98px) {
   .compsite_circle_border::after {
-    content: "";
+    content: '';
     position: absolute;
     right: -222px;
     top: 50%;
@@ -973,7 +974,7 @@ span image {
 
 @media (max-width: 1023.98px) {
   .compsite_circle_border::after {
-    content: "";
+    content: '';
     position: absolute;
     right: -95px;
     top: 50%;

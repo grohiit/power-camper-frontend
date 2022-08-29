@@ -12,6 +12,7 @@ const ReservationForm = ({ name }) => {
     <>
       <div className=" sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-6 xl:mb-0 mx-auto xl:ml-auto">
         <div className="bg_green_linear rounded-lg px-1 py-4 sm:p-4 md:p-11  ">
+          {/*removed   */}
           <h2 className="font-Bubblegum text-white text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md mx-auto text-center">
             {name} Sold Out?
             <span className="block">We can get you a reservation!</span>
