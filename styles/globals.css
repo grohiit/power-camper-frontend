@@ -251,9 +251,12 @@ body {
   backdrop-filter: blur(37px);
 }
 
-.bg_green_linear {
+.bg_cta {
   background-color: rgba(117, 76, 41, 0.8);
-  /* background: #4e5f4c; */
+}
+
+.bg_green_linear {
+  background: #4e5f4c;
   box-shadow: 0px 20px 80px rgba(16, 18, 17, 0.01);
   background-attachment: fixed;
 }

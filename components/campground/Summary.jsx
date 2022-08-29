@@ -1,5 +1,4 @@
-import React from 'react'
-import { heroData } from '../common/Content'
+import { heroData } from '@/components/common/Content'
 import {
   BusIcon,
   CrossIcon,
@@ -9,8 +8,8 @@ import {
   WaterIcon,
   WheelChairIcon,
   SewerIcon,
-} from '../common/Icons'
-import ReviewStars from '../common/ReviewStars'
+} from '@/components/common/Icons'
+import ReviewStars from '@/components/common/ReviewStars'
 import Image from 'next/image'
 
 const Summary = ({ data }) => {
@@ -241,13 +240,13 @@ const Summary = ({ data }) => {
               {/* SHOWER  */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.showers ? '' : 'is_unaivable platte_river_camp_icons'
+                  summary.shower ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
                   <ShowerIcon />
                 </span>
-                {summary.showers ? (
+                {summary.shower ? (
                   <span className="absolute checked-icon opacity-0">
                     <Image
                       src="/img/png/form/check-tick-icon.png"
@@ -261,7 +260,7 @@ const Summary = ({ data }) => {
                     <CrossIcon />
                   </span>
                 )}
-                {summary.showers ? (
+                {summary.shower ? (
                   <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                     This campground has showers on site.
                   </span>
@@ -309,7 +308,7 @@ const Summary = ({ data }) => {
               {/* RV TRAILER  */}
               <div
                 className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative ${
-                  summary.ADA ? '' : 'is_unaivable platte_river_camp_icons'
+                  summary.ada ? '' : 'is_unaivable platte_river_camp_icons'
                 }`}
               >
                 <span className="relative">
@@ -317,7 +316,7 @@ const Summary = ({ data }) => {
                     <WheelChairIcon />
                   </span>
 
-                  {summary.ADA ? (
+                  {summary.ada ? (
                     <span className="absolute checked-icon opacity-0">
                       <Image
                         src="/img/png/form/check-tick-icon.png"
@@ -332,7 +331,7 @@ const Summary = ({ data }) => {
                     </span>
                   )}
                 </span>
-                {summary.ADA ? (
+                {summary.ada ? (
                   <span className="pointer-events-none absolute -top-14 sm:-top-10 left-1/2 -translate-x-1/2 max-w-xs w-[120px] sm:w-[250px] z-50 text-center rounded bg-black px-2 py-1 text-white opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-black before:content-[''] group-hover:opacity-100 font-Cabin text-sm lg:text-base">
                     This campground has accessibility campsites and features
                   </span>
