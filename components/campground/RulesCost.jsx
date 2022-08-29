@@ -1,5 +1,5 @@
-import CampgroundRules from './CampgroundRules'
-import CampgroundCost from './CampgroundCost'
+import CampgroundRules from './CampGroundRules'
+import CampgroundCost from './CampGroundCost'
 
 const RulesCost = ({ data }) => {
   const { campgroundRules, activities, campgroundCost, name } = data ? data : {}
