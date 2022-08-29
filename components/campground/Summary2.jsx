@@ -96,7 +96,7 @@ const Summary = ({ data }) => {
                 </span>
                 {summary.RV || (
                   <span className="absolute cross_icon opacity-0">
-                    <CrossIcon />
+                    <CrossIcon2 />
                   </span>
                 )}
                 {/* </span> */}
@@ -122,7 +122,7 @@ const Summary = ({ data }) => {
 
                   {summary.hookups.electric || (
                     <span className="absolute cross_icon opacity-0 hookups_icon z-40">
-                      <CrossIcon />
+                      <CrossIcon2 />
                     </span>
                   )}
                   {/* </span> */}
@@ -147,7 +147,7 @@ const Summary = ({ data }) => {
 
                     {summary.hookups.sewer || (
                       <span className="absolute cross_icon opacity-0 hookups_icon z-40">
-                        <CrossIcon />
+                        <CrossIcon2 />
                       </span>
                     )}
                     {/* </span> */}
@@ -172,7 +172,7 @@ const Summary = ({ data }) => {
 
                     {summary.hookups.water || (
                       <span className="absolute cross_icon opacity-0 hookups_icon z-40">
-                        <CrossIcon />
+                        <CrossIcon2 />
                       </span>
                     )}
                     {/* </span> */}
@@ -198,7 +198,7 @@ const Summary = ({ data }) => {
                 </span>
                 {summary.shower || (
                   <span className="absolute cross_icon opacity-0">
-                    <CrossIcon />
+                    <CrossIcon2 />
                   </span>
                 )}
                 {/* </span> */}
@@ -224,7 +224,7 @@ const Summary = ({ data }) => {
                 </span>
                 {summary.pets || (
                   <span className="absolute cross_icon opacity-0">
-                    <CrossIcon />
+                    <CrossIcon2 />
                   </span>
                 )}
                 {/* </span> */}
@@ -247,7 +247,7 @@ const Summary = ({ data }) => {
 
                 {summary.ada || (
                   <span className="absolute cross_icon opacity-0">
-                    <CrossIcon />
+                    <CrossIcon2 />
                   </span>
                 )}
                 {/* </span> */}

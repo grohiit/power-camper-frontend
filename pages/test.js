@@ -1,14 +1,5 @@
-import {
-  BusIcon,
-  CrossIcon,
-  DogIcon,
-  ElectricIcon,
-  ShowerIcon,
-  WaterIcon,
-  WheelChairIcon,
-  SewerIcon,
-} from '@/components/common/Icons'
-import Image from 'next/image'
+import Summary from '../components/campground/Summary'
+import Summary2 from '../components/campground/Summary2'
 
 const data = {
   name: 'Test Name',
@@ -19,8 +10,8 @@ const data = {
   summary: {
     hookups: {
       water: true,
-      sewer: false,
-      electric: false,
+      sewer: true,
+      electric: true,
     },
     ada: true,
     cost: 40,
@@ -51,173 +42,15 @@ export default function TestPage() {
     RV: false,
   }
   summary = summaryFalse
+  const data2 = JSON.parse(JSON.stringify(data))
+  data2.summary = summaryFalse
   return (
     <>
-      <div className="w-full sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-12 xl:mb-0 sm:mx-auto xl:ml-auto">
-        <div className="river_main_box p-3 sm:p-5 w-full ">
-          <div className="river_middle_box  p-3 sm:p-5">
-            <div className="flex justify-between mt-6  sm:px-5 max-w-md mx-auto">
-              {/* RV   */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.RV ? '' : 'is_unaivable platte_river_camp_icons'
-                }  `}
-              >
-                <span className="relative">
-                  <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                    <BusIcon />
-                  </span>
-
-                  <span
-                    className={`font-Cabin text-sm lg:text-base  text-center  text-white ${
-                      summary.RV ? 'opacity-100' : 'opacity-70'
-                    } `}
-                  >
-                    RV/Trailers
-                  </span>
-                  {summary.RV || (
-                    <span className="absolute cross_icon">
-                      <CrossIcon />
-                    </span>
-                  )}
-                </span>
-              </div>
-            </div>
-            <div className=" flex justify-between mt-6  sm:px-5 max-w-md mx-auto">
-              {/* SHOWER  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.shower ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="relative">
-                  <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                    <ShowerIcon />
-                  </span>
-                  {summary.shower || (
-                    <span className="absolute cross_icon">
-                      <CrossIcon />
-                    </span>
-                  )}
-                </span>
-              </div>
-              {/* PETS  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2  group relative  ${
-                  summary.pets ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="relative">
-                  <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                    <DogIcon />
-                  </span>
-                  {summary.pets || (
-                    <span className="absolute cross_icon">
-                      <CrossIcon />
-                    </span>
-                  )}
-                </span>
-              </div>
-              {/* RV TRAILER  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative ${
-                  summary.ada ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="relative">
-                  <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                    <WheelChairIcon />
-                  </span>
-                  {summary.ada || (
-                    <span className="absolute cross_icon">
-                      <CrossIcon />
-                    </span>
-                  )}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br /> <br />
-      <div className="w-full sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-12 xl:mb-0 sm:mx-auto xl:ml-auto">
-        <div className="river_main_box p-3 sm:p-5 w-full ">
-          <div className="river_middle_box  p-3 sm:p-5">
-            <div className="flex justify-between mt-6  sm:px-5 max-w-md mx-auto">
-              {/* RV   */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.RV ? '' : 'is_unaivable platte_river_camp_icons'
-                }  `}
-              >
-                <span className="mx-auto flex justify-center hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                  <BusIcon />
-                </span>
-
-                <span
-                  className={`font-Cabin text-sm lg:text-base  text-center  text-white ${
-                    summary.RV ? 'opacity-100' : 'opacity-70'
-                  } `}
-                >
-                  RV/Trailers
-                </span>
-                {summary.RV || (
-                  <span className="absolute cross_icon">
-                    <CrossIcon />
-                  </span>
-                )}
-              </div>
-            </div>
-            <div className=" flex justify-between mt-6  sm:px-5 max-w-md mx-auto">
-              {/* SHOWER  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative    ${
-                  summary.shower ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                  <ShowerIcon />
-                </span>
-                {summary.shower || (
-                  <span className="absolute cross_icon">
-                    <CrossIcon />
-                  </span>
-                )}
-              </div>
-              {/* PETS  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2  group relative  ${
-                  summary.pets ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                  <DogIcon />
-                </span>
-                {summary.pets || (
-                  <span className="absolute cross_icon">
-                    <CrossIcon />
-                  </span>
-                )}
-              </div>
-              {/* RV TRAILER  */}
-              <div
-                className={`border-white h-20 sm:h-24  w-20 sm:w-24 rounded-full flex flex-col  justify-center items-center border-2 group relative ${
-                  summary.ada ? '' : 'is_unaivable platte_river_camp_icons'
-                }`}
-              >
-                <span className="hero_svg_icon text-white rv_trailers text-sm lg:text-base">
-                  <WheelChairIcon />
-                </span>
-                {summary.ada || (
-                  <span className="absolute cross_icon">
-                    <CrossIcon />
-                  </span>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Summary data={data} />
+      <br />
+      <Summary data={data2} />
+      <br />
+      <Summary2 data={data2} />
     </>
   )
 }
