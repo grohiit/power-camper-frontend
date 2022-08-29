@@ -252,7 +252,7 @@ body {
 }
 
 .bg_green_linear {
-  background-color: #754c29;
+  background-color: rgba(117, 76, 41, 0.8);
   /* background: #4e5f4c; */
   box-shadow: 0px 20px 80px rgba(16, 18, 17, 0.01);
   background-attachment: fixed;
