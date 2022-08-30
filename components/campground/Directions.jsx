@@ -1,6 +1,5 @@
-import Image from "next/image";
-import React from "react";
-import { markdownToHtml } from "../common/Functions";
+import Image from 'next/image'
+import { marked } from 'marked'
 
 const Direction = ({ directions }) => {
   return (
@@ -31,9 +30,9 @@ const Direction = ({ directions }) => {
             </h2>
 
             <div
-              className="font-Cabin text-sm lg:text-base opacity-70 "
+              className="font-Cabin text-lg opacity-70 "
               dangerouslySetInnerHTML={{
-                __html: markdownToHtml(directions),
+                __html: marked(directions),
               }}
             ></div>
           </div>
@@ -52,7 +51,7 @@ const Direction = ({ directions }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Direction;
+export default Direction

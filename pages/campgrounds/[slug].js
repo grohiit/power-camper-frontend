@@ -4,7 +4,7 @@ import BestCampsitesReservationInfo from '../../components/campground/BestCampsi
 import RulesCost from '../../components/campground/RulesCost'
 import AmenitiesActivities from '../../components/campground/AmenitiesActivities'
 import CampgroundMap from '../../components/campground/CampgroundMap'
-import Direction from '../../components/campground/Direction'
+import Direction from '../../components/campground/Directions'
 import Weather from '../../components/campground/Weather'
 import Faq from '../../components/common/Faq'
 import Reviews from '../../components/campground/Reviews'

@@ -1696,10 +1696,10 @@
   "resolved" "https://registry.npmjs.org/markdown-table/-/markdown-table-3.0.2.tgz"
   "version" "3.0.2"
 
-"marked@^4.0.17":
-  "integrity" "sha512-Wfk0ATOK5iPxM4ptrORkFemqroz0ZDxp5MWfYA7H/F+wO17NRWV5Ypxi6p3g2Xmw2bKeiYOl6oVnLHKxBA0VhA=="
-  "resolved" "https://registry.npmjs.org/marked/-/marked-4.0.17.tgz"
-  "version" "4.0.17"
+"marked@^4.0.19":
+  "integrity" "sha512-rgQF/OxOiLcvgUAj1Q1tAf4Bgxn5h5JZTp04Fx4XUkVhs7B+7YA9JEWJhJpoO8eJt8MkZMwqLCNeNqj1bCREZQ=="
+  "resolved" "https://registry.npmjs.org/marked/-/marked-4.0.19.tgz"
+  "version" "4.0.19"
 
 "mdast-util-definitions@^5.0.0":
   "integrity" "sha512-rQ+Gv7mHttxHOBx2dkF4HWTg+EE+UR78ptQWDylzPKaQuVGdG4HIoY3SrS/pCp80nZ04greFvXbVFHT+uf0JVQ=="

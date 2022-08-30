@@ -1,17 +1,21 @@
 import React from 'react'
 import { RedCrossIcon, TickIcon } from '../common/Icons'
 import Image from 'next/image'
-import { markdownToHtml } from '../common/Functions'
+import { marked } from 'marked'
 
 const BestCampsitesReservationInfo = ({ data }) => {
   const {
     reservationAllowed,
     reservationRequired,
     reservationInfo,
-    bestCampgsiteDescription,
+    bestCampsiteDescription,
     name,
   } = data ? data : {}
   const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
+
+  console.log(bestCampsiteDescription)
+  console.log(marked(bestCampsiteDescription))
+  console.log(marked.parse(bestCampsiteDescription))
   return (
     <>
       <section className=" mt-20 lg:mt-28 xl:mt-36" id="About">
@@ -24,9 +28,9 @@ const BestCampsitesReservationInfo = ({ data }) => {
                 </h2>
 
                 <div
-                  className="text-justify  font-Cabin text-sm lg:text-base opacity-70 mb-6"
+                  className="text-justify font-Cabin text-lg opacity-70 mb-6"
                   dangerouslySetInnerHTML={{
-                    __html: markdownToHtml(bestCampgsiteDescription),
+                    __html: marked(bestCampsiteDescription),
                   }}
                 ></div>
 
@@ -68,9 +72,9 @@ const BestCampsitesReservationInfo = ({ data }) => {
                 </div>
 
                 <div
-                  className="text-justify  font-Cabin text-sm lg:text-base opacity-70"
+                  className="text-justify  font-Cabin text-lg opacity-70"
                   dangerouslySetInnerHTML={{
-                    __html: markdownToHtml(reservationInfo),
+                    __html: marked(reservationInfo),
                   }}
                 ></div>
               </div>

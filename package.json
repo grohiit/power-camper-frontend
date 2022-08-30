@@ -12,7 +12,7 @@
     "@react-pdf-viewer/default-layout": "^3.6.0",
     "aos": "^2.3.4",
     "framer-motion": "^6.4.1",
-    "marked": "^4.0.17",
+    "marked": "^4.0.19",
     "next": "12.2.0",
     "node-fetch": "^3.2.7",
     "pdf-viewer-reactjs": "^2.2.3",

@@ -1,17 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import { markdownToHtml } from "../common/Functions";
-import { StarIcon } from "../common/Icons";
-import ReviewStars from "../common/ReviewStars";
+import Image from 'next/image'
+import { marked } from 'marked'
+import { StarIcon } from '../common/Icons'
+import ReviewStars from '../common/ReviewStars'
 
 const CampaignReviews = ({ reviewdata }) => {
   const stars = [
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-  ];
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+  ]
   return (
     <>
       {reviewdata &&
@@ -53,7 +52,7 @@ const CampaignReviews = ({ reviewdata }) => {
                   <div
                     className="font-Cabin text-sm   lg:text-sm lg:text-base font-normal text-white opacity-70"
                     dangerouslySetInnerHTML={{
-                      __html: markdownToHtml(val.review),
+                      __html: marked(val.review),
                     }}
                   ></div>
                   <div className="profile_img   max-w-[107px] w-full  mt-5 ">
@@ -71,10 +70,10 @@ const CampaignReviews = ({ reviewdata }) => {
                 </div>
               </div>
             </div>
-          );
+          )
         })}
     </>
-  );
-};
+  )
+}
 
-export default CampaignReviews;
+export default CampaignReviews

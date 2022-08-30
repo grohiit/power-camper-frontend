@@ -1026,3 +1026,12 @@ span image {
 /* .select_body li {
   background-color: #3F503B;
 } */
+
+h3 {
+  @apply font-Bubblegum text-lg lg:text-xl xl:text-2xl text-[#3D4F3B];
+}
+
+ul,
+li {
+  list-style: disc outside none;
+}

@@ -7,6 +7,9 @@ module.exports = {
   ],
   // plugins: [require("tw-elements/dist/plugin")],
   theme: {
+    ul: {
+      listStyle: 'list-disc',
+    },
     container: {
       padding: {
         DEFAULT: '1rem',

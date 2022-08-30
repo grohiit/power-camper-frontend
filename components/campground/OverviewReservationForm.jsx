@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
-import { markdownToHtml } from '../common/Functions'
 import ReservationForm from './ReservationForm'
+import { marked } from 'marked'
 
 const OverviewForm = ({ data: { overview, name } }) => {
   return (
@@ -35,9 +34,7 @@ const OverviewForm = ({ data: { overview, name } }) => {
                 <div
                   className="font-Cabin text-lg opacity-70 text-justify"
                   dangerouslySetInnerHTML={{
-                    __html: markdownToHtml(
-                      JSON.parse(JSON.stringify(overview))
-                    ),
+                    __html: marked(overview),
                   }}
                 ></div>
               </div>
