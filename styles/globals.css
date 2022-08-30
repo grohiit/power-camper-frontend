@@ -1034,4 +1034,6 @@ h3 {
 ul,
 li {
   list-style: disc outside none;
+  text-indent: -1rem;
+  padding-left: 1rem;
 }

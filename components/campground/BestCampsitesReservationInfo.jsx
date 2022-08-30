@@ -12,10 +12,9 @@ const BestCampsitesReservationInfo = ({ data }) => {
     name,
   } = data ? data : {}
   const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
-
   console.log(bestCampsiteDescription)
   console.log(marked(bestCampsiteDescription))
-  console.log(marked.parse(bestCampsiteDescription))
+
   return (
     <>
       <section className=" mt-20 lg:mt-28 xl:mt-36" id="About">
