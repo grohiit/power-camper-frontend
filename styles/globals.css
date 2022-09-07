@@ -1027,8 +1027,20 @@ span image {
   background-color: #3F503B;
 } */
 
+h1 {
+  @apply font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4xl text-center mt-4 mb-4 capitalize;
+}
+
+h2 {
+  @apply font-Bubblegum text-lg lg:text-2xl xl:text-3xl m-12 lg:mb-5 w-full;
+}
+
 h3 {
-  @apply font-Bubblegum text-lg lg:text-xl xl:text-2xl text-[#3D4F3B];
+  @apply font-Bubblegum text-lg lg:text-xl xl:text-2xl m-12 text-[#3D4F3B];
+}
+
+p {
+  @apply font-Cabin text-lg opacity-70 text-justify list-disc ml-12 max-w-full;
 }
 
 ul,

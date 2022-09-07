@@ -10,7 +10,6 @@ import {
   SewerIcon,
 } from '@/components/common/Icons'
 import ReviewStars from '@/components/common/ReviewStars'
-import Image from 'next/image'
 
 const Summary = ({ data }) => {
   const { star } = heroData
@@ -24,7 +23,7 @@ const Summary = ({ data }) => {
       <div className="w-full sm:w-[525px] xl:w-[600px] xl:pl-[25px] mb-12 xl:mb-0 sm:mx-auto xl:ml-auto">
         <div className="river_main_box p-3 sm:p-5 w-full">
           <div className="river_middle_box  p-3 sm:p-5">
-            <h1 className="font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4x text-white text-center mb-4 capitalize">
+            <h1 className="font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4xl text-white text-center mb-4 capitalize">
               {name}
             </h1>
             <p className="font-Cabin text-sm lg:text-base opacity-70 text-center  text-white">

@@ -42,7 +42,6 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         title={campgroundpageData.seoTitle}
         description={campgroundpageData.metaDescription}
       >
-        {/* <Header /> */}
         <GallerySummary data={campgroundpageData} />
         <OverviewReservationForm data={campgroundpageData} />
         <BestCampsitesReservationInfo data={campgroundpageData} />
@@ -56,7 +55,7 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         <Weather data={campgroundpageData} />
         <Faq faqdata={campgroundpageData.faqs} />
         <Reviews name={name} />
-        <CommentForm reviewdata={campgroundreviewData} />
+        {/* <CommentForm reviewdata={campgroundreviewData} /> */}
         <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" />
         <Footer />
         <BackToTop />
