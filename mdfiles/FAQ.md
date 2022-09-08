@@ -1,3 +1,10 @@
+---
+title: Frequently Asked Questions About Power Camper
+slug: faqs
+published date: 9/7/2022
+description: All of your questions about Power Camper answered!
+---
+
 # Frequently Asked Questions
 
 ## Do you sell campsites?
