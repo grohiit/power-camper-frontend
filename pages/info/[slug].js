@@ -9,7 +9,7 @@ export default function PostsPage({ slug, content }) {
     <Layout>
       <div
         dangerouslySetInnerHTML={{ __html: marked(content) }}
-        className="justify-evenly "
+        className="m-auto p-10 w-fit lg:w-2/4 border-2 bg-slate-50"
       ></div>
     </Layout>
   )

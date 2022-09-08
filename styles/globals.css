@@ -1032,15 +1032,15 @@ h1 {
 }
 
 h2 {
-  @apply font-Bubblegum text-lg lg:text-2xl xl:text-3xl m-12 lg:mb-5 w-full;
+  @apply font-Bubblegum text-lg lg:text-2xl xl:text-3xl mt-10 lg:mb-5 w-full;
 }
 
 h3 {
-  @apply font-Bubblegum text-lg lg:text-xl xl:text-2xl m-12 text-[#3D4F3B];
+  @apply font-Bubblegum text-lg lg:text-xl xl:text-2xl text-[#3D4F3B];
 }
 
 p {
-  @apply font-Cabin text-lg opacity-70 text-justify list-disc ml-12 max-w-full;
+  @apply font-Cabin text-lg opacity-70 text-justify list-disc max-w-full;
 }
 
 ul,
