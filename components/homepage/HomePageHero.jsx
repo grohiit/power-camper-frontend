@@ -5,7 +5,6 @@ const HomePageHero = () => {
   return (
     <>
       <div className="bg-[url('/img/png/HeaderImg/hero.webp')] bg-no-repeat bg-center flex flex-col min-h-80vh bg-cover">
-        <Navbar />
         <div className="justify-center sm:items-center flex grow pt-[70px] sm:pt-0 ">
           <div className="container ">
             <div className="md:max-w-4xl mx-auto text-center">
