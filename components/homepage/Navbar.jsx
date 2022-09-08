@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
       )}
       {/* This is Nav for Desktop */}
-      <nav className={` bg-white w-full md:py-2 shadow-sm  top-0`}>
+      <nav className={` absolute bg-white w-full md:py-2 shadow-sm  top-0`}>
         {/* removed absolute */}
         <div className="max-w-7xl mx-auto px-2 py-[13px] sm:px-6 lg:px-8">
           <div className="flex-1 flex items-center justify-between sm:items-center  ">
