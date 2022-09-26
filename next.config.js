@@ -3,12 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     // loader: "custom",
-    domains: [
-      'images.unsplash.com',
-      'live.staticflickr.com',
-      'commons.wikimedia.org',
-      'i.ibb.co',
-    ],
+    domains: ['images.unsplash.com', 'res.cloudinary.com'],
     // path: "https://miro.medium.com",
   },
   webpack: (config) => {

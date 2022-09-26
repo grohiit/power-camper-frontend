@@ -51,12 +51,15 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
           campgroundMap={campgroundpageData.campgroundMap}
           name={name}
         />
-        <Direction directions={campgroundpageData.directions} />
+        <Direction
+          directions={campgroundpageData.directions}
+          name={campgroundpageData.name}
+        />
         <Weather data={campgroundpageData} />
         <Faq faqdata={campgroundpageData.faqs} />
-        <Reviews name={name} />
+        {/* <Reviews name={name} /> */}
         {/* <CommentForm reviewdata={campgroundreviewData} /> */}
-        <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" />
+        {/* <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" /> */}
         <Footer />
         <BackToTop />
       </Layout>

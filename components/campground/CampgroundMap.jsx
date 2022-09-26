@@ -1,8 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import { Document, Page, pdfjs } from 'react-pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 const CampgroundMap = ({ campgroundMap, name }) => {
   function onDocumentLoadSuccess({ numPages }) {}
@@ -29,21 +26,19 @@ const CampgroundMap = ({ campgroundMap, name }) => {
               {name} Campground Map
             </h2>
             <div className="max-w-map bg-[#3D4F3B] river_map_color rounded-lg mb-5 md:mb-8 lg:mb-10 xl:mb-16 pb-1">
-              <div className="river_map_border py-1 lg:py-3.5 px-2 lg:px-5 rounded-lg">
-                <Document
-                  file={campgroundMap}
-                  onLoadSuccess={onDocumentLoadSuccess}
-                >
-                  <Page pageNumber={1} />
-                </Document>
+              <div className="river_map_border py-1 lg:py-3.5 px-2 lg:px-5 rounded-lg map-container">
+                <Image
+                  className="w-full map"
+                  src={campgroundMap}
+                  alt="campgroun map"
+                  width={445}
+                  height={315}
+                  layout="responsive"
+                  objectFit="cover"
+                />
               </div>
             </div>
             <div className=" flex items-center justify-center text-center  ">
-              <Link href="/api/getPDF" passHref>
-                <a className="bg-[#FFFFFF] py-[8px] px-[16px] md:px-[28px] border-2 rounded-full  text-[#4E5F4C] font-bold  font-Bubblegum border-transparent  text-sm lg:text-base hover:opacity-70 ease-in-out duration-75">
-                  Download PDF
-                </a>
-              </Link>
               <Link href={campgroundMap} passHref>
                 <a
                   rel="noreferrer"
