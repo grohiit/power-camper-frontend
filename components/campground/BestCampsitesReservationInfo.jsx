@@ -12,8 +12,6 @@ const BestCampsitesReservationInfo = ({ data }) => {
     name,
   } = data ? data : {}
   const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
-  console.log(bestCampsiteDescription)
-  console.log(marked(bestCampsiteDescription))
 
   return (
     <>

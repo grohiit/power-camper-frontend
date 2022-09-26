@@ -1,6 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import { DiscordIcon, InstgramIcon, OpenseaIcon, StarIcon } from "./Icons";
+import React from 'react'
+import Image from 'next/image'
+import {
+  DiscordIcon,
+  InstgramIcon,
+  OpenseaIcon,
+  SearchbarbuttonIcon,
+  SearchIcon,
+  StarIcon,
+} from './Icons'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -18,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="container mx-auto my-12">
           <div className="lg:flex justify-between flex-wrap">
-            <div className="lg:w-1/4 mb-14 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
+            <div className="lg:w-[200px] mb-10 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
               <a href="#">
                 <Image
                   className="mb-5 "
@@ -60,128 +68,53 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex justify-between flex-wrap  lg:w-2/4 ">
-              <ul className="mb-4 w-20 text-center footer-links-hover">
-                <p className="text-white text-sm lg:text-base  font-bold font-Cabin ">
-                  About us
+            <div className="flex justify-center sm:justify-between flex-wrap  lg:w-[455px] ">
+              <ul className="mb-10 sm:mb-4 w-46  footer-links-hover text-center sm:text-left">
+                <p className="text-white text-sm lg:text-base mb-4  font-bold font-Cabin ">
+                  Useful links
                 </p>
-                <a className="text_decoration" href="#About">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    About us
-                  </li>
-                </a>
-                <a className="text_decoration" href="#About">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    About us
-                  </li>
-                </a>
-                <a className="text_decoration" href="#About">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    About us
-                  </li>
-                </a>
-                <a className="text_decoration" href="#About">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    About us
-                  </li>
-                </a>
-                <a className="text_decoration" href="#About">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    About us
-                  </li>
-                </a>
-              </ul>
-              <ul className="mb-4 w-20 text-center footer-links-hover">
-                <p className="text-white text-sm lg:text-base  font-bold font-Cabin ">
-                  Activities
-                </p>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-              </ul>
-              <ul className="mb-4 w-20 text-center footer-links-hover">
-                <p className="text-white text-sm lg:text-base  font-bold font-Cabin ">
-                  Rules
-                </p>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-              </ul>
-              <ul className="mb-4 w-20 text-center footer-links-hover">
-                <p className="text-white text-sm lg:text-base  font-bold font-Cabin ">
-                  Sold Out
-                </p>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-                <a className="text_decoration" href="#">
-                  <li className="text-white text-sm lg:text-base   font-Cabin opacity-70">
-                    Links
-                  </li>
-                </a>
-              </ul>
-              <ul className="mb-4 w-full sm:w-36 text-center">
-                <p className="text-white text-sm lg:text-base  font-bold font-Cabin mb-5 ">
-                  Overall Rating
-                </p>
+                <Link href="/#about" passHref>
+                  <a className="text_decoration">
+                    <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
+                      About Page
+                    </li>
+                  </a>
+                </Link>
+                <Link href="/#contact" passHref>
+                  <a className="text_decoration">
+                    <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
+                      Contact Us
+                    </li>
+                  </a>
+                </Link>
+                <Link href="#FAQs" passHref>
+                  <a className="text_decoration">
+                    <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
+                      FAQ
+                    </li>
+                  </a>
+                </Link>
 
-                <div className="flex justify-center">
-                  <span className="mr-1 star_active">
-                    <StarIcon />
-                  </span>
-                  <span className="mr-1 star_active">
-                    <StarIcon />
-                  </span>
-                  <span className="mr-1 star_active">
-                    <StarIcon />
-                  </span>
-                  <span className="mr-1 star_active">
-                    <StarIcon />
-                  </span>
-                  <span className="star_active">
-                    <StarIcon />
-                  </span>
+                <a
+                  className="text_decoration"
+                  href="https://app.powercamper.com/login"
+                >
+                  <li className="text-white text-sm lg:text-base sm:mb-3   font-Cabin opacity-70">
+                    Login
+                  </li>
+                </a>
+              </ul>
+              <ul className="mb-4 w-full sm:w-60  text-center sm:text-left  ">
+                <p className="text-white text-sm lg:text-base  font-bold font-Cabin mb-4 ">
+                  Looking for Sold Out Campsites?
+                </p>
+                <div className="  text-center sm:text-left  ">
+                  <button
+                    type="button"
+                    className="bg-[#ffffff] py-3.5  hover:opacity-80    search_button      px-4 border-2 rounded-md   mx-auto sm:mx-0  flex items-center justify-center	  text-[#000000]   font-Balsamiq border-transparent   text-sm sm:text-base font-normal "
+                  >
+                    <span className="leading-3">Search Now</span>
+                  </button>
                 </div>
               </ul>
             </div>
@@ -194,7 +127,7 @@ const Footer = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
