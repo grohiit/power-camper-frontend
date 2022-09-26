@@ -1,17 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
-import Slider from "react-slick";
-import Image from "next/image";
+import React, { useEffect, useState, useRef } from 'react'
+import Slider from 'react-slick'
+import Image from 'next/image'
 
 const CampGroundPhotosSlider = ({ images }) => {
-  const [nav1, setNav1] = useState();
-  const [nav2, setNav2] = useState();
-  const slider1 = useRef(null);
-  const slider2 = useRef(null);
+  const [nav1, setNav1] = useState()
+  const [nav2, setNav2] = useState()
+  const slider1 = useRef(null)
+  const slider2 = useRef(null)
 
   useEffect(() => {
-    setNav1(slider1.current);
-    setNav2(slider2.current);
-  }, []);
+    setNav1(slider1.current)
+    setNav2(slider2.current)
+  }, [])
 
   return (
     <>
@@ -45,7 +45,7 @@ const CampGroundPhotosSlider = ({ images }) => {
                     />
                   </div>
                 </div>
-              );
+              )
             })}
         </Slider>
 
@@ -53,7 +53,7 @@ const CampGroundPhotosSlider = ({ images }) => {
           <Slider
             asNavFor={nav1}
             ref={slider2}
-            slidesToShow={5}
+            slidesToShow={images.length > 7 ? 7 : images.length}
             swipeToSlide={true}
             focusOnSelect={true}
             arrows={false}
@@ -63,7 +63,7 @@ const CampGroundPhotosSlider = ({ images }) => {
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 3,
+                  slidesToShow: images.length > 5 ? 5 : images.length,
                 },
               },
             ]}
@@ -87,13 +87,13 @@ const CampGroundPhotosSlider = ({ images }) => {
                       />
                     </div>
                   </div>
-                );
+                )
               })}
           </Slider>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CampGroundPhotosSlider;
+export default CampGroundPhotosSlider

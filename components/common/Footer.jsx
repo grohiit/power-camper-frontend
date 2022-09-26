@@ -38,8 +38,8 @@ const Footer = () => {
                 />
               </a>
               <p className="text-white text-sm md:text-sm lg:text-base  font-Cabin opacity-70 mb-5 sm:mb-7 text-center lg:text-start ">
-                Lorem ipsum dolor sit amet, <br />
-                consectetur adipiscing elit.
+                Campsite availabilities, <br />
+                hassle-free at your fingertips
               </p>
               <div className="flex items-center">
                 <a
