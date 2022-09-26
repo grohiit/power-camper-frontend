@@ -7,6 +7,7 @@ const nextConfig = {
       'images.unsplash.com',
       'live.staticflickr.com',
       'commons.wikimedia.org',
+      'i.ibb.co',
     ],
     // path: "https://miro.medium.com",
   },

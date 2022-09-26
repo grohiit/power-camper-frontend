@@ -1,7 +1,7 @@
-import React from 'react'
 import { RedCrossIcon, TickIcon } from '../common/Icons'
 import Image from 'next/image'
 import { marked } from 'marked'
+import BestCampsitesFullScreenSlider from './BestCampsitesFullScreenSlider'
 
 const BestCampsitesReservationInfo = ({ data }) => {
   const {
@@ -10,6 +10,7 @@ const BestCampsitesReservationInfo = ({ data }) => {
     reservationInfo,
     bestCampsiteDescription,
     name,
+    bestCampsites,
   } = data ? data : {}
   const bestCampsiteImage = data.bestCampsiteImage || data.images[0]
 
@@ -18,9 +19,10 @@ const BestCampsitesReservationInfo = ({ data }) => {
       <section className=" mt-20 lg:mt-28 xl:mt-36" id="About">
         <div className="container mx-auto">
           <div className="lg:flex  content-center">
+            {/* BEST CAMPSITES  */}
             <div className="lg:w-3/6 lg:pr-[25px] mb-20 lg:mb-0">
               <div>
-                <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md">
+                <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4 lg:mb-5 max-w-md">
                   Best Campsites at {name}
                 </h2>
 
@@ -31,7 +33,7 @@ const BestCampsitesReservationInfo = ({ data }) => {
                   }}
                 ></div>
 
-                <Image
+                {/* <Image
                   className="w-full"
                   src={bestCampsiteImage}
                   alt="RiverImgS"
@@ -39,9 +41,16 @@ const BestCampsitesReservationInfo = ({ data }) => {
                   width={445}
                   height={315}
                   objectFit="cover"
-                />
+                /> */}
+
+                {bestCampsites &&
+                  bestCampsites.length > 0 &&
+                  bestCampsites.map((obj, index) => (
+                    <BestCampsitesFullScreenSlider obj={obj} key={index} />
+                  ))}
               </div>
             </div>
+            {/* RESERVATION INFO */}
             <div className="lg:w-3/6 lg:pl-[25px]">
               <div>
                 <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-5 max-w-md">
