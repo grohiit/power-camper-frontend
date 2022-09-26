@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-pdf-viewer/default-layout": "^3.6.0",
     "aos": "^2.3.4",
+    "dotenv": "^16.0.2",
     "framer-motion": "^6.4.1",
     "gray-matter": "^4.0.3",
     "marked": "^4.0.19",
