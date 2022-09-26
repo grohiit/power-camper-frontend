@@ -26,15 +26,15 @@ const CampgroundMap = ({ campgroundMap, name }) => {
               {name} Campground Map
             </h2>
             <div className="max-w-map bg-[#3D4F3B] river_map_color rounded-lg mb-5 md:mb-8 lg:mb-10 xl:mb-16 pb-1">
-              <div className="river_map_border py-1 lg:py-3.5 px-2 lg:px-5 rounded-lg map-container">
+              <div className="river_map_border py-1 lg:py-3.5 px-2 lg:px-5 rounded-lg">
                 <Image
-                  className="w-full map"
+                  className="w-full"
                   src={campgroundMap}
                   alt="campgroun map"
-                  width={445}
-                  height={315}
+                  width={1400}
+                  height={1400}
                   layout="responsive"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             </div>
