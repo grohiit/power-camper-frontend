@@ -102,7 +102,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                       width={445}
                       height={315}
                       alt="sliderImgs"
-                      objectFit="cover"
+                      objectFit="contain"
                       placeholder="blur"
                       rounded="xl"
                       blurDataURL="/img/png/river/river.png"
@@ -152,7 +152,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                       width={100}
                       height={100}
                       alt="sliderImgsSmall"
-                      objectFit="cover"
+                      objectFit="contain"
                       rounded="xl"
                       placeholder="blur"
                       blurDataURL="/img/png/river/river.png"

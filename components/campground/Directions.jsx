@@ -6,7 +6,8 @@ dotenv.config()
 const Direction = ({ directions, name }) => {
   const embedUrl = `https://www.google.com/maps/embed/v1/place?key=${
     process.env.GOOGLE_API_KEY
-  }=${encodeURIComponent(name)}&zoom=16`
+  }&q=${encodeURIComponent(name)}&zoom=16`
+  console.log(embedUrl)
   return (
     <section className=" mt-8 lg:mt-12 xl:mt-16 relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">

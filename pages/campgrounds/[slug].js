@@ -55,7 +55,7 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
           directions={campgroundpageData.directions}
           name={campgroundpageData.name}
         />
-        <Weather data={campgroundpageData} />
+        {/* <Weather data={campgroundpageData} /> */}
         <Faq faqdata={campgroundpageData.faqs} />
         {/* <Reviews name={name} /> */}
         {/* <CommentForm reviewdata={campgroundreviewData} /> */}
