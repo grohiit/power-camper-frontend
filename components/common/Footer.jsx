@@ -7,6 +7,8 @@ import {
   SearchbarbuttonIcon,
   SearchIcon,
   StarIcon,
+  Twitter,
+  Facebook,
 } from './Icons'
 import Link from 'next/link'
 
@@ -29,7 +31,7 @@ const Footer = () => {
             <div className="lg:w-[200px] mb-10 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
               <Link href="#">
                 <Image
-                  className="w-full mb-5"
+                  className="w-full mb-5 cursor-pointer"
                   src="/img/svg/logo.svg"
                   width={192}
                   height={73}
@@ -44,27 +46,20 @@ const Footer = () => {
               <div className="flex items-center">
                 <a
                   target="_blank"
-                  href="https://instagram.com/"
+                  href="https://twitter.com/powercamper"
                   rel="noopener noreferrer"
                   className="hover:scale-125 ease-in-out duration-200"
                 >
-                  <InstgramIcon />
+                  <Twitter />
                 </a>
+
                 <a
                   target="_blank"
-                  href="https://discord.com/"
+                  href="https://www.facebook.com/powercamper"
                   rel="noopener noreferrer"
                   className="mx-3 hover:scale-125 ease-in-out duration-200"
                 >
-                  <DiscordIcon />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://opensea.io/"
-                  rel="noopener noreferrer"
-                  className="hover:scale-125 ease-in-out duration-200"
-                >
-                  <OpenseaIcon />
+                  <Facebook />
                 </a>
               </div>
             </div>
@@ -73,21 +68,21 @@ const Footer = () => {
                 <p className="text-white text-sm lg:text-base mb-4  font-bold font-Cabin ">
                   Useful links
                 </p>
-                <Link href="/#about" passHref>
+                <Link href="/about-us" passHref>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       About Page
                     </li>
                   </a>
                 </Link>
-                <Link href="/#contact" passHref>
+                <Link href="/contact-us" passHref>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       Contact Us
                     </li>
                   </a>
                 </Link>
-                <Link href="#FAQs" passHref>
+                <Link href="/faq" passHref>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       FAQ
@@ -113,7 +108,9 @@ const Footer = () => {
                     type="button"
                     className="bg-[#ffffff] py-3.5  hover:opacity-80    search_button      px-4 border-2 rounded-md   mx-auto sm:mx-0  flex items-center justify-center	  text-[#000000]   font-Balsamiq border-transparent   text-sm sm:text-base font-normal "
                   >
-                    <span className="leading-3">Search Now</span>
+                    <a href="https://app.powercamper.com/request?clear=1">
+                      <span className="leading-3">Search Now</span>
+                    </a>
                   </button>
                 </div>
               </ul>
@@ -121,8 +118,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t text-center opacity-70 py-3 ">
-          <p className="text-white text-sm lg:text-base    font-Cabin">
-            copyright@2022
+          <p className="text-white font-normal border-[#BAB795] border-solid  text-xs text-center">
+            Copyright Power Camper @2022. All right reserved.
           </p>
         </div>
       </section>

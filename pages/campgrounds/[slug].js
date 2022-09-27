@@ -60,8 +60,6 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         {/* <Reviews name={name} /> */}
         {/* <CommentForm reviewdata={campgroundreviewData} /> */}
         {/* <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" /> */}
-        <Footer />
-        <BackToTop />
       </Layout>
     </>
   )

@@ -1,5 +1,4 @@
 import Layout from '../components/Layout'
-import Footercamp from '../components/homepage/Footercamp'
 import HomePageHero from '../components/homepage/HomePageHero'
 import WhatIsPowerCamper from '../components/homepage/WhatIsPowerCamper'
 import PowerCamperMember from '../components/homepage/PowerCamperMember'
@@ -30,8 +29,6 @@ export default function Home() {
         <Members />
         <Joincamper />
         <Signup />
-        <Footercamp />
-        <BackToTop />
       </Layout>
     </>
   )

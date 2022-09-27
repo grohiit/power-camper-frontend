@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Navbar from './homepage/Navbar'
+import Footer from './common/Footer'
+import BackToTop from './common/BackToTop'
 
 export default function Layout({ children, title, description }) {
   return (
@@ -72,6 +74,8 @@ export default function Layout({ children, title, description }) {
       </Head>
       <Navbar />
       <main>{children}</main>
+      <Footer />
+      <BackToTop />
     </>
   )
 }

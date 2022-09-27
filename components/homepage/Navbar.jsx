@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 import { HeaderCrossIcons2, ToggleIcon2 } from '../common/Icons'
 import Image from 'next/image'
 import 'react-dropdown/style.css'
-import { useRouter } from 'next/router'
-import NavbarDropdown from './NavbarDropdown'
+
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -23,17 +22,12 @@ const Navbar = () => {
       {navOverlay && (
         <div className="fixed bg-[#fff] top-0 h-full flex flex-col justify-center items-center z-20 w-full border-2">
           <ul className="text-center">
-            <li className="py-3" data-aos="fade-up" data-aos-duration="600">
-              <span
-                onClick={() => setNavOverlay(false)}
-                className=" text-[#4F535D] nav_dropdown homepage_dropdown2 my-20 font-bold font-Balsamiq text-sm lg:text-base cursor-pointer"
-                aria-current="page"
-              >
-                <NavbarDropdown />
-              </span>
-            </li>
-            <li className="py-3" data-aos="fade-up" data-aos-duration="800">
-              <Link href="/#about">
+            <li
+              className="py-3 list-none"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <Link href="/about-us">
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -43,8 +37,12 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-            <li className="py-3" data-aos="fade-up" data-aos-duration="1000">
-              <Link href="/#contact">
+            <li
+              className="py-3 list-none"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <Link href="/contact-us">
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -54,7 +52,11 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-            <li className="py-3" data-aos="fade-up" data-aos-duration="1200">
+            <li
+              className="py-3 list-none"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="flex items-center justify-center w-full  sm:static sm:inset-auto  ">
                 <a href="https://app.powercamper.com/login">
                   <button
@@ -106,18 +108,12 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex justify-center items-center">
               <div className="   w-full hidden sm:flex justify-center">
-                <span
-                  className=" text-[#4F535D] nav_dropdown hover:text-[#754C29] homepage_dropdown2    px-3     whitespace-nowrap justify-center ease-in duration-200   font-Balsamiq text-sm lg:text-base "
-                  aria-current="page"
-                >
-                  <NavbarDropdown />
-                </span>
-                <Link href="/#about">
+                <Link href="/about-us">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href="/#contact">
+                <Link href="/contact-us">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
