@@ -27,16 +27,16 @@ const Footer = () => {
         <div className="container mx-auto my-12">
           <div className="lg:flex justify-between flex-wrap">
             <div className="lg:w-[200px] mb-10 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
-              <a href="#">
+              <Link href="#">
                 <Image
-                  className="mb-5 "
-                  src="/img/svg/footerLogo.svg"
+                  className="w-full mb-5"
+                  src="/img/svg/logo.svg"
                   width={192}
                   height={73}
                   alt="footerLogo"
                   layout="intrinsic"
                 />
-              </a>
+              </Link>
               <p className="text-white text-sm md:text-sm lg:text-base  font-Cabin opacity-70 mb-5 sm:mb-7 text-center lg:text-start ">
                 Campsite availabilities, <br />
                 hassle-free at your fingertips
