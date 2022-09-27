@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { HeaderCrossIcons2, ToggleIcon2 } from '../common/Icons'
 import Image from 'next/image'
 import 'react-dropdown/style.css'
@@ -125,22 +125,22 @@ const Navbar = () => {
               </div>
 
               <div className="   hidden sm:flex items-center justify-end w-full   sm:static sm:inset-auto  ">
-                <a href="https://app.powercamper.com/login">
+                <Link href="https://app.powercamper.com/login">
                   <button
                     type="button"
                     className="bg-[#3F503B] hover:bg-[transparent] py-[5px] px-[15px] lg:px-[23px] border-2 rounded-md	hover:border-2 hover:border-[#3F503B]  hover:text-[#3F503B] text-[#ffffff] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
                   >
                     Login
                   </button>
-                </a>
-                <a href="https://app.powercamper.com/request?clear=1">
+                </Link>
+                <Link href="https://app.powercamper.com/request?clear=1">
                   <button
                     type="button"
                     className="bg-[#754C29] py-[5px] px-[15px] lg:px-[23px] hover:bg-[transparent] border-2 rounded-md	hover:border-2 hover:border-[#754C29] text-[#ffffff] hover:text-[#754C29] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
                   >
                     Start
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
 
