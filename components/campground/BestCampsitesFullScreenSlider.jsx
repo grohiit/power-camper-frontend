@@ -58,9 +58,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
           images={obj.Images}
           title={obj.Title}
         />
-        <h3 className="font-Bubblegum text-2xl lg:text-3xl text-center mb-3">
-          {obj.Title}
-        </h3>
+        <h3>{obj.Title}</h3>
 
         <div
           className="text-justify  font-Cabin text-sm lg:text-base opacity-70 mb-6"

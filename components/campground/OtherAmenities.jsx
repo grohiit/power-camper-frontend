@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { amenitiesSecondData } from '../common/Content'
 import { CrossIcon } from '../common/Icons'
+import { iconsObjData } from '../common/Content'
 
 const OtherAmenities = ({ otherAmenities = {} }) => {
   const [filteredOtherAnimities, setFilteredOtherAnimities] = useState([])
@@ -28,10 +29,19 @@ const OtherAmenities = ({ otherAmenities = {} }) => {
     return data
   }
 
+  const otherAmenitiesData = otherAmenities.map((v, i) => {
+    const ThisIcon = iconsObjData[v.key] || iconsObjData['Placeholder']
+    return {
+      icon: ThisIcon,
+      title: v.key,
+      isActive: v.value,
+    }
+  })
+
   return (
     <>
       <div className=" max-w-md   xl:w-9/12 grid grid-cols-4 gap-2 sm:gap-1 justify-center mx-auto lg:mx-0">
-        {filteredOtherAnimities.map((val, index) => {
+        {otherAmenitiesData.map((val, index) => {
           return (
             <div
               className={`w-[64px] sm:w-[85px] py-2 sm:py-3 border-[#CBDED3] border text-center box_shadow_amemties flex flex-col justify-around items-center sm:mb-5  ${
@@ -45,7 +55,8 @@ const OtherAmenities = ({ otherAmenities = {} }) => {
                   <CrossIcon />
                 </span>
               </span>
-              <p className="mb-0 mt-3 lg:mt-5 font-Cabin capitalize text-xs md:text-sm font-bold   text-[#3D4F3B]  ">
+              <p className="mx-5 my-3 font-Cabin capitalize text-sm font-bold text-[#3D4F3B]">
+                {/* mb-0 mt-3 lg:mt-5 font-Cabin capitalize text-xs md:text-sm font-bold   text-[#3D4F3B */}
                 {val.title}
               </p>
             </div>

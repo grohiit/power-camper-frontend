@@ -53,6 +53,12 @@ import {
   WhaleWatchingIcon,
   BackpackingIcon,
   PlaceholderIcon,
+  AdaIcon,
+  RvIcon,
+  PullThruIcon,
+  PetIcon,
+  ShowerNewIcon,
+  HookupIcon,
 } from './Icons'
 
 export const iconsObjData = {
@@ -81,6 +87,12 @@ export const iconsObjData = {
   'Whale Watching': <WhaleWatchingIcon />,
   Backpacking: <BackpackingIcon />,
   Placeholder: <PlaceholderIcon />,
+  'ADA Sites': <AdaIcon />,
+  'RV/Trailers': <RvIcon />,
+  'Pull Through Spots': <PullThruIcon />,
+  'Pet Friendly': <PetIcon />,
+  Showers: <ShowerNewIcon />,
+  Hookups: <HookupIcon />,
 }
 
 export const activitiesData = [
@@ -261,12 +273,12 @@ export const amenitiesData = [
   {
     icon: <SunIcon />,
     title: 'ADA Sites',
-    isActive: true,
+    isActive: false,
   },
   {
     icon: <ShowerGreenAmenityIcon />,
     title: 'Showers',
-    isActive: true,
+    isActive: false,
   },
 ]
 export const amenitiesSecondData = [
