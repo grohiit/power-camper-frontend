@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import ReservationForm from './ReservationForm'
+import ReservationForm from './ReservationFormNew'
 import { marked } from 'marked'
 
-const OverviewForm = ({ data: { overview, name } }) => {
+const OverviewForm = ({ data: { overview, name, facilityID } }) => {
   return (
     <section className="my-16 relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">
@@ -23,25 +23,23 @@ const OverviewForm = ({ data: { overview, name } }) => {
           height={270}
         />
       </div>
-      <div className="container mx-auto ">
-        <div className="xl:flex  content-center justify-center xl:justify-between">
-          <div className="xl:w-3/6 xl:pr-[25px] mb-6 xl:mb-0">
-            <div className="flex flex-col  xl:items-start xl:justify-start">
-              <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 w-full">
-                Overview
-              </h2>
-              <div className="max-w-lg list-disc mb-12 block">
-                <div
-                  className="font-Cabin text-lg opacity-70 text-justify"
-                  dangerouslySetInnerHTML={{
-                    __html: marked(overview),
-                  }}
-                ></div>
-              </div>
-            </div>
-          </div>
-          <ReservationForm name={name} />
+      <div className="flex flex-col-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto">
+        <div className="lg:w-2/4 lg:pr-[25px] mb-6 lg:mb-0 lg:items-start lg:justify-start">
+          <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 w-full">
+            Overview
+          </h2>
+          <div
+            className="font-Cabin text-lg opacity-70 text-justify max-w-lg list-disc mb-12 block"
+            dangerouslySetInnerHTML={{
+              __html: marked(overview),
+            }}
+          ></div>
         </div>
+        <ReservationForm
+          className="lg:w-2/4 mx-11"
+          name={name}
+          facilityID={facilityID}
+        />
       </div>
     </section>
   )
