@@ -2074,6 +2074,7 @@ export const PetIcon = () => {
 export const ShowerNewIcon = () => {
   return (
     <svg
+      // enable-background="new 0 0 510.147 510.147"
       viewBox="0 0 510.147 510.147"
       width="40"
       height="40"
