@@ -4,7 +4,7 @@ import { marked } from 'marked'
 
 const OverviewForm = ({ data: { overview, name } }) => {
   return (
-    <section className="mt-16 sm:mt-24 pt-1 relative">
+    <section className="my-16 relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">
         <Image
           className="mb-12"

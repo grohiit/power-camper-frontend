@@ -7,7 +7,7 @@ import OtherAmenities from './OtherAmenities'
 const AmenitiesActivities = ({ campgroundpageData }) => {
   return (
     <>
-      <section className="mt-20 lg:mt-28 relative ">
+      <section className="mt-16 relative">
         <div className="absolute bottom-full right-0 hidden md:inline-block">
           <Image
             className="mb-12"

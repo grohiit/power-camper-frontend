@@ -9,7 +9,7 @@ const Direction = ({ directions, name }) => {
   }&q=${encodeURIComponent(name)}&zoom=16`
 
   return (
-    <section className=" mt-8 lg:mt-12 xl:mt-16 relative">
+    <section className="relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">
         <Image
           className="mb-12"

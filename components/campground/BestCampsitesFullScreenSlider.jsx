@@ -45,7 +45,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
 
   return (
     <>
-      <div className="mb-5 mt-10 sm:mt-20">
+      <div className="my-5">
         {/* SHOW WHEN CLICK ON ANY SLIDER IMAGE  */}
         <ViewBestCampsiteModal
           indexVal={indexVal}
@@ -61,7 +61,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
         <h3>{obj.Title}</h3>
 
         <div
-          className="text-justify  font-Cabin text-sm lg:text-base opacity-70 mb-6"
+          className="text-justify  font-Cabin text-sm lg:text-base opacity-70 "
           dangerouslySetInnerHTML={{
             __html: marked(obj.Description),
           }}
@@ -92,13 +92,13 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                     setShow(true)
                   }}
                 >
-                  <div className="slider_img pr-2 sm:pr-3">
+                  <div className="">
                     <Image
                       className="w-full rounded-2xl"
                       src={imgPath}
                       layout="responsive"
                       width={445}
-                      height={315}
+                      height={250}
                       alt="sliderImgs"
                       objectFit="contain"
                       placeholder="blur"
@@ -111,13 +111,13 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
             })}
         </Slider>
         <div
-          style={{ maxWidth: `${obj.Images.length * 100}px` }}
-          className={`slider_active_box2  mx-auto pt-3 lg:pt-5  `}
+          // style={{ maxWidth: `${obj.Images.length * 100}px` }}
+          className={`px-5`}
         >
           <Slider
             asNavFor={nav1}
             ref={slider2}
-            slidesToShow={obj.Images.length > 7 ? 7 : obj.Images.length}
+            slidesToShow={obj.Images.length > 5 ? 5 : obj.Images.length}
             slidesToScroll={1}
             swipeToSlide={true}
             focusOnSelect={true}
@@ -128,7 +128,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: obj.Images.length > 5 ? 5 : obj.Images.length,
+                  slidesToShow: obj.Images.length > 3 ? 3 : obj.Images.length,
                 },
               },
             ]}
@@ -143,12 +143,12 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                     setShow(true)
                   }}
                 >
-                  <div className="text-center  mx-3">
+                  <div className="text-center mx-3">
                     <Image
                       className="mx-auto rounded"
                       src={imgPath}
-                      width={100}
-                      height={100}
+                      width={200}
+                      height={200}
                       alt="sliderImgsSmall"
                       objectFit="contain"
                       rounded="xl"

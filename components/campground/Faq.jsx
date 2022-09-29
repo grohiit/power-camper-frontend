@@ -1,21 +1,21 @@
-import { AnimatePresence, motion } from "framer-motion";
-import React from "react";
-import { DownArrowIcon } from "../common/Icons";
-import Image from "next/image";
+import { AnimatePresence, motion } from 'framer-motion'
+import React from 'react'
+import { DownArrowIcon } from '../common/Icons'
+import Image from 'next/image'
 
 const Faq = ({ faqdata }) => {
-  const [view, setView] = React.useState(null);
+  const [view, setView] = React.useState(null)
   const activeHandler = (value) => {
     if (value === view) {
-      setView(null);
+      setView(null)
     } else {
-      setView(value);
+      setView(value)
     }
-  };
+  }
 
   return (
     <>
-      <section className="mt-20 lg:mt-32 xl:mt-40 faqBg relative" id="FAQs">
+      <section className="faqBg relative" id="FAQs">
         <div className="absolute bottom-full right-0 hidden md:inline-block">
           <Image
             className="mb-12"
@@ -55,7 +55,7 @@ const Faq = ({ faqdata }) => {
               <div
                 key={index}
                 className={`faq-wrapper py-4 md:py-6 px-5 xs:px-7 md:px-10 overflow-hidden mb-5  faq_border ${
-                  index === view ? " active-faq-item " : ""
+                  index === view ? ' active-faq-item ' : ''
                 }`}
               >
                 <div
@@ -65,7 +65,7 @@ const Faq = ({ faqdata }) => {
                   {item.question}
                   <span
                     className={`${
-                      index === view ? "rotate-icon" : ""
+                      index === view ? 'rotate-icon' : ''
                     } arrow-icon-faq ml-3`}
                   >
                     <span className="DownArrowIcon">
@@ -82,14 +82,14 @@ const Faq = ({ faqdata }) => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{
                         opacity: 1,
-                        height: "auto",
+                        height: 'auto',
                       }}
                       exit={{ opacity: 0, height: 0 }}
                     >
                       <div className="faq-answer">
                         <p
                           className={`mb-0 pt-4 text-white  font-Cabin text-sm lg:text-base     ${
-                            index === view ? "" : ""
+                            index === view ? '' : ''
                           }`}
                         >
                           {item.answer}
@@ -115,7 +115,7 @@ const Faq = ({ faqdata }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq

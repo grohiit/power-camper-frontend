@@ -6,10 +6,7 @@ const CampgroundMap = ({ campgroundMap, name }) => {
 
   return (
     <>
-      <section
-        id="Green-map"
-        className="bg_green_linear mt-20 lg:mt-28 xl:mt-36 relative"
-      >
+      <section id="Green-map" className="bg_green_linear relative">
         <div className="topWaveImg">
           <Image
             className="w-full "

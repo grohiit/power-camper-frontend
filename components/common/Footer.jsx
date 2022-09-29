@@ -15,7 +15,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <>
-      <section className="mt-20 lg:mt-28 xl:mt-36 bg-[#3D4F3B] ">
+      <section className=" bg-[#3D4F3B] ">
         <div className="topWaveImg">
           <Image
             className="w-full "

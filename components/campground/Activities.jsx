@@ -3,7 +3,6 @@ import { iconsObjData } from '../common/Content'
 const Activities = ({ activities = {} }) => {
   const displayActivities = activities.map((v, i) => {
     const ThisIcon = iconsObjData[v] || iconsObjData['Placeholder']
-    console.log(ThisIcon)
     return {
       icon: iconsObjData[v] || iconsObjData['Placeholder'],
       title: v,

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Navbar from './homepage/Navbar'
+import Navbar from './common/Navbar'
 import Footer from './common/Footer'
 import BackToTop from './common/BackToTop'
 

@@ -6,7 +6,7 @@ import AmenitiesActivities from '../../components/campground/AmenitiesActivities
 import CampgroundMap from '../../components/campground/CampgroundMap'
 import Direction from '../../components/campground/Directions'
 import Weather from '../../components/campground/Weather'
-import Faq from '../../components/common/Faq'
+import Faq from '../../components/campground/Faq'
 import Reviews from '../../components/campground/Reviews'
 import CommentForm from '../../components/campground/CommentForm'
 import NearbyCampgrounds from '../../components/campground/NearbyCampgrounds'

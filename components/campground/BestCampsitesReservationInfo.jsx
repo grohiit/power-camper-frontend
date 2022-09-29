@@ -16,18 +16,18 @@ const BestCampsitesReservationInfo = ({ data }) => {
 
   return (
     <>
-      <section className=" mt-20 lg:mt-28 xl:mt-36" id="About">
+      <section className="my-16">
         <div className="container mx-auto">
           <div className="lg:flex  content-center">
             {/* BEST CAMPSITES  */}
-            <div className="lg:w-3/6 lg:pr-[25px] mb-20 lg:mb-0">
+            <div className="lg:w-3/6 lg:pr-[25px]">
               <div>
                 <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4 lg:mb-5 max-w-md">
                   Best Campsites at {name}
                 </h2>
 
                 <div
-                  className="text-justify font-Cabin text-lg opacity-70 mb-6"
+                  className="text-justify font-Cabin text-lg opacity-70"
                   dangerouslySetInnerHTML={{
                     __html: marked(bestCampsiteDescription),
                   }}
