@@ -5,8 +5,8 @@ export default function TrailerLengthSelectField({ maxLength }) {
   return (
     <>
       <select id="maxeqplen" name="maxeqplen">
-        {lengthOptions.map((len) => (
-          <SelectOption option={[len, len]} />
+        {lengthOptions.map((len, index) => (
+          <SelectOption option={[len, len]} key={index} />
         ))}
       </select>
     </>

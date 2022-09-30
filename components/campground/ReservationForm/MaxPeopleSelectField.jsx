@@ -9,8 +9,8 @@ export default function MaxPeopleSelectField({ maxPeople }) {
           Number in your party:
         </label>
         <select id="maxpeople" name="maxpeople">
-          {peopleOptions.map((peopleCount) => (
-            <SelectOption option={[peopleCount, peopleCount]} />
+          {peopleOptions.map((peopleCount, index) => (
+            <SelectOption option={[peopleCount, peopleCount]} key={index} />
           ))}
         </select>
       </div>

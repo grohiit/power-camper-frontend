@@ -73,9 +73,10 @@ const ReservationForm = ({ name, facilityID }) => {
                   value={campground}
                   onChange={handleCampgroundChange}
                 >
-                  {formInputData.map((campground) => (
+                  {formInputData.map((campground, index) => (
                     <SelectOption
                       option={[campground.facilityID, campground.name]}
+                      key={index}
                     />
                   ))}
                 </select>
