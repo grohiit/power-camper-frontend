@@ -9,12 +9,19 @@ import TrailerLengthSelectField from './TrailerLengthSelectField'
 import MaxPeopleSelectField from './MaxPeopleSelectField'
 
 const ReservationForm = ({ name, facilityID }) => {
-  const [startDate, setStartDate] = useState()
-  const [checkOutDate, setCheckOutdate] = useState()
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  const today = new Date()
+  const [startDate, setStartDate] = useState(new Date())
+  const [checkOutDate, setCheckOutdate] = useState(
+    today.setDate(today.getDate() + 2)
+  )
   const [state, setState] = useState('CA')
   const [campground, setCampground] = useState(facilityID)
   const [siteTypes, setSiteTypes] = useState(
     formInputData.filter((v) => v.facilityID == facilityID)[0]['siteTypes']
+  )
+  const [siteTypeSelected, setSiteTypeSelected] = useState(
+    `${siteTypes[0]} Site`
   )
   const [maxLength, setMaxLength] = useState(
     formInputData.filter((v) => v.facilityID == facilityID)[0]['maxLength']
@@ -38,6 +45,16 @@ const ReservationForm = ({ name, facilityID }) => {
 
     setCampground(facilityID)
   }
+  const handleSiteTypeChange = (e) => {
+    setSiteTypeSelected(e.target.value)
+  }
+  function getFormattedDate(date) {
+    return 'Test'
+  }
+
+  // `${days[date.getDay()]}, ${date.toLocaleString('en-us', {
+  //   dateStyle: 'medium',
+  // })}`
 
   return (
     <>
@@ -83,8 +100,14 @@ const ReservationForm = ({ name, facilityID }) => {
               </div>
             </div>
             <div className="flex  sm:w-96 justify-between mb-4 sm:mb-6 items-center">
-              <SiteTypeSelectField siteTypes={siteTypes} />
-              <TrailerLengthSelectField maxLength={maxLength} />
+              <SiteTypeSelectField
+                siteTypes={siteTypes}
+                handleSiteTypeChange={handleSiteTypeChange}
+              />
+              <TrailerLengthSelectField
+                maxLength={maxLength}
+                siteType={siteTypeSelected}
+              />
             </div>
             <MaxPeopleSelectField maxPeople={maxPeople} />
             <div className="flex  sm:w-96 justify-between mb-12 items-center">

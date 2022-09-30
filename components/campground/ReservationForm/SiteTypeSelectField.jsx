@@ -1,12 +1,19 @@
 import SelectOption from './SelectOption'
 
-export default function SiteTypeSelectField({ siteTypes }) {
+export default function SiteTypeSelectField({
+  siteTypes,
+  handleSiteTypeChange,
+}) {
   return (
     <>
       <label className="font-Cabin text-sm lg:text-base  text-white font-medium mb-3 sm:mb-0">
         Site Type:
       </label>
-      <select id="category_types" name="category_types">
+      <select
+        id="category_types"
+        name="category_types"
+        onChange={handleSiteTypeChange}
+      >
         {siteTypes.map((siteType, index) => (
           <SelectOption
             option={[
