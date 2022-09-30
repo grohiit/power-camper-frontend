@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ReservationForm from './ReservationFormNew'
+import ReservationForm from './ReservationForm/ReservationFormNew'
 import { marked } from 'marked'
 
 const OverviewForm = ({ data: { overview, name, facilityID } }) => {

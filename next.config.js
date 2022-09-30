@@ -10,6 +10,15 @@ const nextConfig = {
     config.resolve.fallback = { fs: false }
     return config
   },
+  async redirects() {
+    return [
+      {
+        source: '/beach-campgrounds/:slug',
+        destination: '/campgrounds/:slug',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
