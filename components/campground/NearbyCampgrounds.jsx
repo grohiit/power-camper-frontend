@@ -20,7 +20,7 @@ const NearbyCampgrounds = ({ nearbycampgroundData, type }) => {
           <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center mb-5 md:mb-8 lg:mb-10 xl:mb-16 xxl:mb-20  max-w-lg mx-auto">
             {type} Campgrounds
           </h2>
-          <div className="block sm:hidden nearby_slider">
+          {/* <div className="block sm:hidden nearby_slider">
             <Slider {...settings}>
               {nearbycampgroundData &&
                 nearbycampgroundData.length &&
@@ -28,8 +28,9 @@ const NearbyCampgrounds = ({ nearbycampgroundData, type }) => {
                   <NearByCampgroundSlide key={index} obj={obj} />
                 ))}
             </Slider>
-          </div>
-          <div className="lg:w-4/5 hidden sm:block mx-auto">
+          </div> */}
+          <div className="w-4/5 mx-auto">
+            {/* hidden sm:block  */}
             {nearbycampgroundData &&
               nearbycampgroundData.length &&
               nearbycampgroundData.map((obj, index) => (
