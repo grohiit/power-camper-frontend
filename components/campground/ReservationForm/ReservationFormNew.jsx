@@ -58,7 +58,6 @@ const ReservationForm = ({ name, facilityID }) => {
         <h2 className="font-Bubblegum text-white text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md mx-auto text-center">
           {name} Sold Out?
           <span className="block">We can get you a reservation!</span>
-          {facilityID}
         </h2>
         <div className="get_started_box py-6 sm:py-8 px-2 sm:px-6 max-w-md mx-auto">
           <h4 className="text-xl lg:text-2xl font-medium font-Bubblegum text-center text-white mb-5 lg:mb-7">
