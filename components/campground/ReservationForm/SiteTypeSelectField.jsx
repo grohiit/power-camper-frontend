@@ -6,7 +6,7 @@ export default function SiteTypeSelectField({
 }) {
   return (
     <>
-      <label className="font-Cabin text-sm lg:text-base  text-white font-medium mb-3 sm:mb-0">
+      <label className="font-Cabin text-base text-white font-medium">
         Site Type:
       </label>
       <select

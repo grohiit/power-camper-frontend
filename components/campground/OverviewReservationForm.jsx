@@ -24,7 +24,8 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
         />
       </div>
       <div className="flex flex-col-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto">
-        <div className="lg:w-2/4 lg:pr-[25px] mb-6 lg:mb-0 lg:items-start lg:justify-start">
+        <div className="lg:w-2/4 lg:pr-[25px] ">
+          {/* mb-6 lg:mb-0 lg:items-start lg:justify-start */}
           <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 w-full">
             Overview
           </h2>
@@ -35,11 +36,9 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
             }}
           ></div>
         </div>
-        <ReservationForm
-          className="lg:w-2/4 mx-11"
-          name={name}
-          facilityID={facilityID}
-        />
+        <div className="lg:w-2/4 lg:pr-[25px]">
+          <ReservationForm name={name} facilityID={facilityID} />
+        </div>
       </div>
     </section>
   )
