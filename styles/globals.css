@@ -717,13 +717,13 @@ span image {
 }
 
 .members_slider .slick-prev {
-  background: #ffffff !important;
+  /* background: #ffffff !important; */
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.12);
   border-radius: 50% !important;
   width: 50px;
   height: 50px;
   cursor: pointer !important;
-  background-image: url('/img/svg/memberSilderArrowLeft.svg') !important;
+  background-image: url('https://res.cloudinary.com/dqdzorc8z/image/upload/v1664832737/memberSilderArrowLeft_g8ia3q.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   left: 0px !important;
@@ -733,13 +733,13 @@ span image {
 }
 
 .members_slider .slick-next {
-  background: #ffffff !important;
+  /* background: #ffffff !important; */
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.12);
   border-radius: 50% !important;
   width: 50px;
   height: 50px;
   cursor: pointer !important;
-  background-image: url('/img/svg/memberSilderArrowRight.svg') !important;
+  background-image: url('https://res.cloudinary.com/dqdzorc8z/image/upload/v1664832737/memberSilderArrowRight_iw3pqj.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   right: 0px !important;

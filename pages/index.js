@@ -28,7 +28,6 @@ export default function Home() {
         <PowerCamperMember />
         <Members />
         <Joincamper />
-        <Signup />
       </Layout>
     </>
   )
