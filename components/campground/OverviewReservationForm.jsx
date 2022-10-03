@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import ReservationForm from './ReservationForm/ReservationFormNew'
 import { marked } from 'marked'
+import { formInputData } from '@/components/common/Content'
 
 const OverviewForm = ({ data: { overview, name, facilityID } }) => {
+  const showForm = formInputData.filter((v) => v.facilityID == facilityID)
+    .length
+    ? true
+    : false
   return (
     <section className="my-16 relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">
@@ -24,21 +29,25 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
         />
       </div>
       <div className="flex flex-col-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto">
-        <div className="lg:w-2/4 lg:pr-[25px] ">
+        <div className={` ${showForm ? 'lg:w-2/4' : 'w-full'} lg:pr-[25px] `}>
           {/* mb-6 lg:mb-0 lg:items-start lg:justify-start */}
-          <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 w-full">
+          <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4 w-full">
             Overview
           </h2>
           <div
-            className="font-Cabin text-lg opacity-70 text-justify max-w-lg list-disc mb-12 block"
+            className="font-Cabin text-lg opacity-70 text-justify list-disc mb-12 block"
             dangerouslySetInnerHTML={{
               __html: marked(overview),
             }}
           ></div>
         </div>
-        <div className="lg:w-2/4 lg:pr-[25px]">
-          <ReservationForm name={name} facilityID={facilityID} />
-        </div>
+        {showForm ? (
+          <div className="lg:w-2/4 lg:pr-[25px]">
+            <ReservationForm name={name} facilityID={facilityID} />
+          </div>
+        ) : (
+          ''
+        )}
       </div>
     </section>
   )

@@ -9,7 +9,6 @@ import TrailerLengthSelectField from './TrailerLengthSelectField'
 import MaxPeopleSelectField from './MaxPeopleSelectField'
 
 const ReservationForm = ({ name, facilityID }) => {
-  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
   const today = new Date()
   const [startDate, setStartDate] = useState(new Date())
   const [checkOutDate, setCheckOutdate] = useState(
@@ -48,9 +47,6 @@ const ReservationForm = ({ name, facilityID }) => {
   const handleSiteTypeChange = (e) => {
     setSiteTypeSelected(e.target.value)
   }
-  function getFormattedDate(date) {
-    return 'Test'
-  }
 
   // `${days[date.getDay()]}, ${date.toLocaleString('en-us', {
   //   dateStyle: 'medium',
@@ -62,6 +58,7 @@ const ReservationForm = ({ name, facilityID }) => {
         <h2 className="font-Bubblegum text-white text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-5 max-w-md mx-auto text-center">
           {name} Sold Out?
           <span className="block">We can get you a reservation!</span>
+          {facilityID}
         </h2>
         <div className="get_started_box py-6 sm:py-8 px-2 sm:px-6 max-w-md mx-auto">
           <h4 className="text-xl lg:text-2xl font-medium font-Bubblegum text-center text-white mb-5 lg:mb-7">

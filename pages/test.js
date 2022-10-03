@@ -2,7 +2,7 @@ import OverviewReservationForm from '@/components/campground/OverviewReservation
 const data = {
   overview: '',
   name: 'test',
-  facilityID: 120090,
+  facilityID: '120090',
 }
 export default function TestPage() {
   return (
