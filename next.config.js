@@ -5,7 +5,6 @@ const nextConfig = {
   images: {
     // loader: "custom",
     domains: ['images.unsplash.com', 'res.cloudinary.com'],
-    // path: "https://miro.medium.com",
   },
   webpack: (config) => {
     config.resolve.fallback = { fs: false }
@@ -15,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/beach-campgrounds/:slug',
-        destination: '/campgrounds/:slug',
+        destination: '/campground/:slug',
         permanent: true,
       },
     ]

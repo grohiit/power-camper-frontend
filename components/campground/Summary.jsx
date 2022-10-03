@@ -14,9 +14,8 @@ import ReviewStars from '@/components/common/ReviewStars'
 const Summary = ({ data }) => {
   const { star } = heroData
 
-  const { name, website, tagLine, phone, rating, summary, location } = data
-    ? data
-    : {}
+  const { name, website, tagLine, phone, rating, summary, location, address } =
+    data ? data : {}
 
   return (
     <>
@@ -40,7 +39,7 @@ const Summary = ({ data }) => {
               ))}
             </div>
             <p className="font-Cabin text-sm lg:text-base opacity-70 text-center  text-white px-10 sm:px-0">
-              {location.formattedAddress ? location.formattedAddress : ''}
+              {address ? address : ''}
             </p>
             <div className="text-center">
               <a

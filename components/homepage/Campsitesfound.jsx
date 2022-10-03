@@ -12,8 +12,6 @@ const Campsitesfound = () => {
             <a href="#about">
               <button
                 type="button"
-                link
-                to="#about"
                 className="text-white work-btn text-center font-Balsamiq font-bold text-base md:text-xl border md:mt-[22px] mt-[15px] rounded-md  border-[#243C5A] border-solid bg-[#3F503B] px-7 py-[10px] hover:border hover:border-solid hover:border-[#243C5A] hover:text-[#3F503B]       hover:bg-transparent leading-[20px] "
               >
                 See How It Works! <Downarrow />
