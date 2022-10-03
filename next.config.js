@@ -13,6 +13,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/beach-campgrounds/el-capitan-beach-camping/',
+        destination: '/campground/el-capitan-state-beach/',
+        permanent: true,
+      },
+      {
         source: '/beach-campgrounds/:slug',
         destination: '/campground/:slug',
         permanent: true,
