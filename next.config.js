@@ -18,6 +18,31 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/beach-campgrounds/san-elijo-beach-camping/',
+        destination: '/campground/san-elijo-state-beach/',
+        permanent: true,
+      },
+      {
+        source: '/beach-campgrounds/carpinteria-state-beach-camping/',
+        destination: '/campground/carpinteria-state-beach/',
+        permanent: true,
+      },
+      {
+        source: '/beach-campgrounds/leo-carrillo-beach-camping',
+        destination: '/campground/leo-carillo-state-beach/',
+        permanent: true,
+      },
+      {
+        source: '/beach-campgrounds/san-clemente-state-beach-camping/',
+        destination: '/campground/san-clemente-state-beach',
+        permanent: true,
+      },
+      {
+        source: '/beach-campgrounds/bolsa-chica-beach-camping/',
+        destination: '/campground/bolsa-chica-state-beach/',
+        permanent: true,
+      },
+      {
         source: '/beach-campgrounds/:slug',
         destination: '/campground/:slug',
         permanent: true,
