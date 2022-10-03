@@ -8,7 +8,7 @@ const PageNotFound = () => {
         <div className="w-full   ">
           <div className="  text-center px-5">
             <Image
-              src="/img/svg/errorImg.svg"
+              src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664836832/Others/errorImg_qpcm5a.svg"
               width={592}
               height={350}
               alt="error"

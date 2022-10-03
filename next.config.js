@@ -43,6 +43,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/beach-campgrounds/half-moon-bay-camp/',
+        destination: '/campground/francis-beach/',
+        permanent: true,
+      },
+      {
+        source: '/beach-campgrounds/',
+        destination: '/campground/',
+        permanent: true,
+      },
+      {
         source: '/beach-campgrounds/:slug',
         destination: '/campground/:slug',
         permanent: true,
