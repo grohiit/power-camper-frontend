@@ -53,6 +53,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/faq/scan-setup',
+        destination: '/how-to-set-up-a-scan/',
+        permanent: true,
+      },
+      {
+        source: '/login/',
+        destination: 'https://app.powercamper.com/login/',
+        permanent: true,
+      },
+      {
         source: '/beach-campgrounds/:slug',
         destination: '/campground/:slug',
         permanent: true,
