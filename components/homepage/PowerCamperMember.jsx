@@ -23,7 +23,7 @@ const PowerCamperMember = () => {
             <h2 className="font-Balsamiq md:text-5xl  text-[32px] text-black font-bold leading-[119%] ">
               Become a Power Camper Member!
             </h2>
-            <p className="text-[#4F535D] md:pt-[20px] text-xl sm:text-2xl    font-Balsamiq   font-bold">
+            <p className="text-[#4F535D] md:pt-[20px] text-xl sm:text-2xl font-Balsamiq   font-bold text-center">
               Membership Perks
             </p>
           </div>
