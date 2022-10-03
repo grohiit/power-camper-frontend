@@ -1,5 +1,4 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
 
 const Unlimited = () => {
   return (
@@ -28,7 +27,7 @@ const Unlimited = () => {
         <div className=" flex items-center mb-[25px] md:mt-[0px] mt-[80px]">
           <Image
             className="w-full "
-            src="/img/png/Unlimited.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827765/Others/Unlimited_g7wheg.png"
             alt="Logo"
             width={367}
             height={269}
@@ -36,7 +35,7 @@ const Unlimited = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Unlimited;
+export default Unlimited

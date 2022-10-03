@@ -1,5 +1,3 @@
-import React from 'react'
-import Slider from 'react-slick'
 import NearbyCampgroundListItem from './NearbyCampgroundListItem'
 import NearByCampgroundSlide from './NearByCampgroundSlide'
 

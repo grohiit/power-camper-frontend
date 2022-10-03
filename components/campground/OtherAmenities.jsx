@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { amenitiesSecondData } from '../common/Content'
 import { CrossIcon } from '../common/Icons'
 import { iconsObjData } from '../common/Content'

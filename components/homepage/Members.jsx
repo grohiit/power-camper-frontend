@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Slider from 'react-slick'
 function Members() {
@@ -46,7 +45,7 @@ function Members() {
             <div className="text-center">
               <Image
                 alt="Scott"
-                src="/img/png/slider/sliderlogo.png"
+                src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828030/Others/sliderlogo_ojscuz.png"
                 width={122}
                 height={122}
               />
@@ -62,7 +61,7 @@ function Members() {
             <div className="text-center">
               <Image
                 alt="Scott"
-                src="/img/png/slider/sliderlogo.png"
+                src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828030/Others/sliderlogo_ojscuz.png"
                 width={122}
                 height={122}
               />
@@ -78,7 +77,7 @@ function Members() {
             <div className="text-center">
               <Image
                 alt="Scott"
-                src="/img/png/slider/sliderlogo.png"
+                src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828030/Others/sliderlogo_ojscuz.png"
                 width={122}
                 height={122}
               />

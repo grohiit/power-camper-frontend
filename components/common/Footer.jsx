@@ -1,15 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
-import {
-  DiscordIcon,
-  InstgramIcon,
-  OpenseaIcon,
-  SearchbarbuttonIcon,
-  SearchIcon,
-  StarIcon,
-  Twitter,
-  Facebook,
-} from './Icons'
+import { Twitter, Facebook } from './Icons'
 import Link from 'next/link'
 
 const Footer = () => {
@@ -19,7 +9,7 @@ const Footer = () => {
         <div className="topWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/top_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828356/Others/top_wave_vsyjef.png"
             alt="topWaveImg"
             width={1920}
             height={85}

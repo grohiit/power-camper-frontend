@@ -19,7 +19,7 @@ const Faq = ({ faqdata }) => {
         <div className="absolute bottom-full right-0 hidden md:inline-block">
           <Image
             className="mb-12"
-            src="/img/png/dots/green_right_side.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/green_right_side_adf6aj.png"
             alt="greenRightSideDot"
             width={164}
             height={270}
@@ -28,7 +28,7 @@ const Faq = ({ faqdata }) => {
         <div className="absolute top-[-63px]  left-0 hidden md:inline-block">
           <Image
             className=" "
-            src="/img/png/dots/white_left_side.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/white_left_side_gps3jp.png"
             alt="whiteLeftSideDot"
             width={200}
             height={270}
@@ -37,7 +37,7 @@ const Faq = ({ faqdata }) => {
         <div className="topWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/top_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_bottom_wave_vhh2lb.png"
             alt="topWaveImg"
             width={1920}
             height={85}
@@ -106,7 +106,7 @@ const Faq = ({ faqdata }) => {
         <div className="bottomWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/bottom_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_bottom_wave_vhh2lb.png"
             alt="bottomWaveImg"
             width={1920}
             height={85}

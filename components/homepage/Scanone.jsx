@@ -1,5 +1,4 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
 
 const Scanone = () => {
   return (
@@ -24,7 +23,7 @@ const Scanone = () => {
         <div className="flex items-center mb-[25px] md:mb-0 md:mt-[0px] mt-[80px]">
           <Image
             className="w-full "
-            src="/img/png/Scanone.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827765/Others/Scanone_dfl959.png"
             alt="Logo"
             width={367}
             height={269}
@@ -32,7 +31,7 @@ const Scanone = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Scanone;
+export default Scanone

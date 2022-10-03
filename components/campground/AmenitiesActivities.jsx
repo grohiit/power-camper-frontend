@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Activities from './Activities'
 import BasicAmenities from './BasicAmenities'
 import OtherAmenities from './OtherAmenities'
@@ -11,7 +10,7 @@ const AmenitiesActivities = ({ campgroundpageData }) => {
         <div className="absolute bottom-full right-0 hidden md:inline-block">
           <Image
             className="mb-12"
-            src="/img/png/dots/green_right_side.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/green_right_side_adf6aj.png"
             alt="greenRightSideDot"
             width={164}
             height={270}
@@ -20,7 +19,7 @@ const AmenitiesActivities = ({ campgroundpageData }) => {
         <div className="absolute top-1/2 left-0 hidden md:inline-block">
           <Image
             className="mb-12"
-            src="/img/png/dots/green_left_side.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829064/Others/green_left_side_rabwnb.png"
             alt="greenLeftSideDot"
             width={164}
             height={270}

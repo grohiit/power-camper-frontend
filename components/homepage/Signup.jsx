@@ -1,5 +1,3 @@
-import React from "react";
-
 const Signup = () => {
   return (
     <>
@@ -26,7 +24,7 @@ const Signup = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Signup;
+export default Signup

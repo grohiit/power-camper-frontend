@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Instantnotification from './Instantnotification'
 import Scanone from './Scanone'
@@ -11,7 +10,7 @@ const PowerCamperMember = () => {
       <div className="mb-[-2px] ">
         <Image
           className="w-full "
-          src="/img/png/waves/top_wave.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664826507/Others/top_wave_y2hhhf.png"
           alt="Logo"
           width={1920}
           height={81}
@@ -39,7 +38,7 @@ const PowerCamperMember = () => {
       <div className="mt-[-2px] ">
         <Image
           className="w-full "
-          src="/img/png/waves/bottom_wave.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664826507/Others/bottom_wave_lbpilw.png"
           alt="Logo"
           width={1920}
           height={81}

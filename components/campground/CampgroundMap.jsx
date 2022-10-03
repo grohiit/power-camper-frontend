@@ -10,7 +10,7 @@ const CampgroundMap = ({ campgroundMap, name }) => {
         <div className="topWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/top_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_top_wave_l0g3cj.png"
             alt="topWaveImg"
             width={1920}
             height={85}
@@ -49,7 +49,7 @@ const CampgroundMap = ({ campgroundMap, name }) => {
         <div className="bottomWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/bottom_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_bottom_wave_vhh2lb.png"
             alt="bottomWaveImg"
             width={1920}
             height={85}

@@ -1,5 +1,4 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
 const Nextweekend = () => {
   return (
     <>
@@ -7,7 +6,7 @@ const Nextweekend = () => {
         <div className=" flex items-center mb-[25px] md:mb-0 md:mt-[0px] mt-[80px]">
           <Image
             className="w-full "
-            src="/img/png/Nextweekend.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827765/Others/Nextweekend_es3z48.png"
             alt="Logo"
             width={367}
             height={269}
@@ -24,7 +23,7 @@ const Nextweekend = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Nextweekend;
+export default Nextweekend

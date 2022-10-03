@@ -1,5 +1,4 @@
 import { RedCrossIcon, TickIcon } from '../common/Icons'
-import Image from 'next/image'
 import { marked } from 'marked'
 import BestCampsitesFullScreenSlider from './BestCampsitesFullScreenSlider'
 
@@ -32,17 +31,6 @@ const BestCampsitesReservationInfo = ({ data }) => {
                     __html: marked(bestCampsiteDescription),
                   }}
                 ></div>
-
-                {/* <Image
-                  className="w-full"
-                  src={bestCampsiteImage}
-                  alt="RiverImgS"
-                  layout="responsive"
-                  width={445}
-                  height={315}
-                  objectFit="cover"
-                /> */}
-
                 {bestCampsites &&
                   bestCampsites.length > 0 &&
                   bestCampsites.map((obj, index) => (

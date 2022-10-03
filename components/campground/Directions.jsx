@@ -13,7 +13,7 @@ const Direction = ({ directions, name }) => {
       <div className="absolute top-0 right-0 hidden md:inline-block">
         <Image
           className="mb-12"
-          src="/img/png/dots/green_right_side.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/green_right_side_adf6aj.png"
           alt="greenRightSideDot"
           width={170}
           height={270}
@@ -22,7 +22,7 @@ const Direction = ({ directions, name }) => {
       <div className="absolute bottom-0 left-0 hidden md:inline-block">
         <Image
           className="mb-12"
-          src="/img/png/dots/green_left_side.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829064/Others/green_left_side_rabwnb.png"
           alt="greenLeftSideDot"
           width={170}
           height={270}

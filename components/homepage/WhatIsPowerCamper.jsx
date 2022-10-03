@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 
 const WhatIsPowerCamper = () => {
@@ -23,7 +22,7 @@ const WhatIsPowerCamper = () => {
           <div className="lg:mt-[0px] mt-[50px] flex items-center">
             <Image
               className="w-full "
-              src="/img/png/powercampercardone.png"
+              src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827299/Others/powercampercardone_sbx1pb.png"
               alt="Logo"
               width={230}
               height={335}
@@ -31,7 +30,7 @@ const WhatIsPowerCamper = () => {
             <div className="ml-3 lg:ml-10">
               <Image
                 className="w-full"
-                src="/img/png/powercampercardtwo.png"
+                src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827299/Others/powercampercardtwo_zhuxqx.png"
                 alt="Logo"
                 width={230}
                 height={335}

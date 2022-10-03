@@ -1,5 +1,4 @@
-import React from "react";
-import { CompsiteIcon, NotificationIcon, ScanIcon } from "../common/Icons";
+import { CompsiteIcon, NotificationIcon, ScanIcon } from '../common/Icons'
 
 const AsEasy = () => {
   return (
@@ -44,7 +43,7 @@ const AsEasy = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default AsEasy;
+export default AsEasy

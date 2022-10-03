@@ -1,12 +1,11 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
 const Joincamper = () => {
   return (
     <>
       <div className="mb-[-2px] ">
         <Image
           className="w-full "
-          src="/img/png/joinPower/joinpoweWavetop.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828138/Others/joinpoweWavetop_nttyzq.png"
           alt="Logo"
           width={1920}
           height={81}
@@ -26,7 +25,7 @@ const Joincamper = () => {
       <div className="mt-[-2px] ">
         <Image
           className="w-full "
-          src="/img/png/joinPower/joinpoweWavebottom.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828138/Others/joinpoweWavebottom_dcpwjp.png"
           alt="Logo"
           width={1920}
           height={81}
@@ -34,7 +33,7 @@ const Joincamper = () => {
         />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Joincamper;
+export default Joincamper

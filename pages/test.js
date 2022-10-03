@@ -1,4 +1,4 @@
-import OverviewReservationForm from '@/components/campground/OverviewReservationForm'
+import Unlimited from '@/components/homepage/Unlimited'
 const data = {
   overview: '',
   name: 'test',
@@ -7,7 +7,7 @@ const data = {
 export default function TestPage() {
   return (
     <>
-      <OverviewReservationForm data={data} />
+      <Unlimited data={data} />
     </>
   )
 }

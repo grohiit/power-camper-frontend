@@ -1,6 +1,5 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 const PageNotFound = () => {
   return (
@@ -27,7 +26,7 @@ const PageNotFound = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default PageNotFound;
+export default PageNotFound

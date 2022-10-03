@@ -1,6 +1,3 @@
-import React from 'react'
-import DropDown from '../common/DropDown'
-import 'react-dropdown/style.css'
 import Image from 'next/image'
 import { Downarrow } from '../common/Icons'
 const Campsitesfound = () => {
@@ -12,16 +9,6 @@ const Campsitesfound = () => {
             <h2 className="font-Balsamiq text-xl sm:text-2xl px-[30px] sm:px-0 text-black font-bold">
               258 campsites found in the past week!
             </h2>
-            {/* <div className="w-[213px] lg:w-[246px] h-[47px] lg:h-[52px] mt-[34px]  mx-auto homepage_dropdown">
-              <DropDown
-                className="bg-[#3F503B]   rounded-md"
-                onChange={(e) => {
-                  console.log(e)
-                }}
-                placeholder="See How It Works!"
-                options={['One', 'Second', 'Three']}
-              />
-            </div> */}
             <a href="#about">
               <button
                 type="button"
@@ -38,7 +25,7 @@ const Campsitesfound = () => {
       <div className="mt-[-2px] ">
         <Image
           className="w-full "
-          src="/img/png/waves/campsitesfound_wave.png"
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664826507/Others/bottom_wave_lbpilw.png"
           alt="Logo"
           width={1920}
           height={81}

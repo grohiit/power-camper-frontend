@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 const Instantnotification = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const Instantnotification = () => {
         <div className=" flex items-center mb-[25px] md:mb-0 ">
           <Image
             className="w-full "
-            src="/img/png/Instantnotifcations.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664827928/Others/Instantnotifcations_ghkamd.png"
             alt="Logo"
             width={367}
             height={269}
@@ -28,7 +28,7 @@ const Instantnotification = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Instantnotification;
+export default Instantnotification

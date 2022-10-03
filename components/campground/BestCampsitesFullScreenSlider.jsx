@@ -103,7 +103,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                       objectFit="contain"
                       placeholder="blur"
                       rounded="xl"
-                      blurDataURL="/img/png/river/river.png"
+                      blurDataURL="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828677/Others/river_ffzk9j.png"
                     />
                   </div>
                 </div>
@@ -153,7 +153,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
                       objectFit="contain"
                       rounded="xl"
                       placeholder="blur"
-                      blurDataURL="/img/png/river/river.png"
+                      blurDataURL="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828677/Others/river_ffzk9j.png"
                     />
                   </div>
                 </div>

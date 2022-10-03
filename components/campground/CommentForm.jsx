@@ -1,38 +1,38 @@
-import Image from "next/image";
-import React, { useState } from "react";
-import "react-dropdown/style.css";
-import { starData } from "../common/Content";
-import DropDown from "../common/DropDown";
-import { StarIcon, UploadIcon } from "../common/Icons";
-import ReviewStars from "../common/ReviewStars";
-import CampaignReviews from "./CampaignReviews";
+import Image from 'next/image'
+import React, { useState } from 'react'
+import 'react-dropdown/style.css'
+import { starData } from '../common/Content'
+import DropDown from '../common/DropDown'
+import { StarIcon, UploadIcon } from '../common/Icons'
+import ReviewStars from '../common/ReviewStars'
+import CampaignReviews from './CampaignReviews'
 
 const CommentForm = ({ reviewdata }) => {
   const initialValues = {
-    name: "",
-    email: "",
-    review: "",
-  };
-  const [formValue, setFormValue] = useState(initialValues);
+    name: '',
+    email: '',
+    review: '',
+  }
+  const [formValue, setFormValue] = useState(initialValues)
   const submitHandler = (e) => {
-    e.preventDefault();
-    setFormValue(formValue);
-  };
-  const [indexvaluefirst, SetIndexValuefirst] = useState(null);
+    e.preventDefault()
+    setFormValue(formValue)
+  }
+  const [indexvaluefirst, SetIndexValuefirst] = useState(null)
   const stars = [
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-    { starValue: <StarIcon />, starActive: "star_active" },
-  ];
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+    { starValue: <StarIcon />, starActive: 'star_active' },
+  ]
   return (
     <>
       <section className="bg-[#3D4F3B] relative bg-fixed mt-16 lg:mt-20 xl:mt-28 form-section">
         <div className="topWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/top_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_top_wave_l0g3cj.png"
             alt="topWaveImg"
             width={1920}
             height={85}
@@ -68,13 +68,13 @@ const CommentForm = ({ reviewdata }) => {
                     <div className="    max-w-[222px] w-[222px]  ">
                       <DropDown
                         placeholder="Traveler Type"
-                        options={["One", "Second", "Three"]}
+                        options={['One', 'Second', 'Three']}
                       />
                     </div>
                     <div className="  mt-4 md:mt-0  md:ml-3 max-w-[222px] w-[222px] ">
                       <DropDown
                         placeholder="Traveler Frequency"
-                        options={["One", "Second", "Three"]}
+                        options={['One', 'Second', 'Three']}
                       />
                     </div>
                   </div>
@@ -86,7 +86,7 @@ const CommentForm = ({ reviewdata }) => {
                   <div className="   max-w-[222px]   w-[222px]">
                     <DropDown
                       placeholder="Newest-default"
-                      options={["One", "Second", "Three"]}
+                      options={['One', 'Second', 'Three']}
                     />
                   </div>
                 </div>
@@ -136,15 +136,15 @@ const CommentForm = ({ reviewdata }) => {
                         onClick={() => SetIndexValuefirst(index)}
                         className={
                           indexvaluefirst === null
-                            ? "mr-1"
+                            ? 'mr-1'
                             : indexvaluefirst >= index
-                            ? "star_active mr-1"
-                            : " mr-1"
+                            ? 'star_active mr-1'
+                            : ' mr-1'
                         }
                       >
                         {val.imageUrl}
                       </span>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -234,7 +234,7 @@ const CommentForm = ({ reviewdata }) => {
         <div className="bottomWaveImg">
           <Image
             className="w-full "
-            src="/img/png/rivermap/bottom_wave.png"
+            src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_bottom_wave_vhh2lb.png"
             alt="bottomWaveImg"
             width={1920}
             height={85}
@@ -243,7 +243,7 @@ const CommentForm = ({ reviewdata }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default CommentForm;
+export default CommentForm
