@@ -8,14 +8,8 @@ export default function TestPage() {
           The Best Backpacks for College and High School Students
         </h1>
         <div className="text-base mx-2 ">
-          {`By `}
-          <a
-            href="https://www.nytimes.com/wirecutter/authors/zoe-vanderweide/"
-            className="underline text-black font-bold"
-          >
-            Zoe Vanderweide
-          </a>
-          <div className="text-sm font-light text-slate-500">
+          By {`Zoe Vanderweide`}
+          <div className="text-sm text-gray-500 ">
             Updated September 12, 2022
           </div>
         </div>
@@ -29,7 +23,7 @@ export default function TestPage() {
             height="512"
           ></Image>
         </div>
-        <div className="m-2">
+        <div className="mx-2 mb-10">
           <p className="">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
             aspernatur quos eveniet veniam doloremque reprehenderit sequi nihil
@@ -46,7 +40,7 @@ export default function TestPage() {
           </p>
         </div>
         <div className="border-t-2 border-black mx-2">
-          <h2 className="mt-2 ">About your guide</h2>
+          <h2 className="mt-2 ">About the Author</h2>
           <div className="flex items-center space-x-3 mb-2">
             <Image
               loading="lazy"
@@ -58,26 +52,6 @@ export default function TestPage() {
             />
             <div className="font-bold">
               <p>Zoe Vanderweide</p>
-              <a
-                href="mailto:notes@wirecutter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  width="16px"
-                  height="15px"
-                  viewBox="0 0 20 15"
-                  version="1.1"
-                >
-                  <path
-                    data-testid="email-fill-area"
-                    fill="#979797"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M18.523,3.316 L18.535,3.327 L10.679,9.761 C10.482,9.921 10.239,10.002 10,10.002 C9.76,10.002 9.517,9.921 9.32,9.761 L1.464,3.327 L1.476,3.316 C1.453,3.3 1.445,3.277 1.427,3.259 L1.427,1.784 L2.963,1.784 L10,7.545 L17.037,1.784 L18.572,1.784 L18.572,3.259 C18.554,3.277 18.546,3.3 18.523,3.316 L18.523,3.316 Z M0,15 L20,15 L20,0 L0,0 L0,15 Z"
-                  ></path>
-                </svg>
-              </a>
             </div>
           </div>
           <div>
