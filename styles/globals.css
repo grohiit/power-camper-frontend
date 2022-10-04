@@ -1104,11 +1104,11 @@ span image {
 }
 
 h1 {
-  @apply font-Bubblegum text-lg md:text-2xl lg:text-3xl xl:text-4xl text-center mt-4 mb-4 capitalize;
+  @apply font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center mt-4 mb-4 capitalize;
 }
 
 h2 {
-  @apply font-Bubblegum text-lg lg:text-2xl xl:text-3xl mt-10 lg:mb-5 w-full;
+  @apply font-Bubblegum text-xl lg:text-2xl xl:text-3xl mt-10 lg:mb-5 w-full;
 }
 
 h3 {
@@ -1132,5 +1132,5 @@ li {
 }
 
 p {
-  @apply text-lg text-justify mb-3;
+  @apply text-base lg:text-lg text-justify mb-3;
 }
