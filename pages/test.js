@@ -4,9 +4,21 @@ export default function TestPage() {
   return (
     <>
       <div className="max-w-5xl m-20 mx-auto">
-        <h1 className="text-4xl">
+        <h1 className="text-4xl ">
           The Best Backpacks for College and High School Students
         </h1>
+        <div className="text-base mx-2 ">
+          {`By `}
+          <a
+            href="https://www.nytimes.com/wirecutter/authors/zoe-vanderweide/"
+            className="underline text-black font-bold"
+          >
+            Zoe Vanderweide
+          </a>
+          <div className="text-sm font-light text-slate-500">
+            Updated September 12, 2022
+          </div>
+        </div>
 
         <div className="my-2">
           <Image
@@ -18,7 +30,7 @@ export default function TestPage() {
           ></Image>
         </div>
         <div className="m-2">
-          <p>
+          <p className="">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
             aspernatur quos eveniet veniam doloremque reprehenderit sequi nihil
             natus! Dolorum laboriosam, sunt placeat iste sint, illum recusandae
@@ -34,8 +46,8 @@ export default function TestPage() {
           </p>
         </div>
         <div className="border-t-2 border-black mx-2">
-          <h2 className="mt-2 mb-10">About your guide</h2>
-          <div className="flex items-center space-x-3 my-5">
+          <h2 className="mt-2 ">About your guide</h2>
+          <div className="flex items-center space-x-3 mb-2">
             <Image
               loading="lazy"
               alt="Zoe Vanderweide"
@@ -44,7 +56,7 @@ export default function TestPage() {
               height="150"
               className="rounded-full"
             />
-            <div>
+            <div className="font-bold">
               <p>Zoe Vanderweide</p>
               <a
                 href="mailto:notes@wirecutter.com"

@@ -5,7 +5,6 @@ import { marked } from 'marked'
 import Layout from '@/components/Layout'
 
 export default function PostsPage({ frontmatter, content }) {
-  console.log(marked(content))
   return (
     <Layout title={frontmatter.title} description={frontmatter.description}>
       <div
@@ -15,6 +14,23 @@ export default function PostsPage({ frontmatter, content }) {
     </Layout>
   )
 }
+
+// export async function getServerSideProps({ params: { slug } }) {
+//   const markdownWithMeta = fs.readFileSync(
+//     path.join('mdfiles', slug + '.md'),
+//     'utf-8'
+//   )
+
+//   const { data: frontmatter, content } = matter(markdownWithMeta)
+
+//   return {
+//     props: {
+//       frontmatter,
+//       content,
+//       slug,
+//     },
+//   }
+// }
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('mdfiles'))
@@ -46,20 +62,3 @@ export async function getStaticProps({ params: { slug } }) {
     },
   }
 }
-
-// export async function getServerSideProps({ params: { slug } }) {
-//   const markdownWithMeta = fs.readFileSync(
-//     path.join('mdfiles', slug + '.md'),
-//     'utf-8'
-//   )
-
-//   const { data: frontmatter, content } = matter(markdownWithMeta)
-
-//   return {
-//     props: {
-//       frontmatter,
-//       content,
-//       slug,
-//     },
-//   }
-// }

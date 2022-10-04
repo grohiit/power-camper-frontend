@@ -24,8 +24,6 @@ body {
   box-sizing: border-box;
   list-style-type: none;
   scroll-behavior: smooth !important;
-
-  text-decoration: none !important;
   transition: all 250ms ease-in-out;
 }
 
@@ -242,10 +240,6 @@ body {
   filter: drop-shadow(0px 4px 16px rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(37px);
 }
-
-/* .bg_cta {
-  background-color: rgba(117, 76, 41, 0.8);
-} */
 
 .bg_green_linear {
   background: #4e5f4c;
