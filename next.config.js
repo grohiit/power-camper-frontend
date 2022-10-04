@@ -10,10 +10,10 @@ const nextConfig = {
       'cdn.thewirecutter.com',
     ],
   },
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false }
-    return config
-  },
+  // webpack: (config) => {
+  //   config.resolve.fallback = { fs: false }
+  //   return config
+  // },
   async redirects() {
     return [
       {
