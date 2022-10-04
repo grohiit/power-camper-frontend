@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions About Power Camper
-slug: faqs
+slug: faq
 published date: 9/7/2022
 description: All of your questions about Power Camper answered!
 ---
@@ -21,7 +21,7 @@ We have a walkthrough guide on setting up a scan here - https://www.powercamper.
 
 ## Why does the site have a monthly subscription? I don't camp every month!
 
-We have to keep the total number of people receiving these instant notifications low, so that you have a chance to get in there and reserve the site. If we sent an alert to 1000 people everytime a weekend reservation popped up, there would be 1 happy subscriber and 999 unhappy ones. That is not a sustainable business model. 
+We have to keep the total number of people receiving these instant notifications low, so that you have a chance to get in there and reserve the site. If we sent an alert to 1000 people everytime a weekend reservation popped up, there would be 1 happy subscriber and 999 unhappy ones. That is not a sustainable business model.
 
 ## Can I cancel my subscription for months that I do not plan to camp?
 

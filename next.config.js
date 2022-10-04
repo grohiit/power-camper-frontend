@@ -4,7 +4,11 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     // loader: "custom",
-    domains: ['images.unsplash.com', 'res.cloudinary.com'],
+    domains: [
+      'images.unsplash.com',
+      'res.cloudinary.com',
+      'cdn.thewirecutter.com',
+    ],
   },
   webpack: (config) => {
     config.resolve.fallback = { fs: false }
