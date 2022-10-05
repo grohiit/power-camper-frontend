@@ -18,7 +18,9 @@ export default function Layout({
           {`"@context": "https://schema.org",
           "@type": "Article",
           "headline": ${title || 'Power Camper'},
-          "description": ${description ||  || 'Get notifed of campground availabilities instantly!'}
+          "description": ${
+            description || 'Get notifed of campground availabilities instantly!'
+          }
           "datePublished": ${datePublished || ''},
           "dateModified": ${dateModified || ''},`}
         </Script>

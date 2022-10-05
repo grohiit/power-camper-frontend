@@ -50,7 +50,7 @@ const CampaignReviews = ({ reviewdata }) => {
                   </div>
 
                   <div
-                    className="font-Cabin text-sm   lg:text-sm lg:text-base font-normal text-white opacity-70"
+                    className="font-Cabin text-sm lg:text-base font-normal text-white opacity-70"
                     dangerouslySetInnerHTML={{
                       __html: marked(val.review),
                     }}
