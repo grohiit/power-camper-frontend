@@ -27,7 +27,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <Link href="/about-us">
+              <Link href="/about-us" passHref>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -42,7 +42,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <Link href="/contact">
+              <Link href="/contact" passHref>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -90,7 +90,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-2 py-[13px] sm:px-6 lg:px-8">
           <div className="flex-1 flex items-center justify-between sm:items-center  ">
             <div className="  flex items-center  ">
-              <Link href="/">
+              <Link href="/" passHref>
                 <span className="cursor-pointer flex justify-center items-center">
                   <Image
                     className="w-full "
@@ -108,12 +108,12 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex justify-center items-center">
               <div className="   w-full hidden sm:flex justify-center">
-                <Link href="/about-us">
+                <Link href="/about-us" passHref>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href="/contact">
+                <Link href="/contact" passHref>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
@@ -121,7 +121,7 @@ const Navbar = () => {
               </div>
 
               <div className="   hidden sm:flex items-center justify-end w-full   sm:static sm:inset-auto  ">
-                <Link href="https://app.powercamper.com/login">
+                <Link href="https://app.powercamper.com/login" passHref>
                   <button
                     type="button"
                     className="bg-[#3F503B] hover:bg-[transparent] py-[5px] px-[15px] lg:px-[23px] border-2 rounded-md	hover:border-2 hover:border-[#3F503B]  hover:text-[#3F503B] text-[#ffffff] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
@@ -129,7 +129,10 @@ const Navbar = () => {
                     Login
                   </button>
                 </Link>
-                <Link href="https://app.powercamper.com/request?clear=1">
+                <Link
+                  href="https://app.powercamper.com/request?clear=1"
+                  passHref
+                >
                   <button
                     type="button"
                     className="bg-[#754C29] py-[5px] px-[15px] lg:px-[23px] hover:bg-[transparent] border-2 rounded-md	hover:border-2 hover:border-[#754C29] text-[#ffffff] hover:text-[#754C29] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"

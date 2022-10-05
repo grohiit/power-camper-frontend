@@ -21,7 +21,7 @@ const NearbyCampgroundListItem = ({ obj }) => {
   ]
   return (
     <>
-      <Link href={`/campground/${slug}`}>
+      <Link href={`/campground/${slug}`} passHref>
         <a>
           <div className="flex justify-between  items-center ">
             <div className="mb-6  ">

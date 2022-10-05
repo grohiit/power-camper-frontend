@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="container mx-auto my-12">
           <div className="lg:flex justify-between flex-wrap">
             <div className="lg:w-[200px] mb-10 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
-              <Link href="/">
+              <Link href="/" passHref>
                 <Image
                   className="w-full mb-5 cursor-pointer"
                   src="/img/svg/logo.svg"
