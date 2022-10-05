@@ -2,11 +2,26 @@ import Head from 'next/head'
 import Navbar from './common/Navbar'
 import Footer from './common/Footer'
 import BackToTop from './common/BackToTop'
+import Script from 'next/script'
 
-export default function Layout({ children, title, description }) {
+export default function Layout({
+  children,
+  title,
+  description,
+  datePublished,
+  dateModified,
+}) {
   return (
     <>
       <Head>
+        <Script type="application/ld+json">
+          {`"@context": "https://schema.org",
+          "@type": "Article",
+          "headline": ${title || 'Power Camper'},
+          "description": ${description ||  || 'Get notifed of campground availabilities instantly!'}
+          "datePublished": ${datePublished || ''},
+          "dateModified": ${dateModified || ''},`}
+        </Script>
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
