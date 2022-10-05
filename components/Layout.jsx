@@ -14,7 +14,7 @@ export default function Layout({
   return (
     <>
       <Head>
-        <Script type="application/ld+json">
+        <script type="application/ld+json">
           {`"@context": "https://schema.org",
           "@type": "Article",
           "headline": ${title || 'Power Camper'},
@@ -23,7 +23,7 @@ export default function Layout({
           }
           "datePublished": ${datePublished || ''},
           "dateModified": ${dateModified || ''},`}
-        </Script>
+        </script>
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
