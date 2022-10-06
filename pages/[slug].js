@@ -1,7 +1,4 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { marked } from 'marked'
+import PageNotFound from '@/components/common/PageNotFound'
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
 
