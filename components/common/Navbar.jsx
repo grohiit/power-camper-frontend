@@ -14,7 +14,7 @@ const Navbar = () => {
     } else {
       document.body.classList.remove('overflow-y-hidden')
     }
-  }, [navOverlay, []])
+  }, [navOverlay])
 
   return (
     <>

@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Navbar from './common/Navbar'
 import Footer from './common/Footer'
 import BackToTop from './common/BackToTop'
-import Script from 'next/script'
 
 export default function Layout({
   children,
@@ -14,7 +13,7 @@ export default function Layout({
   return (
     <>
       <Head>
-        <script type="application/ld+json">
+        <script type="application/ld+json" id="structured-data">
           {`"@context": "https://schema.org",
           "@type": "Article",
           "headline": ${title || 'Power Camper'},

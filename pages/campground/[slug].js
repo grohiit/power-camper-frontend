@@ -18,7 +18,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Aos from 'aos'
 import { useEffect } from 'react'
 
-import { API_URL } from '@/config/index'
+import { API_CAMPGROUND_URL as API_URL } from '@/config/index'
 import PageNotFound from '../../components/common/PageNotFound'
 import Layout from '@/components/Layout'
 
