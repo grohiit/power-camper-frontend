@@ -2,8 +2,8 @@ import PageNotFound from '@/components/common/PageNotFound'
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
 
-export default function PostsPage({ content }) {
-  if (!content.success) return <PageNotFound />
+export default function PostsPage({ content, slug }) {
+  if (!content?.success || slug.includes('+')) return <PageNotFound />
 
   return (
     <Layout>
@@ -24,6 +24,7 @@ export async function getServerSideProps({ params: { slug } }) {
   return {
     props: {
       content,
+      slug,
     },
   }
 }

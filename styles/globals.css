@@ -271,7 +271,6 @@ body {
 }
 
 .faqBg {
-  /* background-image: url('/img/png/faq/faq_bg.png'); */
   background-image: url('https://res.cloudinary.com/dqdzorc8z/image/upload/v1665157445/Others/faq_bg_larxof.png');
   background-position: center;
   background-size: cover;
@@ -642,12 +641,12 @@ span image {
   font-size: 30px;
 }
 
-.page_not_found {
+/* .page_not_found {
   background-image: url('/img/png/pageNotFound/bottom_wave.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 100px;
-}
+} */
 
 .footer-links-hover a li:hover {
   color: rgba(255, 255, 255, 0.6) !important;
