@@ -271,7 +271,8 @@ body {
 }
 
 .faqBg {
-  background-image: url('/img/png/faq/faq_bg.png');
+  /* background-image: url('/img/png/faq/faq_bg.png'); */
+  background-image: url('https://res.cloudinary.com/dqdzorc8z/image/upload/v1665157445/Others/faq_bg_larxof.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

@@ -15,7 +15,7 @@ const Faq = ({ faqdata }) => {
 
   return (
     <>
-      <section className="faqBg relative" id="FAQs">
+      <section className="faqBg relative pt-1" id="FAQs">
         <div className="absolute bottom-full right-0 hidden md:inline-block">
           <Image
             className="mb-12"
@@ -25,7 +25,7 @@ const Faq = ({ faqdata }) => {
             height={270}
           />
         </div>
-        <div className="absolute top-[-63px]  left-0 hidden md:inline-block">
+        <div className="absolute top-[-63px] left-0 hidden md:inline-block">
           <Image
             className=" "
             src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/white_left_side_gps3jp.png"
@@ -34,7 +34,7 @@ const Faq = ({ faqdata }) => {
             height={270}
           />
         </div>
-        <div className="topWaveImg">
+        {/* <div className="topWaveImg">
           <Image
             className="w-full "
             src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664829160/Others/rivermap_bottom_wave_vhh2lb.png"
@@ -43,7 +43,7 @@ const Faq = ({ faqdata }) => {
             height={85}
             layout="responsive"
           />
-        </div>
+        </div> */}
         <div className="container   mx-auto my-16 lg:my-24">
           <div>
             <h4 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center text-white mb-6 lg:mb-12   ">
