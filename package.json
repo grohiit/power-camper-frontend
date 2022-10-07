@@ -9,24 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-pdf-viewer/default-layout": "^3.6.0",
     "aos": "^2.3.4",
     "dotenv": "^16.0.3",
     "framer-motion": "^6.4.1",
-    "gray-matter": "^4.0.3",
     "marked": "^4.1.1",
     "next": "12.2.0",
     "node-fetch": "^3.2.7",
-    "pdf-viewer-reactjs": "^2.2.3",
     "react": "^17.0.2",
     "react-datepicker": "^4.8.0",
-    "react-dom": "^17.0.2",
     "react-dropdown": "^1.10.0",
-    "react-markdown": "^8.0.3",
-    "react-pdf": "^5.7.2",
     "react-slick": "^0.29.0",
     "react-slider": "^2.0.1",
-    "remark-gfm": "^3.0.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
