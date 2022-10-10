@@ -1,16 +1,36 @@
 import PageNotFound from '@/components/common/PageNotFound'
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
+import TitleAuthor from '@/components/camping roundups/TitleAuthor'
+import FeaturedImage from '@/components/camping roundups/FeaturedImage'
+import AuthorBio from '@/components/camping roundups/AuthorBio'
+import MainContent from '@/components/camping roundups/MainContent'
 
-export default function PostsPage({ content, slug }) {
-  if (!content?.success || slug.includes('+')) return <PageNotFound />
+export default function PostsPage({ response, slug }) {
+  if (!response?.success || slug.includes('+')) return <PageNotFound />
+  const {
+    author,
+    authorBio,
+    authorImage,
+    title,
+    content,
+    updatedDate,
+    featuredImage,
+  } = response.data
 
   return (
     <Layout>
-      <div
-        dangerouslySetInnerHTML={{ __html: content.data.content }}
-        className="m-auto p-10 w-fit lg:w-2/4 border-2 bg-slate-50"
-      ></div>
+      <div className="max-w-5xl m-20 mx-auto">
+        <TitleAuthor title={title} author={author} updatedDate={updatedDate} />
+
+        <FeaturedImage imageUrl={featuredImage} />
+        <MainContent content={content} />
+        <AuthorBio
+          author={author}
+          authorBio={authorBio}
+          authorImage={authorImage}
+        />
+      </div>
     </Layout>
   )
 }
@@ -20,13 +40,13 @@ export async function getServerSideProps({ params }) {
 
   const API_URL = `${API_CONTENT_URL}/${databaseSlug}`
 
-  console.log(API_URL)
+  // console.log(API_URL)
   const res = await fetch(API_URL)
-  const content = await res.json()
+  const response = await res.json()
 
   return {
     props: {
-      content,
+      response,
       slug: params.slug,
     },
   }
