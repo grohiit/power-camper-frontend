@@ -641,13 +641,6 @@ span image {
   font-size: 30px;
 }
 
-/* .page_not_found {
-  background-image: url('/img/png/pageNotFound/bottom_wave.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 100% 100px;
-} */
-
 .footer-links-hover a li:hover {
   color: rgba(255, 255, 255, 0.6) !important;
 }
@@ -804,12 +797,6 @@ span image {
   .amenities_icon svg {
     width: 75% !important;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .page_not_found {
-    background-size: auto !important;
   }
 }
 

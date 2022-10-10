@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function ({ imageUrl }) {
+export default function FeaturedImage({ imageUrl }) {
   return (
     <>
       <div className="my-2">
