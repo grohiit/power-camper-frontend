@@ -27,7 +27,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <a href="/about-us" passHref>
+              <Link href="/about-us" replace>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -35,14 +35,14 @@ const Navbar = () => {
                 >
                   About
                 </a>
-              </a>
+              </Link>
             </li>
             <li
               className="py-3 list-none"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <a href="/contact" passHref>
+              <Link href="/contact" replace>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 >
                   Contact
                 </a>
-              </a>
+              </Link>
             </li>
             <li
               className="py-3 list-none"
@@ -108,16 +108,16 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex justify-center items-center">
               <div className="   w-full hidden sm:flex justify-center">
-                <a href="/about-us" passHref>
+                <Link href="/about-us" replace>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
-                </a>
-                <a href="/contact" passHref>
+                </Link>
+                <Link href="/contact" replace>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
-                </a>
+                </Link>
               </div>
 
               <div className="   hidden sm:flex items-center justify-end w-full   sm:static sm:inset-auto  ">
