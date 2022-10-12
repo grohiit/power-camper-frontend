@@ -19,11 +19,11 @@ export default function PostsPage({ response, slug }) {
   } = response.data
 
   return (
-    <Layout>
+    <Layout title={title} dateModified={updatedDate}>
       <div className="max-w-5xl m-20 mx-auto">
         <TitleAuthor title={title} author={author} updatedDate={updatedDate} />
 
-        <FeaturedImage imageUrl={featuredImage} />
+        <FeaturedImage featuredImage={featuredImage} title={title} />
         <MainContent content={content} />
         <AuthorBio
           author={author}

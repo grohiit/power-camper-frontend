@@ -12,6 +12,7 @@ export default function AuthorBio({ author, authorBio, authorImage }) {
             width="150"
             height="150"
             className="rounded-full"
+            objectFit="contain"
           />
           <div className="font-bold">
             <p>{author}</p>

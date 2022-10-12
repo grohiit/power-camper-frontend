@@ -1,13 +1,13 @@
 import Image from 'next/image'
 
-export default function FeaturedImage({ imageUrl }) {
+export default function FeaturedImage({ featuredImage, title }) {
   return (
     <>
       <div className="my-2">
         <Image
-          alt="The Best Backpacks for College and High School Students"
+          alt={title}
           role="presentation"
-          src={imageUrl}
+          src={featuredImage}
           width="1024"
           height="512"
           objectFit="contain"

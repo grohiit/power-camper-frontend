@@ -18,7 +18,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Aos from 'aos'
 import { useEffect } from 'react'
 
-import { API_CAMPGROUND_URL as API_URL } from '@/config/index'
+import { API_CAMPGROUND_URL } from '@/config/index'
 import PageNotFound from '../../components/common/PageNotFound'
 import Layout from '@/components/Layout'
 
@@ -26,16 +26,16 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
   useEffect(() => {
     Aos.init()
   }, [])
+  if (!pagedata?.success) return <PageNotFound />
 
   const campgroundpageData = pagedata && pagedata.data ? pagedata.data : {}
-  const campgroundreviewData =
-    reviewdata && reviewdata.data ? reviewdata.data : {}
-  const datanearby =
-    nearbycampgroundData && nearbycampgroundData.data
-      ? nearbycampgroundData.data
-      : {}
-  if (!pagedata.success) return <PageNotFound />
-  const name = campgroundpageData.name
+  // const campgroundreviewData =
+  //   reviewdata && reviewdata.data ? reviewdata.data : {}
+  // const datanearby =
+  //   nearbycampgroundData && nearbycampgroundData.data
+  //     ? nearbycampgroundData.data
+  //     : {}
+
   return (
     <>
       <Layout
@@ -49,7 +49,7 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         <AmenitiesActivities campgroundpageData={campgroundpageData} />
         <CampgroundMap
           campgroundMap={campgroundpageData.campgroundMap}
-          name={name}
+          name={campgroundpageData.name}
         />
         <Direction
           directions={campgroundpageData.directions}
@@ -66,31 +66,24 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
 }
 
 export async function getServerSideProps({ params }) {
-  let pagedata
-  let reviewdata
-  let nearbycampgroundData
-  if (params) {
-    //   API CALL FOR PAGE DATA
-    const PAGE_URL = `${API_URL}/${params.slug}`
+  //   API CALL FOR PAGE DATA
+  const PAGE_URL = `${API_CAMPGROUND_URL}/${params.slug}`
+  const res = await fetch(PAGE_URL)
+  const pagedata = await res.json()
 
-    const res = await fetch(PAGE_URL)
-    pagedata = await res.json()
+  // API CALL FOR REVIEW DATA
+  // const REVIEW_API_URL = `${API_URL}/reviews/${params.slug}`
+  // const resrview = await fetch(REVIEW_API_URL)
+  // const reviewdata = await resrview.json()
 
-    // API CALL FOR REVIEW DATA
-    const REVIEW_API_URL = `${API_URL}/reviews/${params.slug}`
-    const resrview = await fetch(REVIEW_API_URL)
-    reviewdata = await resrview.json()
+  // API CALL FOR NEARBY CAMPGROUNDS DATA
+  // const NEARBYCAMPGROUND_API_URL = `${API_URL}/nearby/${params.slug}`
+  // const nearbycampground = await fetch(NEARBYCAMPGROUND_API_URL)
+  // const nearbycampgroundData = await nearbycampground.json()
 
-    // API CALL FOR NEARBY CAMPGROUNDS DATA
-    const NEARBYCAMPGROUND_API_URL = `${API_URL}/nearby/${params.slug}`
-    const nearbycampground = await fetch(NEARBYCAMPGROUND_API_URL)
-    nearbycampgroundData = await nearbycampground.json()
-  }
   return {
     props: {
       pagedata,
-      reviewdata,
-      nearbycampgroundData,
     },
   }
 }
