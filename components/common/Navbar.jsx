@@ -27,7 +27,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <Link href="/about-us" replace>
+              <Link href="/about-us">
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -42,7 +42,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <Link href="/contact" replace>
+              <Link href="/contact">
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -108,12 +108,17 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex justify-center items-center">
               <div className="   w-full hidden sm:flex justify-center">
-                <Link href="/about-us" replace>
+                <Link href="/test">
+                  <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
+                    Test
+                  </a>
+                </Link>
+                <Link href="/about-us">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href="/contact" replace>
+                <Link href="/contact">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>

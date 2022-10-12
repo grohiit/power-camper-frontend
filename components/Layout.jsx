@@ -44,7 +44,7 @@ export default function Layout({
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://power-camper2.vercel.app/" />
         <meta property="og:title" content="Power Camper" />
-        <meta
+        {/* <meta
           property="og:description"
           content="Get notifed of campground availabilities instantly!"
         />
@@ -86,7 +86,7 @@ export default function Layout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" /> */}
       </Head>
       <Navbar />
       <main>{children}</main>
