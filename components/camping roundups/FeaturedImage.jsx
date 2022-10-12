@@ -11,6 +11,7 @@ export default function FeaturedImage({ featuredImage, title }) {
           width="1024"
           height="512"
           objectFit="contain"
+          priority
         ></Image>
       </div>
     </>

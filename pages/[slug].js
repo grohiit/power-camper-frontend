@@ -18,7 +18,38 @@ export default function PostsPage({ response, slug }) {
   )
 }
 
-export async function getServerSideProps({ params: { slug } }) {
+// export async function getServerSideProps({ params: { slug } }) {
+//   const API_URL = `${API_CONTENT_URL}/${slug}`
+
+//   const res = await fetch(API_URL)
+//   const response = await res.json()
+
+//   return {
+//     props: {
+//       response,
+//       slug,
+//     },
+//   }
+// }
+
+export async function getStaticPaths() {
+  const API_URL = `${API_CONTENT_URL}`
+  const res = await fetch(API_URL)
+  const response = await res.json()
+
+  const paths = response.data.map((article) => ({
+    params: {
+      slug: article.slug,
+    },
+  }))
+
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params: { slug } }) {
   const API_URL = `${API_CONTENT_URL}/${slug}`
 
   const res = await fetch(API_URL)
@@ -31,34 +62,3 @@ export async function getServerSideProps({ params: { slug } }) {
     },
   }
 }
-
-// export async function getStaticPaths() {
-//   const files = fs.readdirSync(path.join('mdfiles'))
-
-//   const paths = files.map((filename) => ({
-//     params: {
-//       slug: filename.replace('.md', ''),
-//     },
-//   }))
-
-//   return {
-//     paths,
-//     fallback: false,
-//   }
-// }
-
-// export async function getStaticProps({ params: { slug } }) {
-//   const markdownWithMeta = fs.readFileSync(
-//     path.join('mdfiles', slug + '.md'),
-//     'utf-8'
-//   )
-
-//   const { data: frontmatter, content } = matter(markdownWithMeta)
-//   return {
-//     props: {
-//       frontmatter,
-//       content,
-//       slug,
-//     },
-//   }
-// }
