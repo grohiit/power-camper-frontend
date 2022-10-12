@@ -6,9 +6,7 @@ export default function TestPage() {
   `
   return (
     <>
-      <Layout>
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
-      </Layout>
+      <div dangerouslySetInnerHTML={{ __html: content }}></div>
     </>
   )
 }
