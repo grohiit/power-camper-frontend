@@ -10,6 +10,7 @@ export default function FeaturedImage({ imageUrl }) {
           src={imageUrl}
           width="1024"
           height="512"
+          objectFit="contain"
         ></Image>
       </div>
     </>

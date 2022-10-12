@@ -1,6 +1,7 @@
 import PageNotFound from '@/components/common/PageNotFound'
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
+import Image from 'next/image'
 
 export default function PostsPage({ response, slug }) {
   if (!response?.success || slug.includes('+')) return <PageNotFound />

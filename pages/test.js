@@ -1,7 +1,3 @@
-import AuthorBio from '@/components/camping roundups/AuthorBio'
-import FeaturedImage from '@/components/camping roundups/FeaturedImage'
-import MainContent from '@/components/camping roundups/MainContent'
-import TitleAuthor from '@/components/camping roundups/TitleAuthor'
 import Image from 'next/image'
 
 export default function TestPage() {
@@ -26,21 +22,31 @@ export default function TestPage() {
 </p>`
   return (
     <>
-      <div className="max-w-5xl m-20 mx-auto">
-        <TitleAuthor
-          title="The Best Backpacks for College and High School Students"
-          author="Zoe Vanderweide"
-          updatedDate="September 12, 2022"
+      <p>
+        Below are step by step instructions on how to set up a new scan on Power
+        Camper.
+      </p>
+      <p>
+        <Image
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1665518980/articleImages/Image%202_1918a2f5-9024-41a3-8c2a-d388e603158d.png"
+          width={512}
+          height={140}
         />
-
-        <FeaturedImage imageUrl="https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px-2x1-0006.jpg" />
-        <MainContent content={content} />
-        <AuthorBio
-          author="Zoe Vanderweide"
-          authorBio={authorBio}
-          authorImage="https://cdn.thewirecutter.com/wp-content/media/2022/06/zoe-vanderweide.jpg"
+      </p>
+      <h3>
+        <strong>(Optional Step)</strong>
+      </h3>
+      <p>
+        If you’d like to look for the same dates at multiple campgrounds, follow
+        these instructions:
+      </p>
+      <p>
+        <Image
+          src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1665518980/articleImages/Image%201_28640c5e-b2f4-41cb-9fd8-2fefc4b7d9cd.png"
+          width={512}
+          height={354}
         />
-      </div>
+      </p>
     </>
   )
 }
