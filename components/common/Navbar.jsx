@@ -24,8 +24,6 @@ const Navbar = () => {
   const contactPage = `${domain}/contact`
   // console.log({ domain, aboutPage, contactPage })
 
-  domain = 'https://codetocashflow.com'
-
   return (
     <>
       {/* This is Nav for mobile */}
