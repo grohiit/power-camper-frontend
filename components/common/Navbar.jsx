@@ -15,7 +15,14 @@ const Navbar = () => {
       document.body.classList.remove('overflow-y-hidden')
     }
   }, [navOverlay])
-  const domain = 'https://codetocashflow.com'
+  // let domain = 'https://codetocashflow.com'
+  // console.log({ domain })
+  const domain = process.env.DOMAIN
+
+  // const newdomain = domain.toLowerCase()
+  const aboutPage = `${domain}/about-us`
+  const contactPage = `${domain}/contact`
+  console.log({ domain, aboutPage, contactPage })
   return (
     <>
       {/* This is Nav for mobile */}
@@ -27,7 +34,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <Link href={`${domain}/about-us`}>
+              <Link href={aboutPage}>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -42,7 +49,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <Link href={`${domain}/contact`}>
+              <Link href={contactPage}>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -113,12 +120,12 @@ const Navbar = () => {
                     Test
                   </a>
                 </Link> */}
-                <Link href={`${domain}/about-us`}>
+                <Link href={aboutPage}>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href={`${domain}/contact`}>
+                <Link href={contactPage}>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
@@ -126,7 +133,7 @@ const Navbar = () => {
               </div>
 
               <div className="   hidden sm:flex items-center justify-end w-full   sm:static sm:inset-auto  ">
-                <Link href="https://app.powercamper.com/login" passHref>
+                <Link href="https://app.powercamper.com/login">
                   <button
                     type="button"
                     className="bg-[#3F503B] hover:bg-[transparent] py-[5px] px-[15px] lg:px-[23px] border-2 rounded-md	hover:border-2 hover:border-[#3F503B]  hover:text-[#3F503B] text-[#ffffff] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
@@ -134,10 +141,7 @@ const Navbar = () => {
                     Login
                   </button>
                 </Link>
-                <Link
-                  href="https://app.powercamper.com/request?clear=1"
-                  passHref
-                >
+                <Link href="https://app.powercamper.com/request?clear=1">
                   <button
                     type="button"
                     className="bg-[#754C29] py-[5px] px-[15px] lg:px-[23px] hover:bg-[transparent] border-2 rounded-md	hover:border-2 hover:border-[#754C29] text-[#ffffff] hover:text-[#754C29] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
