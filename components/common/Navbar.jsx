@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { HeaderCrossIcons2, ToggleIcon2 } from './Icons'
 import Image from 'next/image'
 import 'react-dropdown/style.css'
-
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -18,6 +17,7 @@ const Navbar = () => {
   let domain = 'https://codetocashflow.com'
   // console.log({ domain })
   // domain = process.env.DOMAIN
+  domain = process.env.NEXT_PUBLIC_DOMAIN
 
   // const newdomain = domain.toLowerCase()
   const aboutPage = `${domain}/about-us`

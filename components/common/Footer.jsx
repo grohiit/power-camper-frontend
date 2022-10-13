@@ -3,7 +3,7 @@ import { Twitter, Facebook } from './Icons'
 import Link from 'next/link'
 
 const Footer = () => {
-  const domain = 'https://codetocashflow.com'
+  const domain = process.env.NEXT_PUBLIC_DOMAIN
   return (
     <>
       <section className=" bg-[#3D4F3B] ">
