@@ -41,9 +41,9 @@ export default function Layout({
           name="description"
           content="Get notifed of campground availabilities instantly!"
         />
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" />
         <meta property="og:url" content="https://power-camper2.vercel.app/" />
-        <meta property="og:title" content="Power Camper" />
+        <meta property="og:title" content="Power Camper" /> */}
         {/* <meta
           property="og:description"
           content="Get notifed of campground availabilities instantly!"

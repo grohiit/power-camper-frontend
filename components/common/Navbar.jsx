@@ -108,17 +108,17 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex justify-center items-center">
               <div className="   w-full hidden sm:flex justify-center">
-                <Link href="/test">
+                {/* <Link href="/test">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     Test
                   </a>
-                </Link>
+                </Link> */}
                 <Link href="/about-us">
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href="/contact">
+                <Link href="https://codetocashflow.com/contact" shallow={false}>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
