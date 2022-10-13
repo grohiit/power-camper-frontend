@@ -90,7 +90,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-2 py-[13px] sm:px-6 lg:px-8">
           <div className="flex-1 flex items-center justify-between sm:items-center  ">
             <div className="  flex items-center  ">
-              <Link href="/" passHref>
+              <Link href={domain}>
                 <span className="cursor-pointer flex justify-center items-center">
                   <Image
                     className="w-full "
