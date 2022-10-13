@@ -15,14 +15,17 @@ const Navbar = () => {
       document.body.classList.remove('overflow-y-hidden')
     }
   }, [navOverlay])
-  // let domain = 'https://codetocashflow.com'
+  let domain = 'https://codetocashflow.com'
   // console.log({ domain })
-  const domain = process.env.DOMAIN
+  // domain = process.env.DOMAIN
 
   // const newdomain = domain.toLowerCase()
   const aboutPage = `${domain}/about-us`
   const contactPage = `${domain}/contact`
-  console.log({ domain, aboutPage, contactPage })
+  // console.log({ domain, aboutPage, contactPage })
+
+  domain = 'https://codetocashflow.com'
+
   return (
     <>
       {/* This is Nav for mobile */}

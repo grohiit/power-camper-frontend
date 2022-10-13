@@ -3,6 +3,7 @@ import { Twitter, Facebook } from './Icons'
 import Link from 'next/link'
 
 const Footer = () => {
+  const domain = 'https://codetocashflow.com'
   return (
     <>
       <section className=" bg-[#3D4F3B] ">
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="container mx-auto my-12">
           <div className="lg:flex justify-between flex-wrap">
             <div className="lg:w-[200px] mb-10 lg:mb-4 flex flex-col justify-center items-center lg:items-start">
-              <Link href="/" passHref>
+              <Link href={`${domain}/`}>
                 <Image
                   className="w-full mb-5 cursor-pointer"
                   src="/img/svg/logo.svg"
@@ -58,21 +59,21 @@ const Footer = () => {
                 <p className="text-white text-sm lg:text-base mb-4  font-bold font-Cabin ">
                   Useful links
                 </p>
-                <Link href="/about-us" passHref>
+                <Link href={`${domain}/about-us`}>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       About Page
                     </li>
                   </a>
                 </Link>
-                <Link href="/contact" passHref>
+                <Link href={`${domain}/contact`}>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       Contact Us
                     </li>
                   </a>
                 </Link>
-                <Link href="/faq" passHref>
+                <Link href={`${domain}/faq`}>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
                       FAQ
