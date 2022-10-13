@@ -15,7 +15,7 @@ const Navbar = () => {
       document.body.classList.remove('overflow-y-hidden')
     }
   }, [navOverlay])
-  console.log(process.env.DOMAIN)
+  const domain = 'https://codetocashflow.com'
   return (
     <>
       {/* This is Nav for mobile */}
@@ -27,7 +27,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <Link href={`${process.env.DOMAIN}/about-us`}>
+              <Link href={`${domain}/about-us`}>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -42,7 +42,7 @@ const Navbar = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <Link href={`${process.env.DOMAIN}/contact`}>
+              <Link href={`${domain}/contact`}>
                 <a
                   onClick={() => setNavOverlay(false)}
                   className="text-[#4F535D]  font-bold font-Balsamiq text-sm lg:text-base"
@@ -113,12 +113,12 @@ const Navbar = () => {
                     Test
                   </a>
                 </Link> */}
-                <Link href={`${process.env.DOMAIN}/about-us`}>
+                <Link href={`${domain}/about-us`}>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  font-Balsamiq text-sm lg:text-base">
                     About
                   </a>
                 </Link>
-                <Link href={`${process.env.DOMAIN}/contact`}>
+                <Link href={`${domain}/contact`}>
                   <a className="text-[#4F535D] px-3 flex  hover:text-[#754C29]  flex-col whitespace-nowrap justify-center ease-in duration-200  hover:text-red   font-Balsamiq text-sm lg:text-base">
                     Contact
                   </a>
