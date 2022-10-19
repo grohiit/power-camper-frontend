@@ -14,10 +14,10 @@ const Navbar = () => {
       document.body.classList.remove('overflow-y-hidden')
     }
   }, [navOverlay])
-  let domain = 'https://codetocashflow.com'
+
   // console.log({ domain })
   // domain = process.env.DOMAIN
-  domain = process.env.NEXT_PUBLIC_DOMAIN
+  const domain = process.env.NEXT_PUBLIC_DOMAIN
 
   // const newdomain = domain.toLowerCase()
   const aboutPage = `${domain}/about-us`
@@ -134,7 +134,7 @@ const Navbar = () => {
               </div>
 
               <div className="   hidden sm:flex items-center justify-end w-full   sm:static sm:inset-auto  ">
-                <Link href="https://app.powercamper.com/login">
+                <Link href="https://app.powercamper.com/master_control/">
                   <button
                     type="button"
                     className="bg-[#3F503B] hover:bg-[transparent] py-[5px] px-[15px] lg:px-[23px] border-2 rounded-md	hover:border-2 hover:border-[#3F503B]  hover:text-[#3F503B] text-[#ffffff] font-normal  font-Bubblegum border-transparent  ml-[20px] text-md lg:text-base  ease-in-out duration-200"
@@ -154,7 +154,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center sm:hidden  ">
-              <a href="https://app.powercamper.com/login">
+              <a href="https://app.powercamper.com/master_control/">
                 <button
                   type="button"
                   className="bg-[#3F503B] hover:bg-[transparent] py-[5px] px-[15px] lg:px-[23px] border-2 rounded-md	hover:border-2 hover:border-[#3F503B]  hover:text-[#3F503B] text-[#ffffff] font-normal  font-Bubblegum border-transparent    text-md lg:text-base  ease-in-out duration-200"
