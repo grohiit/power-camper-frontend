@@ -10,19 +10,29 @@ export default function Layout({
   datePublished,
   dateModified,
 }) {
+  function addProductJsonLd() {
+    return {
+      __html: `
+    {"@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "${title || 'Power Camper'}",
+    "description": "${
+      description || 'Get notifed of campground availabilities instantly!'
+    }",
+    "datePublished": "${datePublished || ''}",
+    "dateModified": "${dateModified || ''}"}
+    `,
+    }
+  }
   return (
     <>
       <Head>
-        <script type="application/ld+json" id="structured-data">
-          {`{"@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "${title || 'Power Camper'}",
-          "description": "${
-            description || 'Get notifed of campground availabilities instantly!'
-          }",
-          "datePublished": "${datePublished || ''}",
-          "dateModified": "${dateModified || ''}"}`}
-        </script>
+        <script
+          type="application/ld+json"
+          id="structured-data"
+          dangerouslySetInnerHTML={addProductJsonLd()}
+          key="product-jsonld"
+        />
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
