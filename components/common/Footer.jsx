@@ -80,7 +80,6 @@ const Footer = () => {
                     </li>
                   </a>
                 </Link>
-
                 <a
                   className="text_decoration"
                   href="https://app.powercamper.com/login"
@@ -89,6 +88,13 @@ const Footer = () => {
                     Login
                   </li>
                 </a>
+                <Link href={`${domain}/campground/`}>
+                  <a className="text_decoration">
+                    <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
+                      Campground
+                    </li>
+                  </a>
+                </Link>
               </ul>
               <ul className="mb-4 w-full sm:w-60  text-center sm:text-left  ">
                 <p className="text-white text-sm lg:text-base  font-bold font-Cabin mb-4 ">
