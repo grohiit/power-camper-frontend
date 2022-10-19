@@ -14,14 +14,14 @@ export default function Layout({
     <>
       <Head>
         <script type="application/ld+json" id="structured-data">
-          {`"@context": "https://schema.org",
+          {`{"@context": "https://schema.org",
           "@type": "Article",
           "headline": ${title || 'Power Camper'},
           "description": ${
             description || 'Get notifed of campground availabilities instantly!'
           }
           "datePublished": ${datePublished || ''},
-          "dateModified": ${dateModified || ''},`}
+          "dateModified": ${dateModified || ''},}`}
         </script>
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.png" />

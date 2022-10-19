@@ -91,7 +91,7 @@ const Footer = () => {
                 <Link href={`${domain}/campground/`}>
                   <a className="text_decoration">
                     <li className="text-white text-sm lg:text-base mb-3   font-Cabin opacity-70">
-                      Campground
+                      Campgrounds
                     </li>
                   </a>
                 </Link>
