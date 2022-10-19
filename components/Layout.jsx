@@ -21,7 +21,7 @@ export default function Layout({
             description || 'Get notifed of campground availabilities instantly!'
           }",
           "datePublished": "${datePublished || ''}",
-          "dateModified": "${dateModified || ''},}"`}
+          "dateModified": "${dateModified || ''}"}`}
         </script>
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.png" />
