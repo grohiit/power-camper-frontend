@@ -16,10 +16,10 @@ export default function Layout({
         <script type="application/ld+json" id="structured-data">
           {`{"@context": "https://schema.org",
           "@type": "Article",
-          "headline": ${title || 'Power Camper'},
-          "description": ${
+          "headline": "${title || 'Power Camper'}",
+          "description": "${
             description || 'Get notifed of campground availabilities instantly!'
-          }
+          }",
           "datePublished": ${datePublished || ''},
           "dateModified": ${dateModified || ''},}`}
         </script>
