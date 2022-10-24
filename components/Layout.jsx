@@ -34,7 +34,7 @@ export default function Layout({
           key="product-jsonld"
         />
         <meta charSet="utf-8" />
-        <link rel="icon" href="favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
