@@ -26,7 +26,11 @@ export default function PostsPage({ response, slug }) {
       dateModified={dateModified}
     >
       <div className="max-w-5xl m-20 mx-auto">
-        <TitleAuthor title={title} author={author} updatedDate={updatedDate} />
+        <TitleAuthor
+          title={title}
+          author={author}
+          dateModified={dateModified}
+        />
 
         <FeaturedImage featuredImage={featuredImage} title={title} />
         <MainContent content={content} />
