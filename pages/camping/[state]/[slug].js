@@ -14,12 +14,17 @@ export default function PostsPage({ response, slug }) {
     authorImage,
     title,
     content,
-    updatedDate,
+    datePublished,
+    dateModified,
     featuredImage,
   } = response.data
 
   return (
-    <Layout title={title} dateModified={updatedDate}>
+    <Layout
+      title={title}
+      datePublished={datePublished}
+      dateModified={dateModified}
+    >
       <div className="max-w-5xl m-20 mx-auto">
         <TitleAuthor title={title} author={author} updatedDate={updatedDate} />
 

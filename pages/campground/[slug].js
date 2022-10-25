@@ -41,6 +41,8 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
       <Layout
         title={campgroundpageData.seoTitle}
         description={campgroundpageData.metaDescription}
+        datePublished={campgroundpageData.datePublished}
+        dateModified={campgroundpageData.dateModified}
       >
         <GallerySummary data={campgroundpageData} />
         <OverviewReservationForm data={campgroundpageData} />

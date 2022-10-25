@@ -6,10 +6,14 @@ import Image from 'next/image'
 export default function PostsPage({ response, slug }) {
   if (!response?.success || slug.includes('+')) return <PageNotFound />
 
-  const { content, title } = response.data
+  const { content, title, datePublished, dateModified } = response.data
 
   return (
-    <Layout title={title}>
+    <Layout
+      title={title}
+      datePublished={datePublished}
+      dateModified={dateModified}
+    >
       <main className="m-auto p-10 w-fit lg:w-2/4 border-2 bg-slate-50">
         <h1 className="text-4xl ">{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
