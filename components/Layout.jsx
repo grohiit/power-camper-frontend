@@ -96,17 +96,19 @@ export default function Layout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M3SZRFG"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden"
-          ></iframe>
-        </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
       </Head>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-M3SZRFG"
+          height="0"
+          width="0"
+        >
+          <style jsx>
+            {`display:none
+          visibility:hidden`}
+          </style>
+        </iframe>
+      </noscript>
       <Navbar />
       <main>{children}</main>
       <Footer />
