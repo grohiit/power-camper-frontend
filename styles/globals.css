@@ -1074,6 +1074,6 @@ p {
   @apply text-base lg:text-lg text-justify mb-3;
 }
 
-a {
+main a {
   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
 }
