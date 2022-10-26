@@ -61,7 +61,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
         <h3>{obj.Title}</h3>
 
         <div
-          className="text-justify  font-Cabin text-sm lg:text-base opacity-70 "
+          className="text-justify  font-Cabin text-lg opacity-70 "
           dangerouslySetInnerHTML={{
             __html: marked(obj.Description),
           }}
