@@ -2,3 +2,4 @@
 User-agent: *
 Disallow: /_next/
 Disallow: /_next
+Disallow: /test
