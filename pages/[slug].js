@@ -4,7 +4,7 @@ import { API_CONTENT_URL } from '@/config/index'
 import Image from 'next/image'
 
 export default function PostsPage({ response, slug }) {
-  if (!response?.success || slug.includes('+')) return <PageNotFound />
+  // if (!response?.success || slug.includes('+')) return <PageNotFound />
 
   const { content, title, datePublished, dateModified } = response.data
 
@@ -41,11 +41,13 @@ export async function getStaticPaths() {
   const res = await fetch(API_URL)
   const response = await res.json()
 
-  const paths = response.data.map((article) => ({
-    params: {
-      slug: article.slug,
-    },
-  }))
+  const paths = response.data
+    .filter((v) => !v.slug?.includes('+'))
+    .map((article) => ({
+      params: {
+        slug: article.slug,
+      },
+    }))
 
   return {
     paths,

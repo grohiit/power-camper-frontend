@@ -2,7 +2,7 @@ const siteUrl = process.env.NEXT_PUBLIC_URL || 'https://powercamper.com'
 
 module.exports = {
   siteUrl,
-  exclude: ['/test', '*+*', '/server-sitemap.xml'],
+  exclude: ['/test'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -11,9 +11,6 @@ module.exports = {
         allow: '/',
         disallow: ['/_next/', '/_next', '/test'],
       },
-    ],
-    additionalSitemaps: [
-      `${siteUrl}/server-sitemap.xml`, // <==== Add here
     ],
   },
 }
