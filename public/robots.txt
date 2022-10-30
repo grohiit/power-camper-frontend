@@ -1,5 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
+Allow: /
 Disallow: /_next/
 Disallow: /_next
 Disallow: /test
+
+# Host
+Host: http://localhost:3000
+
+# Sitemaps
+Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: http://localhost:3000/server-sitemap.xml
