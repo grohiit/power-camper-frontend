@@ -13,7 +13,7 @@ export default function DetailSections({ campgroundpageData }) {
     : {}
   return (
     <>
-      <section className="lg:grid grid-cols-2 px-4 gap-10 justify-around">
+      <section className="lg:grid grid-cols-2 px-4 gap-10 justify-around container mx-auto">
         <div>
           <BestCampsites data={campgroundpageData} />
           <CampgroundRules campgroundRules={campgroundRules} name={name} />
