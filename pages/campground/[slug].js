@@ -62,7 +62,9 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         {/* <CommentForm reviewdata={campgroundreviewData} /> */}
         {/* <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" /> */}
         {nearbyCampInfo && (
-          <HeadingContent heading={'Nearby'} content={nearbyCampInfo} />
+          <div className="mx-auto container">
+            <HeadingContent heading={'Nearby'} content={nearbyCampInfo} />
+          </div>
         )}
       </Layout>
     </>
