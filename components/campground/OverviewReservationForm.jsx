@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ReservationForm from './ReservationForm/ReservationFormNew'
 import { marked } from 'marked'
 import { formInputData } from '@/components/common/Content'
+import HeadingContent from './HeadingContent'
 
 const OverviewForm = ({ data: { overview, name, facilityID } }) => {
   const showForm = formInputData.filter((v) => v.facilityID == facilityID)
@@ -31,15 +32,14 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
       <div className="flex flex-wrap-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto ">
         <div className={` ${showForm ? 'lg:w-2/4' : 'w-full'} lg:pr-[25px] `}>
           {/* mb-6 lg:mb-0 lg:items-start lg:justify-start */}
-          <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4 w-full">
-            Overview
-          </h2>
+          {/* <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4">Overview</h2>
           <div
             className="font-Cabin text-lg opacity-70 text-justify list-disc mb-12 block"
             dangerouslySetInnerHTML={{
               __html: marked(overview),
             }}
-          ></div>
+          ></div> */}
+          <HeadingContent heading={'Overview'} content={overview} />
         </div>
         {showForm ? (
           <div className="lg:w-2/4 lg:pr-[25px] w-full">

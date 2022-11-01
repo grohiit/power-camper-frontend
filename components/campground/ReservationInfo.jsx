@@ -36,7 +36,7 @@ const ReservationInfo = ({ data }) => {
           </div>
 
           <div
-            className="text-justify  font-Cabin text-lg opacity-70"
+            className="text-justify font-Cabin text-lg opacity-70"
             dangerouslySetInnerHTML={{
               __html: marked(reservationInfo),
             }}

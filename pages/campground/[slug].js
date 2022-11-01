@@ -5,6 +5,7 @@ import CampgroundMap from '@/components/campground/CampgroundMap'
 import Direction from '@/components/campground/Directions'
 import Weather from '@/components/campground/Weather'
 import Faq from '@/components/campground/Faq'
+import HeadingContent from '@/components/campground/HeadingContent'
 import Reviews from '@/components/campground/Reviews'
 import CommentForm from '@/components/campground/CommentForm'
 import NearbyCampgrounds from '@/components/campground/NearbyCampgrounds'
@@ -27,20 +28,25 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
   if (!pagedata?.success) return <PageNotFound />
 
   const campgroundpageData = pagedata && pagedata.data ? pagedata.data : {}
-  // const campgroundreviewData =
-  //   reviewdata && reviewdata.data ? reviewdata.data : {}
-  // const datanearby =
-  //   nearbycampgroundData && nearbycampgroundData.data
-  //     ? nearbycampgroundData.data
-  //     : {}
+  const {
+    seoTitle,
+    metaDescription,
+    datePublished,
+    dateModified,
+    campgroundMap,
+    name,
+    directions,
+    nearbyCampInfo,
+    faqs,
+  } = campgroundpageData
 
   return (
     <>
       <Layout
-        title={campgroundpageData.seoTitle}
-        description={campgroundpageData.metaDescription}
-        datePublished={campgroundpageData.datePublished}
-        dateModified={campgroundpageData.dateModified}
+        title={seoTitle}
+        description={metaDescription}
+        datePublished={datePublished}
+        dateModified={dateModified}
       >
         <GallerySummary data={campgroundpageData} />
         <OverviewReservationForm data={campgroundpageData} />
@@ -48,19 +54,16 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         <RulesCost data={campgroundpageData} />
         <AmenitiesActivities data={campgroundpageData} /> */}
         <DetailSections campgroundpageData={campgroundpageData} />
-        <CampgroundMap
-          campgroundMap={campgroundpageData.campgroundMap}
-          name={campgroundpageData.name}
-        />
-        <Direction
-          directions={campgroundpageData.directions}
-          name={campgroundpageData.name}
-        />
+        <CampgroundMap campgroundMap={campgroundMap} name={name} />
+        <Direction directions={directions} name={name} />
         {/* <Weather data={campgroundpageData} /> */}
-        <Faq faqdata={campgroundpageData.faqs} />
+        <Faq faqdata={faqs} />
         {/* <Reviews name={name} /> */}
         {/* <CommentForm reviewdata={campgroundreviewData} /> */}
         {/* <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" /> */}
+        {nearbyCampInfo && (
+          <HeadingContent heading={'Nearby'} content={nearbyCampInfo} />
+        )}
       </Layout>
     </>
   )

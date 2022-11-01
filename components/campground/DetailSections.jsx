@@ -6,11 +6,17 @@ import Image from 'next/image'
 import BasicAmenities from './BasicAmenities'
 import OtherAmenities from './OtherAmenities'
 import Activities from './Activities'
+import HeadingContent from './HeadingContent'
 
 export default function DetailSections({ campgroundpageData }) {
-  const { campgroundRules, campgroundCost, name } = campgroundpageData
-    ? campgroundpageData
-    : {}
+  const {
+    campgroundRules,
+    campgroundCost,
+    name,
+    basicAmenities,
+    otherAmenities,
+    uniqueExperiences,
+  } = campgroundpageData ? campgroundpageData : {}
   return (
     <>
       <section className="lg:grid grid-cols-2 px-4 gap-10 justify-around container mx-auto">
@@ -19,13 +25,15 @@ export default function DetailSections({ campgroundpageData }) {
           <CampgroundRules campgroundRules={campgroundRules} name={name} />
           {/* lg:w-3/6 lg:pr-[25px] mb-20 lg:mb-0 */}
           <div className="">
-            <BasicAmenities
-              basicAmenities={campgroundpageData.basicAmenities}
-            />
-            <OtherAmenities
-              otherAmenities={campgroundpageData.otherAmenities}
-            />
+            <BasicAmenities basicAmenities={basicAmenities} />
+            <OtherAmenities otherAmenities={otherAmenities} />
           </div>
+          {uniqueExperiences && (
+            <HeadingContent
+              heading={'Unique Experiences'}
+              content={uniqueExperiences}
+            />
+          )}
         </div>
         <div>
           <ReservationInfo data={campgroundpageData} />
