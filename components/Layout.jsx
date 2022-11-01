@@ -34,7 +34,7 @@ export default function Layout({
           key="product-jsonld"
         />
         <meta charSet="utf-8" />
-
+        <meta name="robots" content="noimageindex" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
