@@ -11,7 +11,8 @@ const Activities = ({ activities = {} }) => {
 
   return (
     <>
-      <div className="lg:w-3/6 lg:pl-[25px]">
+      {/* lg:w-3/6 lg:pl-[25px] */}
+      <div className="">
         <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4">
           Activities
         </h2>

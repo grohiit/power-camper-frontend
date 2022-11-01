@@ -9,7 +9,7 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/_next/image/', '/test'],
+        disallow: ['/test'],
       },
     ],
     additionalSitemaps: [

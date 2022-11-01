@@ -17,7 +17,7 @@ const CampGroundPhotosSlider = ({ images }) => {
     <>
       <div className="xl:w-3/6 xl:pr-[25px] my-auto pt-10 sm:pt-0">
         <Slider
-          className="mainSlider"
+          className=""
           asNavFor={nav2}
           ref={slider1}
           arrows={false}

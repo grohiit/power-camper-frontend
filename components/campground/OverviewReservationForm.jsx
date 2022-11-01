@@ -28,7 +28,7 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
           height={270}
         />
       </div>
-      <div className="flex flex-col-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto">
+      <div className="flex flex-wrap-reverse lg:flex-row content-center justify-center lg:justify-between container mx-auto">
         <div className={` ${showForm ? 'lg:w-2/4' : 'w-full'} lg:pr-[25px] `}>
           {/* mb-6 lg:mb-0 lg:items-start lg:justify-start */}
           <h2 className="font-Bubblegum text-2xl lg:text-3xl mb-4 w-full">
@@ -42,7 +42,7 @@ const OverviewForm = ({ data: { overview, name, facilityID } }) => {
           ></div>
         </div>
         {showForm ? (
-          <div className="lg:w-2/4 lg:pr-[25px]">
+          <div className="lg:w-2/4 lg:pr-[25px] w-full">
             <ReservationForm name={name} facilityID={facilityID} />
           </div>
         ) : (

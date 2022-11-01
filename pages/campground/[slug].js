@@ -1,17 +1,15 @@
-import GallerySummary from '../../components/campground/GallerySummary'
-import OverviewReservationForm from '../../components/campground/OverviewReservationForm'
-import BestCampsitesReservationInfo from '../../components/campground/BestCampsitesReservationInfo'
-import RulesCost from '../../components/campground/RulesCost'
-import AmenitiesActivities from '../../components/campground/AmenitiesActivities'
-import CampgroundMap from '../../components/campground/CampgroundMap'
-import Direction from '../../components/campground/Directions'
-import Weather from '../../components/campground/Weather'
-import Faq from '../../components/campground/Faq'
-import Reviews from '../../components/campground/Reviews'
-import CommentForm from '../../components/campground/CommentForm'
-import NearbyCampgrounds from '../../components/campground/NearbyCampgrounds'
-import Footer from '../../components/common/Footer'
-import BackToTop from '../../components/common/BackToTop'
+import GallerySummary from '@/components/campground/GallerySummary'
+import OverviewReservationForm from '@/components/campground/OverviewReservationForm'
+import DetailSections from '@/components/campground/DetailSections'
+import CampgroundMap from '@/components/campground/CampgroundMap'
+import Direction from '@/components/campground/Directions'
+import Weather from '@/components/campground/Weather'
+import Faq from '@/components/campground/Faq'
+import Reviews from '@/components/campground/Reviews'
+import CommentForm from '@/components/campground/CommentForm'
+import NearbyCampgrounds from '@/components/campground/NearbyCampgrounds'
+import Footer from '@/components/common/Footer'
+import BackToTop from '@/components/common/BackToTop'
 import 'aos/dist/aos.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -19,7 +17,7 @@ import Aos from 'aos'
 import { useEffect } from 'react'
 
 import { API_CAMPGROUND_URL } from '@/config/index'
-import PageNotFound from '../../components/common/PageNotFound'
+import PageNotFound from '@/components/common/PageNotFound'
 import Layout from '@/components/Layout'
 
 export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
@@ -46,9 +44,10 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
       >
         <GallerySummary data={campgroundpageData} />
         <OverviewReservationForm data={campgroundpageData} />
-        <BestCampsitesReservationInfo data={campgroundpageData} />
+        {/* <BestCampsitesReservationInfo data={campgroundpageData} />
         <RulesCost data={campgroundpageData} />
-        <AmenitiesActivities campgroundpageData={campgroundpageData} />
+        <AmenitiesActivities data={campgroundpageData} /> */}
+        <DetailSections campgroundpageData={campgroundpageData} />
         <CampgroundMap
           campgroundMap={campgroundpageData.campgroundMap}
           name={campgroundpageData.name}

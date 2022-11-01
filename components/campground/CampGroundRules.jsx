@@ -1,7 +1,9 @@
+import Image from 'next/image'
 const CampGroundRules = ({ campgroundRules, name }) => {
   return (
     <>
-      <div className="lg:w-3/6 lg:pr-[100px] mb-20 lg:mb-0">
+      {/* lg:w-3/6 lg:pr-[100px] */}
+      <div className="">
         <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4">
           {name} Campground Rules
         </h2>

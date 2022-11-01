@@ -67,7 +67,7 @@ const BestCampsitesFullScreenSlider = ({ obj }) => {
           }}
         ></div>
         <Slider
-          className="mainSlider"
+          className=" "
           asNavFor={nav2}
           ref={slider1}
           arrows={true}

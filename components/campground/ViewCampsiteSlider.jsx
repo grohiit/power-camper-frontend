@@ -12,7 +12,8 @@ const ViewCampsiteSlider = ({
   return (
     <>
       <Slider
-        className="mainSlider"
+        className=""
+        dots={true}
         asNavFor={sliderSmall}
         ref={sliderMainRef}
         arrows={true}
@@ -30,9 +31,9 @@ const ViewCampsiteSlider = ({
           images.map((imgPath, index) => {
             return (
               <div key={index} onClick={() => setShow(true)}>
-                <div className="slider_img pr-2 sm:pr-3">
+                <div className="slider_img pr-2 sm:pr-3 ">
                   <Image
-                    className="w-full rounded-2xl"
+                    className="w-full rounded-2xl "
                     src={imgPath}
                     layout="responsive"
                     width={445}
@@ -53,6 +54,7 @@ const ViewCampsiteSlider = ({
         className="slider_active_box2   mx-auto pt-3 lg:pt-5"
       >
         <Slider
+          className=""
           asNavFor={sliderMain}
           ref={slidersmallRef}
           slidesToShow={images.length > 7 ? 7 : images.length}
@@ -75,7 +77,7 @@ const ViewCampsiteSlider = ({
             images.map((imgPath, index) => {
               return (
                 <div key={index} onClick={() => setShow(true)}>
-                  <div className="mx-3 text-center">
+                  <div className="mx-3 text-center hover:cursor-pointer">
                     <Image
                       className="mx-auto rounded"
                       src={imgPath}
