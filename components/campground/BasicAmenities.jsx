@@ -10,10 +10,10 @@ const BasicAmenities = ({ basicAmenities = {} }) => {
 
   return (
     <>
-      <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl mb-4 text-center lg:text-start">
+      <h2 className="font-Bubblegum text-2xl lg:text-3xl xl:text-4xl text-center lg:text-start">
         Amenities
       </h2>
-      <div className="max-w-md   xl:w-9/12 grid grid-cols-3 gap-4 sm:gap-1 justify-center mb-4 sm:mb-0 mx-auto lg:mx-0 ">
+      <div className="max-w-md xl:w-9/12 grid grid-cols-3 gap-4 sm:gap-1 mb-4 sm:mb-0 mx-auto lg:mx-0 ">
         {basicAmenitiesData.map((val, index) => (
           <div
             className={`w-24 sm:w-[128px]  py-4 sm:py-5 border-[#CBDED3] border text-center box_shadow_amemties flex flex-col justify-around items-center   sm:mb-5  ${

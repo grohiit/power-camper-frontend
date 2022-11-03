@@ -13,7 +13,7 @@ const OtherAmenities = ({ otherAmenities = {} }) => {
 
   return (
     <>
-      <div className=" max-w-md   xl:w-9/12 grid grid-cols-4 gap-2 sm:gap-1 justify-center mx-auto lg:mx-0">
+      <div className=" max-w-md xl:w-9/12 grid grid-cols-4 gap-2 sm:gap-1 justify-center mx-auto lg:mx-0">
         {otherAmenitiesData.map((val, index) => {
           return (
             <div

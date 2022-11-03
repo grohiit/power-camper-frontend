@@ -34,8 +34,10 @@ export default function DetailSections({ campgroundpageData }) {
           <ReservationInfo data={campgroundpageData} />
           <CampgroundCost campgroundCost={campgroundCost} name={name} />
           <Activities activities={campgroundpageData.activities} />
-          <BasicAmenities basicAmenities={basicAmenities} />
-          <OtherAmenities otherAmenities={otherAmenities} />
+          <div className="">
+            <BasicAmenities basicAmenities={basicAmenities} />
+            <OtherAmenities otherAmenities={otherAmenities} />
+          </div>
           <CampgroundRules campgroundRules={campgroundRules} name={name} />
         </div>
       </section>
