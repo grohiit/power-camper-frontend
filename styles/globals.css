@@ -1054,20 +1054,12 @@ h6 {
   @apply font-Bubblegum text-base lg:text-lg xl:text-xl mt-2;
 }
 
-/* p,
-li,
 ul {
-  @apply font-Cabin text-lg opacity-70 text-justify list-disc max-w-full tracking-widest;
-} */
-
-ul {
-  text-indent: -1rem;
   padding-left: 1rem;
 }
 
 li {
-  list-style: disc inside none;
-  /* padding-left: 1rem; */
+  list-style: disc outside none;
 }
 
 p {
