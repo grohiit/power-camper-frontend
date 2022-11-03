@@ -17,7 +17,7 @@ const OverviewForm = ({
       </div>
       <div className="absolute top-0 right-0 hidden md:inline-block -z-50 ">
         <Image
-          className="mb-12"
+          className=""
           src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/green_right_side_adf6aj.png"
           alt="greenRightSideDot"
           width={164}

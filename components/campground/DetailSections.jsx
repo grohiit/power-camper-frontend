@@ -22,13 +22,13 @@ export default function DetailSections({ campgroundpageData }) {
       <section className="lg:grid grid-cols-2 px-4 gap-10 justify-around container mx-auto">
         <div>
           <BestCampsites data={campgroundpageData} />
-
           {uniqueExperiences && (
             <HeadingContent
               heading={'Unique Experiences'}
               content={uniqueExperiences}
             />
           )}
+          <CampgroundRules campgroundRules={campgroundRules} name={name} />
         </div>
         <div>
           <ReservationInfo data={campgroundpageData} />
@@ -38,7 +38,6 @@ export default function DetailSections({ campgroundpageData }) {
             <BasicAmenities basicAmenities={basicAmenities} />
             <OtherAmenities otherAmenities={otherAmenities} />
           </div>
-          <CampgroundRules campgroundRules={campgroundRules} name={name} />
         </div>
       </section>
     </>
