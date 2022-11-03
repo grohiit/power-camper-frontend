@@ -1,34 +1,7 @@
-import { useEffect, useState } from 'react'
-import { amenitiesSecondData } from '../common/Content'
 import { CrossIcon } from '../common/Icons'
 import { iconsObjData } from '../common/Content'
 
 const OtherAmenities = ({ otherAmenities = {} }) => {
-  const [filteredOtherAnimities, setFilteredOtherAnimities] = useState([])
-
-  useEffect(() => {
-    for (let i = 0; i < amenitiesSecondData.length; i++) {
-      const data = findMatch(otherAmenities, amenitiesSecondData[i])
-      if (data.length) {
-        setFilteredOtherAnimities((prevState) => [...prevState, ...data])
-      }
-    }
-  }, [otherAmenities])
-
-  function findMatch(basicAmenities, amenitiesData) {
-    const data = []
-    for (let j = 0; j < basicAmenities.length; j++) {
-      if (
-        basicAmenities[j].key.toLowerCase() ===
-        amenitiesData.title.toLowerCase()
-      ) {
-        amenitiesData.isActive = basicAmenities[j].value
-        data.push(amenitiesData)
-      }
-    }
-    return data
-  }
-
   const otherAmenitiesData = otherAmenities.map((v, i) => {
     const ThisIcon = iconsObjData[v.key] || iconsObjData['Placeholder']
     return {
@@ -56,7 +29,6 @@ const OtherAmenities = ({ otherAmenities = {} }) => {
                 </span>
               </span>
               <p className="mx-5 my-3 font-Cabin capitalize text-sm font-bold text-[#3D4F3B]">
-                {/* mb-0 mt-3 lg:mt-5 font-Cabin capitalize text-xs md:text-sm font-bold   text-[#3D4F3B */}
                 {val.title}
               </p>
             </div>

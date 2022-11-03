@@ -63,7 +63,10 @@ export default function Home({ pagedata, reviewdata, nearbycampgroundData }) {
         {/* <NearbyCampgrounds nearbycampgroundData={datanearby} type="Nearby" /> */}
         {nearbyCampInfo && (
           <div className="mx-auto container">
-            <HeadingContent heading={'Nearby'} content={nearbyCampInfo} />
+            <HeadingContent
+              heading={`Nearby Campgrounds to ${name}`}
+              content={nearbyCampInfo}
+            />
           </div>
         )}
       </Layout>

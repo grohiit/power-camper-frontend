@@ -16,7 +16,7 @@ const Faq = ({ faqdata }) => {
   return (
     <>
       <section className="faqBg relative" id="FAQs">
-        <div className="absolute bottom-full right-0 hidden md:inline-block">
+        <div className="absolute bottom-full right-0 hidden md:inline-block -z-50">
           <Image
             className="mb-12"
             src="https://res.cloudinary.com/dqdzorc8z/image/upload/v1664828827/Others/green_right_side_adf6aj.png"

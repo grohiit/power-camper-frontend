@@ -1066,8 +1066,8 @@ ul {
 }
 
 li {
-  list-style: disc outside none;
-  padding-left: 1rem;
+  list-style: disc inside none;
+  /* padding-left: 1rem; */
 }
 
 p {

@@ -22,12 +22,7 @@ export default function DetailSections({ campgroundpageData }) {
       <section className="lg:grid grid-cols-2 px-4 gap-10 justify-around container mx-auto">
         <div>
           <BestCampsites data={campgroundpageData} />
-          <CampgroundRules campgroundRules={campgroundRules} name={name} />
-          {/* lg:w-3/6 lg:pr-[25px] mb-20 lg:mb-0 */}
-          <div className="">
-            <BasicAmenities basicAmenities={basicAmenities} />
-            <OtherAmenities otherAmenities={otherAmenities} />
-          </div>
+
           {uniqueExperiences && (
             <HeadingContent
               heading={'Unique Experiences'}
@@ -39,16 +34,11 @@ export default function DetailSections({ campgroundpageData }) {
           <ReservationInfo data={campgroundpageData} />
           <CampgroundCost campgroundCost={campgroundCost} name={name} />
           <Activities activities={campgroundpageData.activities} />
+          <BasicAmenities basicAmenities={basicAmenities} />
+          <OtherAmenities otherAmenities={otherAmenities} />
+          <CampgroundRules campgroundRules={campgroundRules} name={name} />
         </div>
       </section>
-      {/* <section className="lg:flex content-center container mx-auto relative">
-        
-        
-      </section>
-      <section className="my-16 lg:flex content-center container mx-auto relative">
-        
-        
-      </section> */}
     </>
   )
 }

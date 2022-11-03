@@ -59,7 +59,5 @@ const Direction = ({ directions, name }) => {
     </section>
   )
 }
-//AIzaSyA-I0SfLLLGdonwzAyA_Wgn0XQTosPSzhw
-//src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.2052135224008!2d-86.12146168455808!3d44.715423191112315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881e0e7158b7b693%3A0x7a17fd2cbddea795!2s5685%20Lake%20Michigan%20Rd%2C%20Honor%2C%20MI%2049640%2C%20USA!5e0!3m2!1sen!2sin!4v1657191353117!5m2!1sen!2sin"
 
 export default Direction
