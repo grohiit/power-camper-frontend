@@ -18,10 +18,11 @@ const BestCampsites = ({ data }) => {
           __html: marked(bestCampsiteDescription),
         }}
       ></div>
-      {bestCampsites.length &&
-        bestCampsites.map((obj, index) => (
-          <BestCampsitesFullScreenSlider obj={obj} key={index} />
-        ))}
+      {bestCampsites.length
+        ? bestCampsites.map((obj, index) => (
+            <BestCampsitesFullScreenSlider obj={obj} key={index} />
+          ))
+        : ''}
     </>
   )
 }
