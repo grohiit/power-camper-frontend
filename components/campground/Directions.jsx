@@ -7,7 +7,7 @@ const Direction = ({ directions, name }) => {
   const embedUrl = `https://www.google.com/maps/embed/v1/place?key=${
     process.env.GOOGLE_API_KEY
   }&q=${encodeURIComponent(name)}&zoom=16`
-  console.log(directions)
+
   return (
     <section className="relative">
       <div className="absolute top-0 right-0 hidden md:inline-block">

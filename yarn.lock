@@ -1441,10 +1441,10 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next-sitemap@^3.1.29":
-  "integrity" "sha512-7UQyfpI7obOdB11aCswWYfqRn5CR0YSmWHo1r/uarrFfZD5PyyAWtQlgP6jNqDW0eX1ZJWERBwmJ2dLjl4nT8Q=="
-  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-3.1.29.tgz"
-  "version" "3.1.29"
+"next-sitemap@^3.1.30":
+  "integrity" "sha512-mZqq9xWrTp/tgUM7+Oz/qxT6x2vnJhwQ3AGke2GjypRbUo44QaTb+4Cp1uX9GwXBaiuuuXDoWyS5VxJP3pJljw=="
+  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-3.1.30.tgz"
+  "version" "3.1.30"
   dependencies:
     "@corex/deepmerge" "^4.0.29"
     "minimist" "^1.2.6"
