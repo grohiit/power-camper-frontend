@@ -1054,11 +1054,13 @@ h6 {
 }
 
 ul {
+  @apply text-base lg:text-lg;
   padding-left: 1rem;
   list-style: disc outside none;
 }
 
 ol {
+  @apply text-base lg:text-lg;
   padding-left: 2rem;
   list-style: decimal outside none;
 }
