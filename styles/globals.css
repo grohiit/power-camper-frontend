@@ -22,7 +22,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style-type: none;
   scroll-behavior: smooth !important;
   transition: all 250ms ease-in-out;
 }
@@ -1056,10 +1055,12 @@ h6 {
 
 ul {
   padding-left: 1rem;
+  list-style: disc outside none;
 }
 
-li {
-  list-style: disc outside none;
+ol {
+  padding-left: 2rem;
+  list-style: decimal outside none;
 }
 
 p {
