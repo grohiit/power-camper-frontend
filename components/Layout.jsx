@@ -46,11 +46,6 @@ export default function Layout({
         <link rel="apple-touch-icon" href="logo192.png" />
         <link rel="manifest" href="manifest.json" />
         <title>{title || 'Power Camper'}</title>
-        <meta name="title" content="Power Camper" />
-        <meta
-          name="description"
-          content="Get notifed of campground availabilities instantly!"
-        />
         {/* <meta property="og:type" content="website" />
         <meta property="og:url" content="https://power-camper2.vercel.app/" />
         <meta property="og:title" content="Power Camper" /> */}
