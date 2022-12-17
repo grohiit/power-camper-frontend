@@ -1,8 +1,9 @@
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
 import { marked } from 'marked'
-import FeaturedImage from '@/components/camping roundups/FeaturedImage'
+import Image from 'next/image'
 import PageNotFound from '@/components/common/PageNotFound'
+import Link from 'next/link'
 
 export default function StateArchivePage({ response, state }) {
   if (!response.length) return <PageNotFound />
@@ -18,21 +19,33 @@ export default function StateArchivePage({ response, state }) {
       <hr className="my-5 border-2 border-black mx-10" />
       <div className="flex flex-wrap justify-around mx-10">
         {response.map((v, index) => (
-          <div className="mx-5 my-5 w-[500px]" key={index}>
-            <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
-            <h2 className="text-2xl my-0 ">{v.title}</h2>
-            <div className="text-base mb-3">
-              <div className="text-sm text-blue-500">
-                Updated {v.dateModified.split('T')[0] || ''}
+          <Link key={index} href={`/${v.slug.split('+').join('/')}`}>
+            <div className="mx-5 my-5 w-[500px]">
+              <div className="my-2 hover:cursor-pointer">
+                <Image
+                  alt={v.title}
+                  src={v.featuredImage}
+                  width="1024"
+                  height="512"
+                  objectFit="contain"
+                  className="rounded-3xl"
+                ></Image>
               </div>
-              by <span className="font-semibold">{v.author}</span>
+              <h2 className="text-2xl my-0 hover:cursor-pointer">{v.title}</h2>
+              <div className="text-base mb-3">
+                <div className="text-sm text-blue-500">
+                  Updated {v.dateModified.split('T')[0] || ''}
+                </div>
+                by <span className="font-semibold">{v.author}</span>
+              </div>
+              <div
+                className="hover:cursor-pointer"
+                dangerouslySetInnerHTML={{
+                  __html: marked(v.content.substr(0, 200) + '...'),
+                }}
+              ></div>
             </div>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: marked(v.content.substr(0, 200) + '...'),
-              }}
-            ></div>
-          </div>
+          </Link>
         ))}
       </div>
     </Layout>
