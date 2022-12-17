@@ -8,14 +8,14 @@ export default function BlogArchivePage({ response }) {
     <Layout>
       <h1>Power Camper Blog</h1>
       <hr className="my-5" />
-      {response.map((v) => (
+      {response.map((v, index) => (
         // v.title,
         // v.author,
         // v.dateModified,
         // marked(v.content.substr(0, 30)),
         // v.featuredImage,
 
-        <div className="w-2/6 mx-5 my-5 h-auto">
+        <div className="w-2/6 mx-5 my-5 h-auto" key={index}>
           <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
           <h2 className="text-2xl my-0 ">{v.title}</h2>
           <div className="text-base">
