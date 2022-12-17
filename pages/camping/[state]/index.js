@@ -2,8 +2,10 @@ import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
 import { marked } from 'marked'
 import FeaturedImage from '@/components/camping roundups/FeaturedImage'
+import PageNotFound from '@/components/common/PageNotFound'
 
-export default function BlogArchivePage({ response, state, slug }) {
+export default function StateArchivePage({ response, state }) {
+  if (!response.length) return <PageNotFound />
   return (
     <Layout>
       <h1 className="text-left mx-10">{state} Camping Guides</h1>
@@ -16,12 +18,6 @@ export default function BlogArchivePage({ response, state, slug }) {
       <hr className="my-5" />
       <div className="flex flex-wrap justify-around">
         {response.map((v, index) => (
-          // v.title,
-          // v.author,
-          // v.dateModified,
-          // marked(v.content.substr(0, 30)),
-          // v.featuredImage,
-
           <div className="mx-5 my-5 w-[500px]" key={index}>
             <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
             <h2 className="text-2xl my-0 ">{v.title}</h2>
@@ -44,13 +40,11 @@ export default function BlogArchivePage({ response, state, slug }) {
 }
 
 export async function getServerSideProps({ params: { state } }) {
-  const identifier = `camping+`
+  const identifier = `camping+${state}`
   const capitalCaseState =
     state.charAt(0).toUpperCase() + state.substr(1).toLowerCase()
 
   const API_URL = `${API_CONTENT_URL}`
-
-  // console.log(API_URL)
   const res = await fetch(API_URL)
   const resp = await res.json()
   const response = resp.data.filter((v) => v.slug.startsWith(identifier))
