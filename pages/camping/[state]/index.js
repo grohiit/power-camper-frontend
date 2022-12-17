@@ -15,14 +15,14 @@ export default function BlogArchivePage({ response, state, slug }) {
       </p>
       <hr className="my-5" />
       <div className="flex flex-wrap justify-around">
-        {response.map((v) => (
+        {response.map((v, index) => (
           // v.title,
           // v.author,
           // v.dateModified,
           // marked(v.content.substr(0, 30)),
           // v.featuredImage,
 
-          <div className="mx-5 my-5 w-[500px]">
+          <div className="mx-5 my-5 w-[500px]" key={index}>
             <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
             <h2 className="text-2xl my-0 ">{v.title}</h2>
             <div className="text-base mb-3">
