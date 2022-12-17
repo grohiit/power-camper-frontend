@@ -15,8 +15,8 @@ export default function StateArchivePage({ response, state }) {
         {state}. Whether you have a location in mind or if you are looking for a
         travel spot, you will find it here.
       </p>
-      <hr className="my-5" />
-      <div className="flex flex-wrap justify-around">
+      <hr className="my-5 border-2 border-black mx-10" />
+      <div className="flex flex-wrap justify-around mx-10">
         {response.map((v, index) => (
           <div className="mx-5 my-5 w-[500px]" key={index}>
             <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
