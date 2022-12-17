@@ -7,6 +7,9 @@ import Link from 'next/link'
 
 export default function StateArchivePage({ response, state }) {
   if (!response.length) return <PageNotFound />
+
+  const domain = process.env.NEXT_PUBLIC_DOMAIN
+
   return (
     <Layout>
       <h1 className="text-left mx-10">{state} Camping Guides</h1>
@@ -19,7 +22,7 @@ export default function StateArchivePage({ response, state }) {
       <hr className="my-5 border-2 border-black mx-10" />
       <div className="flex flex-wrap justify-around mx-10">
         {response.map((v, index) => (
-          <Link key={index} href={`/${v.slug.split('+').join('/')}`}>
+          <Link key={index} href={`${domain}/${v.slug.split('+').join('/')}`}>
             <div className="mx-5 my-5 w-[500px]">
               <div className="my-2 hover:cursor-pointer">
                 <Image

@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_URL || 'https://www.powercamper.com'
+const siteUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://www.powercamper.com'
 
 module.exports = {
   siteUrl,
