@@ -1,30 +1,50 @@
 import Layout from '@/components/Layout'
 import { API_CONTENT_URL } from '@/config/index'
 import { marked } from 'marked'
-import FeaturedImage from '@/components/camping roundups/FeaturedImage'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function BlogArchivePage({ response }) {
+  const domain = process.env.NEXT_PUBLIC_DOMAIN
+
+  const title = `Power Camper Blog`
+
   return (
-    <Layout>
-      <h1>Power Camper Blog</h1>
-      <hr className="my-5" />
-      {response.map((v, index) => (
-        <div className="w-2/6 mx-5 my-5 h-auto" key={index}>
-          <FeaturedImage featuredImage={v.featuredImage} title={v.title} />
-          <h2 className="text-2xl my-0 ">{v.title}</h2>
-          <div className="text-base">
-            <div className="text-sm text-blue-500">
-              Updated {v.dateModified.split('T')[0] || ''}
-            </div>
-            by {v.author}
-          </div>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: marked(v.content.substr(0, 200)),
-            }}
-          ></div>
-        </div>
-      ))}
+    <Layout title={title}>
+      <h1 className="text-left mx-10">{title}</h1>
+      <hr className="my-5 border-2 border-black mx-10" />
+      <div className="flex flex-wrap justify-around mx-10">
+        {response.map((v, index) => (
+          <Link key={index} href={`${domain}/${v.slug.split('+').join('/')}`}>
+            <a className="no-underline text-black hover:text-black visited:text-black my-3">
+              <div className="w-[500px]">
+                <div>
+                  <Image
+                    alt={v.title}
+                    src={v.featuredImage}
+                    width="1024"
+                    height="512"
+                    objectFit="contain"
+                    className="rounded-3xl"
+                  ></Image>
+                </div>
+                <h2 className="text-2xl my-0">{v.title}</h2>
+                <div className="text-base mb-3">
+                  <div className="text-sm text-blue-500">
+                    Updated {v.dateModified.split('T')[0] || ''}
+                  </div>
+                  by <span className="font-semibold">{v.author}</span>
+                </div>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: marked(v.content.substr(0, 200) + '...'),
+                  }}
+                ></div>
+              </div>
+            </a>
+          </Link>
+        ))}
+      </div>
     </Layout>
   )
 }
