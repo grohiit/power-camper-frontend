@@ -19,8 +19,8 @@ export default function CampingArchivePage({ response, states }) {
       <h1 className="text-left mx-10">{title}</h1>
       <p className="mx-10 max-w-4xl">{description}</p>
       <div className="">
-        {states.map((state, index) => (
-          <div>
+        {states.map((state, stateIndex) => (
+          <div key={stateIndex}>
             <hr className="border-2 border-black mx-10 mb-5" />
             <Link href={`${domain}/camping/${state.toLowerCase()}`}>
               <a className="no-underline text-black hover:text-black visited:text-black block">
