@@ -8,41 +8,47 @@ import { formInputData } from '@/components/common/Content'
 import TrailerLengthSelectField from './TrailerLengthSelectField'
 import MaxPeopleSelectField from './MaxPeopleSelectField'
 
-const ReservationForm = ({ name, facilityID }) => {
+const ReservationForm = ({ name, campgroundId }) => {
   const today = new Date()
   const [startDate, setStartDate] = useState(new Date())
   const [checkOutDate, setCheckOutdate] = useState(
     today.setDate(today.getDate() + 2)
   )
   const [state, setState] = useState('CA')
-  const [campground, setCampground] = useState(facilityID)
+  const [campground, setCampground] = useState(campgroundId)
   const [siteTypes, setSiteTypes] = useState(
-    formInputData.filter((v) => v.facilityID == facilityID)[0]['siteTypes']
+    formInputData.filter((v) => v.campgroundId == campgroundId)[0]['siteTypes']
   )
   const [siteTypeSelected, setSiteTypeSelected] = useState(
     `${siteTypes[0]} Site`
   )
   const [maxLength, setMaxLength] = useState(
-    formInputData.filter((v) => v.facilityID == facilityID)[0]['maxLength']
+    formInputData.filter((v) => v.campgroundId == campgroundId)[0]['maxLength']
   )
 
   const [maxPeople, setMaxPeople] = useState(
-    formInputData.filter((v) => v.facilityID == facilityID)[0]['maxPeople']
+    formInputData.filter((v) => v.campgroundId == campgroundId)[0]['maxPeople']
   )
 
   const handleCampgroundChange = (e) => {
-    const facilityID = e.target.value
+    const campgroundId = e.target.value
     setSiteTypes(
-      formInputData.filter((v) => v.facilityID == facilityID)[0]['siteTypes']
+      formInputData.filter((v) => v.campgroundId == campgroundId)[0][
+        'siteTypes'
+      ]
     )
     setMaxLength(
-      formInputData.filter((v) => v.facilityID == facilityID)[0]['maxLength']
+      formInputData.filter((v) => v.campgroundId == campgroundId)[0][
+        'maxLength'
+      ]
     )
     setMaxPeople(
-      formInputData.filter((v) => v.facilityID == facilityID)[0]['maxPeople']
+      formInputData.filter((v) => v.campgroundId == campgroundId)[0][
+        'maxPeople'
+      ]
     )
 
-    setCampground(facilityID)
+    setCampground(campgroundId)
   }
   const handleSiteTypeChange = (e) => {
     setSiteTypeSelected(e.target.value)
@@ -78,14 +84,14 @@ const ReservationForm = ({ name, facilityID }) => {
                 <option val="CA">CA</option>
               </select>
               <select
-                id="facilityID"
-                name="facilityID"
+                id="campgroundId"
+                name="campgroundId"
                 value={campground}
                 onChange={handleCampgroundChange}
               >
                 {formInputData.map((campground, index) => (
                   <SelectOption
-                    option={[campground.facilityID, campground.name]}
+                    option={[campground.campgroundId, campground.name]}
                     key={index}
                   />
                 ))}

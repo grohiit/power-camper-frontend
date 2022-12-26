@@ -95,160 +95,6 @@ export const iconsObjData = {
   Hookups: <HookupIcon />,
 }
 
-export const activitiesData = [
-  {
-    icon: <PawIcon />,
-    title: 'Quis quam porta ornare fermentum lectus tincidunt.',
-  },
-  {
-    icon: <SwimmingIcon />,
-    title: 'Rm is morbi iaculiscommodo senectus quam sed massa.',
-  },
-  {
-    icon: <FireIcon />,
-    title: 'Quis quam porta ornare fermentum lectus tincidunt.',
-  },
-  {
-    icon: <Cloud />,
-    title: 'Ultrices amet purus velit.',
-  },
-  // {
-  //   icon: <CapIcon />,
-  //   title: "Ultrices amet purus velit nunc lectus",
-  // },
-]
-export const rulesData = [
-  {
-    subtitle: '12 days',
-    iconCondition: false,
-    title: 'Max. Length of Stayx',
-  },
-  {
-    subtitle: '8',
-    iconCondition: false,
-    title: 'Max. People per Site',
-  },
-  {
-    subtitle: '2',
-    iconCondition: false,
-    title: 'Max. Vehicles per Site',
-  },
-  {
-    subtitle: '',
-    iconCondition: true,
-    title: 'RV/Trailers Allowed?',
-  },
-  {
-    subtitle: '40ft',
-    iconCondition: false,
-    title: 'RV/Trailer Max Length',
-  },
-  {
-    subtitle: '',
-    iconCondition: false,
-    title: 'Group Camping Allowed',
-  },
-  {
-    subtitle: '',
-    iconCondition: true,
-    title: 'Pets Allowed?',
-  },
-  {
-    subtitle: 'Only in designated fire rings',
-    iconCondition: false,
-    title: 'Fires Allowed?',
-  },
-]
-export const costData = [
-  {
-    title: 'Site Type',
-    subtitle: 'Nightly Fee',
-  },
-  {
-    title: 'Site w/ Electrical Hook-up',
-    subtitle: '$31',
-  },
-  {
-    title: 'Site w/ Electrical Hook-up',
-    subtitle: '$26',
-  },
-  {
-    title: 'Group Site',
-    subtitle: '$50',
-  },
-  {
-    title: 'Walk-in Sites',
-    subtitle: '$22',
-  },
-]
-
-export const weatherData = [
-  {
-    icon: <BulbIcon />,
-    title: 'Sunday',
-    date: '03/07/2022',
-    degree: '70°',
-  },
-  {
-    icon: <CloudsIcon />,
-    title: 'Monday',
-    date: '04/07/2022',
-    degree: '70°',
-  },
-  {
-    icon: <BulbIcon />,
-    title: 'Tuesday',
-    date: '05/07/2022',
-    degree: '70°',
-  },
-  {
-    icon: <CloudsIcon />,
-    title: 'Wednesday',
-    date: '06/07/2022',
-    degree: '70°',
-  },
-  {
-    icon: <BulbIcon />,
-    title: 'Thuresday',
-    date: '07/07/2022',
-    degree: '70°',
-  },
-
-  {
-    icon: <CloudsIcon />,
-    title: 'Friday',
-    date: '08/07/2022',
-    degree: '70°',
-  },
-  {
-    icon: <BulbIcon />,
-    title: 'Saturday',
-    date: '09/07/2022',
-    degree: '70°',
-  },
-]
-
-export const showImg = [
-  {
-    image: '/img/png/slider/sliderImg1.png',
-  },
-  {
-    image: '/img/png/slider/sliderImg2.png',
-  },
-  {
-    image: '/img/png/slider/sliderImg3.png',
-  },
-  {
-    image: '/img/png/slider/sliderImg1.png',
-  },
-  {
-    image: '/img/png/slider/sliderImg2.png',
-  },
-  {
-    image: '/img/png/slider/sliderImg3.png',
-  },
-]
-
 export const amenitiesData = [
   {
     icon: <RVTrailerIcon />,
@@ -411,100 +257,86 @@ export const heroData = {
   ],
 }
 
-// export const data = {
-//   list: [
-//     "Doheny State Beach is Californias first state beach, located in Dana Point, where HWY 1 and I-5 meet",
-//     "It features over a mile of pristine sand and attracts thousands of surfers and day-use visitors each year",
-//     "he Doheny Campground is open year-round and offers 118 campsite locations for RVs, Trailers, and other vehicles up to 35 feet in length, as well as tent camping",
-//     "All campsites have a maximum capacity of 8 people, except there is 1 group site available that support up to 40 people.",
-//     "The campground does not offer any hookup capabilities, only a waste dump for RVs - so plan your trip accordingly!",
-//   ],
-// };
-
-// export const first = {
-//   value: `<ul> Doheny State Beach is Californias first state beach, located in Dana Point, where HWY 1 and I-5 meet. It features over a mile of pristine sand and attracts thousands of surfers and day-use visitors each year. The Doheny Campground is open year-round and offers 118 campsite locations for RVs, Trailers, and other vehicles up to 35 feet in length, as well as tent camping. All campsites have a maximum capacity of 8 people, except there is 1 group site available that support up to 40 people.The campground does not offer any hookup capabilities, only a waste dump for RVs - so plan your trip accordingly! Pets are allowed on a 6" leash. **Some bold text** * Bullet item 1 * Bullet item 2 * Bullet item 3 Some more text about the campground. 1. List item 1 2. List item 2 3. List item 3</ul>`,
-// };
-
 export const formInputData = [
   {
-    facilityID: 120010,
+    campgroundId: 120010,
     name: 'Bolsa Chica State Beach',
     maxLength: 40,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer'],
   },
   {
-    facilityID: 120015,
+    campgroundId: 120015,
     name: 'Carpinteria State Beach',
     maxLength: 35,
     maxPeople: 25,
     siteTypes: ['RV', 'Trailer', 'Tent', 'Group'],
   },
   {
-    facilityID: 120025,
+    campgroundId: 120025,
     name: 'Doheny State Beach',
     maxLength: 38,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer', 'Tent'],
   },
   {
-    facilityID: 120030,
+    campgroundId: 120030,
     name: 'El Capitan State Beach',
     maxLength: 42,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer', 'Tent', 'Group'],
   },
   {
-    facilityID: 120047,
+    campgroundId: 120047,
     name: 'Leo Carrillo State Park',
     maxLength: 31,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer', 'Tent', 'Group'],
   },
   {
-    facilityID: 120082,
+    campgroundId: 120082,
     name: 'San Clemente State Beach',
     maxLength: 42,
     maxPeople: 50,
     siteTypes: ['RV', 'Trailer', 'Tent', 'Group'],
   },
   {
-    facilityID: 120083,
+    campgroundId: 120083,
     name: 'San Elijo State Beach',
     maxLength: 35,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer', 'Tent'],
   },
   {
-    facilityID: 120087,
+    campgroundId: 120087,
     name: 'Seacliff State Beach',
     maxLength: 40,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer'],
   },
   {
-    facilityID: 120090,
+    campgroundId: 120090,
     name: 'South Carlsbad State Beach',
     maxLength: 37,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer', 'Tent'],
   },
   {
-    facilityID: 120263,
+    campgroundId: 120263,
     name: 'Silver Strand State Beach',
     maxLength: 40,
     maxPeople: 8,
     siteTypes: ['RV', 'Trailer'],
   },
   {
-    facilityID: 120742,
+    campgroundId: 120742,
     name: 'Crystal Cove Beach Cottages',
     maxLength: 10,
     maxPeople: 9,
     siteTypes: ['Cabin'],
   },
   {
-    facilityID: 123400,
+    campgroundId: 123400,
     name: 'Crystal Cove Moro Campground',
     maxLength: 38,
     maxPeople: 8,

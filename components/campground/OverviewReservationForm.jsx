@@ -4,9 +4,9 @@ import { formInputData } from '@/components/common/Content'
 import HeadingContent from './HeadingContent'
 
 const OverviewForm = ({
-  data: { overview, name, facilityID, dateModified },
+  data: { overview, name, campgroundId, dateModified },
 }) => {
-  const showForm = formInputData.filter((v) => v.facilityID == facilityID)
+  const showForm = formInputData.filter((v) => v.campgroundId == campgroundId)
     .length
     ? true
     : false
@@ -38,7 +38,7 @@ const OverviewForm = ({
       </div>
       {showForm && (
         <div className="lg:w-2/4 pl-5">
-          <ReservationForm name={name} facilityID={facilityID} />
+          <ReservationForm name={name} campgroundId={campgroundId} />
         </div>
       )}
     </section>
