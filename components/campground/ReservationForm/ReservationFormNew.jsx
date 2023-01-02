@@ -120,7 +120,14 @@ const ReservationForm = ({ name, campgroundId }) => {
                 type="text"
                 name="from"
                 selected={startDate}
-                onChange={(date) => setStartDate(date)}
+                onChange={(date) => {
+                  setStartDate(date)
+                  if (checkOutDate < date.getTime()) {
+                    setCheckOutdate(
+                      new Date(date).setDate(new Date(date).getDate() + 1)
+                    )
+                  }
+                }}
                 dateFormat="MMM dd, yyyy"
               />
             </div>
@@ -134,7 +141,14 @@ const ReservationForm = ({ name, campgroundId }) => {
                 type="text"
                 name="to"
                 selected={checkOutDate}
-                onChange={(date) => setCheckOutdate(date)}
+                onChange={(date) => {
+                  setCheckOutdate(date)
+                  if (startDate > date.getTime()) {
+                    setStartDate(
+                      new Date(date).setDate(new Date(date).getDate() - 1)
+                    )
+                  }
+                }}
                 dateFormat="MMM dd, yyyy"
               />
             </div>
