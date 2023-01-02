@@ -84,8 +84,8 @@ const ReservationForm = ({ name, campgroundId }) => {
                 <option val="CA">CA</option>
               </select>
               <select
-                id="campgroundId"
-                name="campgroundId"
+                id="facilityID"
+                name="facilityID"
                 value={campground}
                 onChange={handleCampgroundChange}
               >
