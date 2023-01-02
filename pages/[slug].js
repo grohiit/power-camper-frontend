@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { marked } from 'marked'
 
 export default function PostsPage({ response, slug }) {
-  // if (!response?.success || slug.includes('+')) return <PageNotFound />
+  if (!response?.success || slug.includes('+')) return <PageNotFound />
 
   const { content, title, datePublished, dateModified } = response.data
 
