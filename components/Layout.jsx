@@ -46,34 +46,7 @@ export default function Layout({
         <link rel="apple-touch-icon" href="logo192.png" />
         <link rel="manifest" href="manifest.json" />
         <title>{title || 'Power Camper'}</title>
-        {/* <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://power-camper2.vercel.app/" />
-        <meta property="og:title" content="Power Camper" /> */}
-        {/* <meta
-          property="og:description"
-          content="Get notifed of campground availabilities instantly!"
-        />
-        <meta
-          property="og:image"
-          content="https://power-camper2.vercel.app/seoSecond.webp"
-        />
-        <meta
-          property="twitter:card"
-          content="https://power-camper2.vercel.app/"
-        />
-        <meta
-          property="twitter:url"
-          content="https://power-camper2.vercel.app/"
-        />
-        <meta property="twitter:title" content="Power Camper" />
-        <meta
-          property="twitter:description"
-          content="Get notifed of campground availabilities instantly!"
-        />
-        <meta
-          property="twitter:image"
-          content="https://power-camper2.vercel.app/seoSecond.webp"
-        /> */}
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
