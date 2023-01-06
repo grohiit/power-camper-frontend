@@ -67,6 +67,11 @@ const nextConfig = {
         destination: '/campground/:slug',
         permanent: true,
       },
+      {
+        source: '/campground/leo-carillo-state-beach/',
+        destination: '/campground/leo-carrillo-state-beach/',
+        permanent: true,
+      },
     ]
   },
 }
